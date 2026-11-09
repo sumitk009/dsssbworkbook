@@ -1,0 +1,38 @@
+{
+"mcq":[
+{"q":"Which is the main tested advantage of Exploratory Data Analysis (EDA)?","o":["It offers flexible ways to generate hypotheses from the data","It gives definitive answers through formal testing","It removes the need for data cleaning","It stores data for transaction processing"],"a":0,"e":"EDA is exploratory: it helps generate hypotheses before formal testing and does not aim at definitive answers.","t":"7.1 Data Science and Big Data"},
+{"q":"Growth curve analysis is a set of techniques used for modelling change over time and also serves as a technique for which purpose?","o":["Data reduction","Data encryption","Data warehousing","Data replication"],"a":0,"e":"Many observations are summarised by a few curve parameters, so it works as a data-reduction technique.","t":"7.1 Data Science and Big Data"},
+{"q":"Which of the following is NOT one of the V's used to characterise Big Data?","o":["Validation","Velocity","Veracity","Variety"],"a":0,"e":"The V's are Volume, Velocity, Variety, Veracity and Value. Validation is not one of them.","t":"7.1 Data Science and Big Data"},
+{"q":"In Hadoop, which component is responsible for distributed storage across cluster nodes?","o":["HDFS","MapReduce","Spark","OLAP"],"a":0,"e":"HDFS stores data across nodes; MapReduce does the distributed processing.","t":"7.1 Data Science and Big Data"},
+{"q":"A data warehouse is best described as a relational database designed for:","o":["Queries and analysis rather than transaction processing","Day-to-day transaction processing only","Storing only the current operational data","Running web applications"],"a":0,"e":"A warehouse integrates historical data for analysis (OLAP); the operational database handles transactions (OLTP).","t":"7.1 Data Science and Big Data"},
+{"q":"In the standard data-science pipeline, which stage comes immediately after cleaning/preparing the data?","o":["Explore (EDA)","Collect","Model / analyse","Interpret and communicate"],"a":0,"e":"The order is collect, clean, explore, model, interpret.","t":"7.1 Data Science and Big Data"},
+{"q":"A Pandas Series is best described as:","o":["A one-dimensional labelled array that can hold any data type","A two-dimensional table with columns of different types","A fixed-size array of only numbers","A SQL join result"],"a":0,"e":"Series is 1-D labelled; the two-dimensional structure is the DataFrame.","t":"7.2 Pandas"},
+{"q":"A Pandas DataFrame is:","o":["A two-dimensional labelled structure with columns of potentially different types","A one-dimensional labelled array","A single column of integers only","A list of Python functions"],"a":0,"e":"A DataFrame is 2-D like a spreadsheet; each column is itself a Series.","t":"7.2 Pandas"},
+{"q":"Which Pandas method takes a column name (or list of names) and creates a new re-indexed DataFrame?","o":["set_index()","reset_index()","groupby()","dropna()"],"a":0,"e":"set_index() re-indexes by column; reset_index() undoes it.","t":"7.2 Pandas"},
+{"q":"Which Pandas operation concatenates multiple tables both column-wise and row-wise, as a database join does?","o":["merge","concat","groupby","fillna"],"a":0,"e":"merge is the SQL-style join on key columns; concat merely stacks frames along an axis.","t":"7.2 Pandas"},
+{"q":"If 'import pandas as pd' raises an ImportError, what does it mean?","o":["Python could not find Pandas in its list of available libraries","Pandas is installed but the data is empty","The DataFrame has missing values","The CSV file does not exist"],"a":0,"e":"ImportError means the library was not found; the fix is pip install pandas.","t":"7.2 Pandas"},
+{"q":"Which Pandas method removes rows containing missing (NaN) data?","o":["dropna()","fillna()","isnull()","describe()"],"a":0,"e":"dropna() removes incomplete rows; fillna() substitutes values and isnull() only tests.","t":"7.2 Pandas"},
+{"q":"For the data 2, 4, 6, 8, 10, what is the variance (dividing by n)?","o":["8","6","40","2.83"],"a":0,"e":"Squared deviations 16+4+0+4+16 = 40; 40/5 = 8. The value 2.83 is the standard deviation.","t":"7.3 Descriptive Statistics"},
+{"q":"For the data 2, 4, 6, 8, 10, what is the min-max scaled value of 8?","o":["0.75","0.60","0.80","1.41"],"a":0,"e":"(8 - 2)/(10 - 2) = 6/8 = 0.75. The value 1.41 is the z-score of 10.","t":"7.3 Descriptive Statistics"},
+{"q":"Which measure is resistant to outliers?","o":["Median","Mean","Range","Variance"],"a":0,"e":"The median depends on the middle of sorted data, so extreme values barely affect it; the mean does not resist outliers.","t":"7.3 Descriptive Statistics"},
+{"q":"The z-score of a value x is calculated as:","o":["(x - mean) / standard deviation","(x - min) / (max - min)","(max - min) / n","(x - mean)^2 / n"],"a":0,"e":"z states how many standard deviations a value is from the mean; (x-min)/(max-min) is min-max scaling.","t":"7.3 Descriptive Statistics"}
+],
+"tf":[
+{"s":"Exploratory Data Analysis aims to give definitive answers to research questions.","a":false,"n":"False. EDA is exploratory and generates hypotheses; it does not aim at definitive answers."},
+{"s":"Hadoop's MapReduce splits the work in the map step and combines the results in the reduce step.","a":true,"n":"True. MapReduce is the distributed processing part of Hadoop."},
+{"s":"A data warehouse is designed mainly for transaction processing (OLTP).","a":false,"n":"False. A data warehouse is for queries and analysis (OLAP); the operational database handles transactions."},
+{"s":"In a DataFrame, each column is itself a Series.","a":true,"n":"True. A DataFrame is a 2-D structure made of labelled columns, each a Series."},
+{"s":"Pandas concat() performs a database-style join on key columns.","a":false,"n":"False. merge does the SQL-style join; concat merely stacks frames along an axis."},
+{"s":"The mean resists outliers better than the median.","a":false,"n":"False. The median resists outliers; the mean does not."},
+{"s":"Standard deviation is the square root of the variance.","a":true,"n":"True. It brings the spread back into the data's own units."},
+{"s":"Min-max scaling squeezes values into the range [0, 1].","a":true,"n":"True. The formula is (x - min)/(max - min)."}
+],
+"fill":[
+{"q":"In the Big Data V's, ______ refers to the trustworthiness of the data.","d":"Veracity","alts":"veracity"},
+{"q":"Hadoop's storage layer is called ______.","d":"HDFS","alts":"hdfs~hadoopdistributedfilesystem"},
+{"q":"Pandas method ______ creates a new DataFrame re-indexed on a given column.","d":"set_index()","alts":"set_index~set_index()"},
+{"q":"Missing data in Pandas appears as ______.","d":"NaN","alts":"nan"},
+{"q":"For a data set, range = maximum minus ______.","d":"minimum","alts":"minimum~min"},
+{"q":"For the data 2, 4, 6, 8, 10, the mean is ______.","d":"6","alts":"6"}
+]
+}

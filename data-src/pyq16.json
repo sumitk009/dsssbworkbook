@@ -1,0 +1,341 @@
+{
+ "pyq": [
+  {
+   "q": "Which of the following is frequently used to ensure that data is correctly entered into a computer?",
+   "o": [
+    "Keyboards",
+    "Speakers",
+    "Input controls",
+    "Digitisers"
+   ],
+   "a": 2,
+   "e": "Input controls (validation and verification checks) ensure data is entered correctly; keyboards and digitisers only capture data and speakers are output devices. Note: The official key gives (a); the correct answer is (c).",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-2",
+   "ch": 1,
+   "chname": "",
+   "topic": "Input / Output Devices & Peripherals",
+   "chg": true
+  },
+  {
+   "q": "Which of the following statement is/are correct?\nI. Metropolitan Area Network (MAN) is a collection of Local Area Networks (LANs) connected together over a city.\nII. Metropolitan Area Network (MAN) supports both data and voice transmission.",
+   "o": [
+    "Only I",
+    "Only II",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "a": 2,
+   "e": "A MAN interconnects LANs over a city and carries both data and voice (e.g. IEEE 802.6 DQDB), so both statements are true. Note: The old key (a) was wrong; the correct answer is (c).",
+   "src": "DSSSB TGT CS 2021 | 01/08/2021 | Shift-1",
+   "ch": 2,
+   "chname": "",
+   "topic": "Logic Gates & Universal Gates",
+   "chg": true
+  },
+  {
+   "q": "Which of the following is correct for Digital Circuits?",
+   "o": [
+    "They use analog signals for communication",
+    "They process information using continuous voltage levels",
+    "They are not suitable for high speed operations",
+    "More than one of the above",
+    "None of the above"
+   ],
+   "a": 4,
+   "e": "Digital circuits use discrete 0/1 levels and are used in very fast devices, so (a), (b), (c) and hence (d) are false. Note: The old key (c) was wrong; the correct answer is (e).",
+   "src": "BPSC TRE 3.0 Exam-22.07.2024 (11-12)",
+   "ch": 2,
+   "chname": "",
+   "topic": "Logic Families, ICs & Digital Devices",
+   "chg": true
+  },
+  {
+   "q": "Semaphore are used to solve the problem of:",
+   "o": [
+    "Race condition",
+    "Multi-tasking",
+    "Mutual exclusion",
+    "Both (a) and (c)"
+   ],
+   "a": 3,
+   "e": "Semaphores enforce mutual exclusion on shared resources and thereby eliminate race conditions; multi-tasking is an OS feature. Note: The old key (c) was wrong; the correct answer is (d).",
+   "src": "CGPSC C.S. 2020 Set-A",
+   "ch": 3,
+   "chname": "",
+   "topic": "Process Synchronisation, Semaphores & Critical Section",
+   "chg": true
+  },
+  {
+   "q": "A measure of amount of memory required to execute an algorithm is known as:",
+   "o": [
+    "Space complexity of an algorithm",
+    "Time complexity of an algorithm",
+    "Time efficiency of an algorithm",
+    "Accuracy of an algorithm"
+   ],
+   "a": 0,
+   "e": "Space complexity is the total memory an algorithm needs as a function of input size; time complexity/efficiency measure running time. Note: The old key (d) was wrong; the correct answer is (a).",
+   "src": "DSSSB TGT CS 2025 | 12/09/2025 | 5:00 PM - 7:00 PM",
+   "ch": 4,
+   "chname": "",
+   "topic": "Algorithms, Flowcharts & Pseudocode",
+   "chg": true
+  },
+  {
+   "q": "Consider the given memory representation of the singly linked list where start points to the address of first node of the linked list, which is memory location 0. If a new node whose data value is X is inserted after the node whose data value is E in any free location available in the memory, then what will the memory representation be after inserting the new node?\nMemory location | Item value | Pointer to next element\n0 | A | 4\n1 | E | 2\n2 | B | NULL\n3 | (free) | —\n4 | C | 1",
+   "o": [
+    "After inserting X: Loc0=A→3, Loc1=E→2, Loc2=B→NULL, Loc3=X→4, Loc4=C→1",
+    "After inserting X: Loc0=A→4, Loc1=E→2, Loc2=B→NULL, Loc3=X→1, Loc4=C→3",
+    "After inserting X: Loc0=A→4, Loc1=E→2, Loc2=B→3, Loc3=X→NULL, Loc4=C→1",
+    "After inserting X: Loc0=A→4, Loc1=E→3, Loc2=B→NULL, Loc3=X→2, Loc4=C→1"
+   ],
+   "a": 3,
+   "e": "The list is A→C→E→B; X goes in free location 3, so X→2 (B) and E→3, giving A→C→E→X→B. Note: The old key (a) was wrong; the correct answer is (d).",
+   "src": "DSSSB TGT CS 2025 | 12/09/2025 | 5:00 PM - 7:00 PM",
+   "ch": 5,
+   "chname": "",
+   "topic": "C — Control Flow: Loops, if-else & switch",
+   "chg": true
+  },
+  {
+   "q": "This question is based upon the following class and code segment :\nclass STOCK { float price ; public : STOCK( ) ; // Function 1\nSTOCK(float P) ; // Function 2\nSTOCK(STOCK &S) ; // Function 3\nvoid INIT( ) ; // Function 4\nvoid DISP( ) ; // Function 5\n~ STOCK( ) ; // Function 6 };\nvoid main( ) { STOCK S2(10) ; // Statement 1\n________ ________ // Other Statements\n________ }\nWhich of the following declaration/statement will invoke the default constructor of the class - STOCK ?",
+   "o": [
+    "STOCK S1(S2);",
+    "STOCK S2;",
+    "STOCK S1(20);",
+    "S2.INIT();"
+   ],
+   "a": 1,
+   "e": "The default constructor takes no arguments and runs for a declaration like STOCK S2;. S1(S2) calls the copy constructor and S1(20) the parameterised one. Note: The official key gives (c); the correct answer is (b).",
+   "src": "NVS PGT C.S. 15.12.2022 (Shift-II)",
+   "ch": 5,
+   "chname": "",
+   "topic": "Java — Classes, Inheritance, Interfaces & Packages",
+   "chg": true
+  },
+  {
+   "q": "Identify the descending order of strict access protection.",
+   "o": [
+    "Public, protected, private, package",
+    "Private, protected, package, public",
+    "Public, private, protected, package",
+    "Private, package, protected, public"
+   ],
+   "a": 3,
+   "e": "From strictest to least strict the Java access levels are private, package (default), protected, public. Note: The official key gives (b); the correct answer is (d).",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-2",
+   "ch": 5,
+   "chname": "",
+   "topic": "C — Output Tracing / Miscellaneous",
+   "chg": true
+  },
+  {
+   "q": "Which of the following is not a valid variable name in most programming languages?",
+   "o": [
+    "my Variable",
+    "123Variable",
+    "_myVariable",
+    "More than one of the above"
+   ],
+   "a": 3,
+   "e": "'my Variable' has a space and '123Variable' starts with a digit, so both (a) and (b) are invalid; '_myVariable' is valid. Note: The official key gives (b); the correct answer is (d).",
+   "src": "BPSC TRE 1.0 2023 (11-12)",
+   "ch": 5,
+   "chname": "",
+   "topic": "C — Output Tracing / Miscellaneous",
+   "chg": true
+  },
+  {
+   "q": "Which of the following constructors is provided by the C++ compiler if not defined in a class?",
+   "o": [
+    "Copy constructor",
+    "Default constructor",
+    "Parameterized constructor",
+    "More than one of the above"
+   ],
+   "a": 3,
+   "e": "The compiler implicitly supplies both a default constructor and a copy constructor, but never a parameterized one. Note: The official key gives (b); the correct answer is (d).",
+   "src": "BPSC TRE 2.0 22.02.2024 (9-10)",
+   "ch": 5,
+   "chname": "",
+   "topic": "C++ — Classes, Objects & Access Specifiers",
+   "chg": true
+  },
+  {
+   "q": "The functions 'cin' and 'cout' resolve the necessary conversions at :",
+   "o": [
+    "Compile time",
+    "Execution time",
+    "Linking time",
+    "None of these"
+   ],
+   "a": 0,
+   "e": "cin/cout use overloaded >> and << operators chosen by the compiler from operand types, so conversions are resolved at compile time. Note: The old key (b) was wrong; the correct answer is (a).",
+   "src": "HTET PGT C.S. 2021",
+   "ch": 5,
+   "chname": "",
+   "topic": "C++ — Templates, Exceptions & I/O Streams",
+   "chg": true
+  },
+  {
+   "q": "Additional information sent when an exception is thrown may be placed in _____.",
+   "o": [
+    "The throw keyword",
+    "The function that caused the error",
+    "The catch block",
+    "An object of the exception class"
+   ],
+   "a": 3,
+   "e": "The thrown object (of an exception class) carries the extra error information to the handler; the catch block only receives it. Note: The official key gives (c); the correct answer is (d).",
+   "src": "KVS PGT C.S. 2018",
+   "ch": 5,
+   "chname": "",
+   "topic": "C++ — Templates, Exceptions & I/O Streams",
+   "chg": true
+  },
+  {
+   "q": "Which of the given options best describes the truthfulness of the following statements?\ni) A tuple is a sequence of immutable Python objects, in the given tuple course = \"l\", \"m\", \"n\", \"o\", has four elements.\nii) To explicitly remove an entire tuple, use the drop statement.",
+   "o": [
+    "i-True, ii-True",
+    "i-False, ii-True",
+    "i-True, ii-False",
+    "i-False, ii-False"
+   ],
+   "a": 2,
+   "e": "Statement i is true; statement ii is false because a tuple is removed with del, and Python has no drop statement. Note: The old key (c) was wrong for the old wording; the correct answer is (c) i-True, ii-False.",
+   "src": "DSSSB TGT CS 2023 | 24/06/2023 | Shift-2",
+   "ch": 6,
+   "chname": "",
+   "topic": "Data Types, Variables & Type Casting",
+   "chg": true
+  },
+  {
+   "q": "Which sorting algorithm performs the worst when the input array is nearly sorted?",
+   "o": [
+    "Max Sort",
+    "Hybrid Sort",
+    "Insertion Sort",
+    "Bubble Sort"
+   ],
+   "a": 0,
+   "e": "Max (selection-type) sort always makes n(n-1)/2 comparisons, so it gains nothing from nearly-sorted input, whereas insertion sort is adaptive. Note: The official key gives (c); the correct answer is (a).",
+   "src": "DSSSB TGT CS 2025 | 12/09/2025 | 1:00 PM - 3:00 PM",
+   "ch": 8,
+   "chname": "",
+   "topic": "Arrays & Address Calculation (Row/Column Major)",
+   "chg": true
+  },
+  {
+   "q": "Which of the following statements is NOT true with respect to database normalization?",
+   "o": [
+    "A 4NF table is more immune against logical inconsistencies than a 3NF table.",
+    "A 3NF table will have fewer anomalies than a 2NF table.",
+    "A 3NF table is more vulnerable than a 2NF table.",
+    "A database is said to be in 3NF if all its tables are in 3NF"
+   ],
+   "a": 2,
+   "e": "Higher normal forms have fewer anomalies, so saying a 3NF table is more vulnerable than a 2NF table is false. Note: The old key (a) was wrong; the correct answer is (c).",
+   "src": "KVS PGT C.S. 2013",
+   "ch": 9,
+   "chname": "",
+   "topic": "Normalisation & Functional Dependencies",
+   "chg": true
+  },
+  {
+   "q": "________ is the address of the current tunnel endpoint for MN that can be chosen via DHCP.",
+   "o": [
+    "FA",
+    "COA",
+    "HA",
+    "CN"
+   ],
+   "a": 1,
+   "e": "In Mobile IP the care-of address (COA) is the mobile node's current tunnel endpoint and can be co-located and obtained via DHCP. Note: The official key gives (a); the correct answer is (b).",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-2",
+   "ch": 10,
+   "chname": "",
+   "topic": "Application Layer Protocols (HTTP, DNS, FTP, SMTP)",
+   "chg": true
+  },
+  {
+   "q": "________ is the standard that defines how web servers and application programs communicate.",
+   "o": [
+    "JDBC",
+    "ODBC",
+    "CGI",
+    "HTTP"
+   ],
+   "a": 2,
+   "e": "CGI (Common Gateway Interface) defines communication between a web server and external programs; HTTP is browser-to-server, JDBC/ODBC are for databases. Note: The official key gives (d); the correct answer is (c).",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-2",
+   "ch": 11,
+   "chname": "",
+   "topic": "ASP / .NET & Server-Side Technologies",
+   "chg": true
+  },
+  {
+   "q": "Multimedia is widely used to add special_____ to movies",
+   "o": [
+    "Arrangement",
+    "Attachment",
+    "Effects",
+    "Control"
+   ],
+   "a": 2,
+   "e": "Multimedia (CGI, sound, animation) is used to create special effects in films. Note: The official key gives (a); the correct answer is (c).",
+   "src": "Bihar STET C.S. 12.09.2023 (Shift-II)",
+   "ch": 13,
+   "chname": "",
+   "topic": "Multimedia: Audio, Video, Animation & VR",
+   "chg": true
+  },
+  {
+   "q": "Which method creates interpolants that are softer?",
+   "o": [
+    "Polynomial and spline interpolation",
+    "Piecewise constant interpolation",
+    "Polynomial interpolation",
+    "Linear interpolation and spline interpolation"
+   ],
+   "a": 0,
+   "e": "Polynomial and spline interpolants are smooth, whereas piecewise constant gives jumps and linear gives corners. Note: The official key gives (b); the correct answer is (a).",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-2",
+   "ch": 17,
+   "chname": "Mathematics & Aptitude",
+   "topic": "Numerical Methods & Interpolation",
+   "chg": true
+  },
+  {
+   "q": "According to business economics, the growth of an existing product is used to estimate the demand for a new product using:",
+   "o": [
+    "growth curve approach",
+    "vicarious approach",
+    "substitute approach",
+    "opinion polling approach"
+   ],
+   "a": 0,
+   "e": "In the growth curve approach (Joel Dean), demand for a new product is estimated from the growth pattern of an existing product. Note: The official key gives (c); the correct answer is (a).",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-2",
+   "ch": 18,
+   "chname": "Economics & Commerce",
+   "topic": "Demand, Supply, Elasticity, Cost & Market Structure",
+   "chg": true
+  },
+  {
+   "q": "What is effective desire?",
+   "o": [
+    "Demand",
+    "Consumption",
+    "Calculus",
+    "Utility"
+   ],
+   "a": 0,
+   "e": "Demand is effective desire: desire backed by ability and willingness to pay. Note: The official key gives (b); the correct answer is (a).",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-2",
+   "ch": 18,
+   "chname": "Economics & Commerce",
+   "topic": "Demand, Supply, Elasticity, Cost & Market Structure",
+   "chg": true
+  }
+ ]
+}

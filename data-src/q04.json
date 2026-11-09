@@ -1,0 +1,956 @@
+{
+ "mcq": [
+  {
+   "q": "Who created the C language at Bell Labs?",
+   "o": [
+    "Bjarne Stroustrup",
+    "James Gosling",
+    "Dennis Ritchie",
+    "Niklaus Wirth"
+   ],
+   "a": 2,
+   "e": "C was created by Dennis Ritchie; Stroustrup made C++ and Gosling made Java.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "Which language was created by Bjarne Stroustrup?",
+   "o": [
+    "C",
+    "C++",
+    "Java",
+    "Simula"
+   ],
+   "a": 1,
+   "e": "C++ is Stroustrup's; C is Ritchie's and Java is Gosling's.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "The full form of the language name FORTRAN is:",
+   "o": [
+    "Formula Translation",
+    "Format Transcription",
+    "Function Translator",
+    "Formal Translation"
+   ],
+   "a": 0,
+   "e": "FORTRAN = Formula Translation.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "In C, tokens are:",
+   "o": [
+    "Only the keywords of the language",
+    "The smallest individual units of a program as well as the basic elements recognised by the compiler",
+    "Only the variables declared in a program",
+    "The comments in a program"
+   ],
+   "a": 1,
+   "e": "Tokens are both the smallest units of a C program and the basic elements the compiler recognises.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "Which of the following is NOT a valid C identifier?",
+   "o": [
+    "_myVariable",
+    "total_2",
+    "Sum",
+    "123Variable"
+   ],
+   "a": 3,
+   "e": "An identifier may start with a letter or underscore but never with a digit.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "Which of the following is a keyword in C?",
+   "o": [
+    "variable",
+    "automatic",
+    "volatile",
+    "integer"
+   ],
+   "a": 2,
+   "e": "volatile is a C keyword; variable, automatic and integer are not (the real words are auto, int).",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "In the declaration int a, b, c = 10; (inside a function), what do a and b contain?",
+   "o": [
+    "0",
+    "Garbage (indeterminate) values",
+    "10",
+    "-1"
+   ],
+   "a": 1,
+   "e": "Only c is initialised; uninitialised local variables hold indeterminate values, never an automatic 0.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "Which statement about the default value of a register variable is correct?",
+   "o": [
+    "It is 0",
+    "It is garbage",
+    "It is 1",
+    "It is NULL"
+   ],
+   "a": 1,
+   "e": "A register variable lives in a CPU register but its default value is garbage, not zero.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "Which of the following is NOT a storage class in C?",
+   "o": [
+    "auto",
+    "register",
+    "static",
+    "intern"
+   ],
+   "a": 3,
+   "e": "The storage classes are auto, register, static and extern; there is no 'intern'.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "Which storage class variables retain their value between function calls and default to 0?",
+   "o": [
+    "auto",
+    "register",
+    "static",
+    "volatile"
+   ],
+   "a": 2,
+   "e": "static variables are initialised to 0 by default and keep their value between calls.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "With short = 2 bytes, float = 4 bytes, long = 8 bytes, how many bytes does struct { short a[5]; union { float v; long z; } u; } occupy (no padding considered)?",
+   "o": [
+    "14",
+    "18",
+    "20",
+    "28"
+   ],
+   "a": 1,
+   "e": "Struct adds members: 5x2 = 10; the union takes its largest member (8); total 18.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "The #include directive is resolved during which stage?",
+   "o": [
+    "Linking",
+    "Preprocessing",
+    "Execution",
+    "Assembling"
+   ],
+   "a": 1,
+   "e": "The preprocessor runs before compilation and replaces #include with the file's contents.",
+   "t": "5.1 C Basics"
+  },
+  {
+   "q": "What is the value of x after: int a=8,b=5,c=10,d=3,e=2,f=7,g=3; x = a + b*(c-d)/e + f%g;  (integer arithmetic)",
+   "o": [
+    "26",
+    "27",
+    "20",
+    "25"
+   ],
+   "a": 0,
+   "e": "b*(c-d) = 35, 35/2 = 17 (integer division), f%g = 1, so 8 + 17 + 1 = 26.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "Which operator has the highest precedence in C?",
+   "o": [
+    "Parentheses ( )",
+    "%",
+    "*",
+    "="
+   ],
+   "a": 0,
+   "e": "Parentheses are highest; % ranks with * and /, and = is lowest.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "Which of the following is NOT an arithmetic operator?",
+   "o": [
+    "%",
+    "+",
+    "&&",
+    "/"
+   ],
+   "a": 2,
+   "e": "&& is a logical operator.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "The ?: operator in C takes how many operands?",
+   "o": [
+    "2",
+    "3",
+    "4",
+    "1"
+   ],
+   "a": 1,
+   "e": "?: is the only ternary operator, so it has exactly three operands.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "What is the value of c after: int x=0, a=0; char r = x ? 'a' : a ? 'b' : 'c';  (value of r)",
+   "o": [
+    "'a'",
+    "'b'",
+    "'c'",
+    "Compile error"
+   ],
+   "a": 2,
+   "e": "?: is right-associative; x is 0 so the second ?: is evaluated; a is 0 so 'c' results.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "What does the statement x -= y + 1; mean?",
+   "o": [
+    "x = x - y + 1",
+    "x = x - (y + 1)",
+    "x = (x - y) + 1",
+    "x = y + 1 - x"
+   ],
+   "a": 1,
+   "e": "A compound assignment applies to the whole right-hand side: x = x - (y + 1).",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "What value is stored in k after: int v, k; k = (v = 20, v + 2);",
+   "o": [
+    "20",
+    "22",
+    "2",
+    "42"
+   ],
+   "a": 1,
+   "e": "The comma operator evaluates left to right and keeps the right value: v + 2 = 22.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "What is the result of -7 % 3 in C?",
+   "o": [
+    "1",
+    "-1",
+    "2",
+    "-2"
+   ],
+   "a": 1,
+   "e": "The result of % takes the sign of the dividend, so -7 % 3 = -1.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "What is the result of 7 % -3 in C?",
+   "o": [
+    "-1",
+    "1",
+    "2",
+    "-2"
+   ],
+   "a": 1,
+   "e": "The sign follows the dividend (7), so the result is 1.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "What is the value of 4 ^ 3 in C?",
+   "o": [
+    "12",
+    "7",
+    "1",
+    "64"
+   ],
+   "a": 1,
+   "e": "^ is bitwise XOR: 100 XOR 011 = 111 = 7.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "What does printf(\"%d\", printf(\"C Programming\")); print?",
+   "o": [
+    "13",
+    "C Programming",
+    "C Programming13",
+    "C Programming12"
+   ],
+   "a": 2,
+   "e": "The inner printf prints 'C Programming' and returns 13 (characters printed), which the outer printf then prints.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "What does printf(\"%d%d%d\", 62, 062, 0x62); print?",
+   "o": [
+    "626262",
+    "625098",
+    "62498",
+    "625062"
+   ],
+   "a": 1,
+   "e": "062 is octal = 50 and 0x62 is hex = 98, so the output is 62 50 98.",
+   "t": "5.2 C Operators"
+  },
+  {
+   "q": "Which loop is infinite?",
+   "o": [
+    "while(0) { }",
+    "while(5) { }",
+    "for(i=0;i<5;i++) { }",
+    "do { } while(0);"
+   ],
+   "a": 1,
+   "e": "Any non-zero value is true, so while(5) never stops; only 0 is false.",
+   "t": "5.3 C Control Flow"
+  },
+  {
+   "q": "int i = 5;\ndo { printf(\"%d \", i); } while (i > 5);\nWhat is printed?",
+   "o": [
+    "Nothing",
+    "5",
+    "5 6",
+    "Infinite output"
+   ],
+   "a": 1,
+   "e": "A do-while runs its body first, so 5 is printed once before the condition fails.",
+   "t": "5.3 C Control Flow"
+  },
+  {
+   "q": "Which loop always executes its body at least once?",
+   "o": [
+    "while",
+    "for",
+    "do-while",
+    "None of these"
+   ],
+   "a": 2,
+   "e": "do-while tests the condition after the body.",
+   "t": "5.3 C Control Flow"
+  },
+  {
+   "q": "In a for loop, what happens if the condition part is omitted?",
+   "o": [
+    "Compile error",
+    "The loop becomes infinite",
+    "The loop runs once",
+    "The loop never runs"
+   ],
+   "a": 1,
+   "e": "All three parts of for are optional; with no condition the loop never terminates by itself.",
+   "t": "5.3 C Control Flow"
+  },
+  {
+   "q": "In a dangling-else situation, an else binds to:",
+   "o": [
+    "The first if in the program",
+    "The outermost if",
+    "The nearest unmatched if",
+    "The if that is indented the same"
+   ],
+   "a": 2,
+   "e": "An else always pairs with the nearest preceding unmatched if, whatever the indentation.",
+   "t": "5.3 C Control Flow"
+  },
+  {
+   "q": "What is the output?\nswitch (5) {\ncase 5: printf(\"Five\");\ndefault: printf(\"Default\");\n}",
+   "o": [
+    "Five",
+    "FiveDefault",
+    "Default",
+    "Compile error"
+   ],
+   "a": 1,
+   "e": "There is no break, so control falls through from case 5 into default.",
+   "t": "5.3 C Control Flow"
+  },
+  {
+   "q": "A loop 'for (j = 1; j <= n; ) j = j * 2;' makes how many comparisons?",
+   "o": [
+    "n",
+    "log n + 1",
+    "n log n",
+    "log n - 1"
+   ],
+   "a": 1,
+   "e": "j doubles each time, so the body runs about log n times and the condition is tested log n + 1 times.",
+   "t": "5.3 C Control Flow"
+  },
+  {
+   "q": "int arr[5];\nfor (i = 0; i < 5; i++) arr[i] = i*i - 2*i + 1;\nWhat are the elements of arr?",
+   "o": [
+    "1 0 1 4 9",
+    "0 1 4 9 16",
+    "1 1 1 1 1",
+    "1 0 1 2 3"
+   ],
+   "a": 0,
+   "e": "i*i - 2*i + 1 = (i-1)^2, giving 1, 0, 1, 4, 9 for i = 0..4.",
+   "t": "5.3 C Control Flow"
+  },
+  {
+   "q": "A function prototype tells the compiler:",
+   "o": [
+    "The body of the function",
+    "The number and types of arguments and the return type",
+    "Only the function name",
+    "The local variables of the function"
+   ],
+   "a": 1,
+   "e": "A prototype is the interface only: argument count, argument types and return type.",
+   "t": "5.4 C Functions"
+  },
+  {
+   "q": "A function is declared with the prototype void func(void); and called as func(10). What happens?",
+   "o": [
+    "Compilation error",
+    "10 is ignored",
+    "Garbage is passed",
+    "Runtime error"
+   ],
+   "a": 0,
+   "e": "The call must match the prototype; passing an argument to func(void) is a compile-time error.",
+   "t": "5.4 C Functions"
+  },
+  {
+   "q": "To modify a caller's variable from a called function in C, you should:",
+   "o": [
+    "Pass the variable by value",
+    "Pass the address of the variable",
+    "Declare it static",
+    "Use a prototype"
+   ],
+   "a": 1,
+   "e": "Call by value only copies; passing the address lets the function change the original.",
+   "t": "5.4 C Functions"
+  },
+  {
+   "q": "What is printed?\nint x = 10, y = 20;\n{\nint y = 40;\ny++;\nx++;\n}\nprintf(\"%d %d\", x, y);",
+   "o": [
+    "11 41",
+    "11 20",
+    "10 20",
+    "10 41"
+   ],
+   "a": 1,
+   "e": "The inner y shadows the outer y only inside the block; x is changed to 11, outer y stays 20.",
+   "t": "5.4 C Functions"
+  },
+  {
+   "q": "Which declaration describes a function fun taking (float *, char **) and returning int **?",
+   "o": [
+    "int * fun(float *, char **)",
+    "int ** fun(float *, char **)",
+    "int fun(float **, char *)",
+    "float ** fun(int *, char **)"
+   ],
+   "a": 1,
+   "e": "Each pointer level adds a star: pointer-to-pointer-to-int return, float pointer and char pointer-to-pointer arguments.",
+   "t": "5.4 C Functions"
+  },
+  {
+   "q": "Variable-argument (variadic) functions in C use macros such as va_list, va_start and va_arg declared in:",
+   "o": [
+    "stdio.h",
+    "stdarg.h",
+    "stdlib.h",
+    "string.h"
+   ],
+   "a": 1,
+   "e": "The variadic macros come from <stdarg.h>.",
+   "t": "5.4 C Functions"
+  },
+  {
+   "q": "Which of the following is a valid declaration of a 2D array in C?",
+   "o": [
+    "int arr[2][2] = {1,2,3,4};",
+    "int arr[][] = {1,2,3,4};",
+    "int arr[2,2] = {1,2,3,4};",
+    "int arr[2][2] = {1,2},{3,4};"
+   ],
+   "a": 0,
+   "e": "Only the first dimension may be omitted and each dimension needs its own brackets.",
+   "t": "5.5 Arrays, Strings, Pointers"
+  },
+  {
+   "q": "For int arr[2][2] = {{1,2},{3,4}}; which expression does NOT give 4?",
+   "o": [
+    "*(*(arr+1)+1)",
+    "*(arr[1]+1)",
+    "arr[1][1]",
+    "*(*arr+1)"
+   ],
+   "a": 3,
+   "e": "*(*arr+1) is arr[0][1], which is 2.",
+   "t": "5.5 Arrays, Strings, Pointers"
+  },
+  {
+   "q": "What does printf(\"Hello, World!\" + 7) print?",
+   "o": [
+    "Hello",
+    "World!",
+    "Hello, World!",
+    "Compilation error"
+   ],
+   "a": 1,
+   "e": "A char pointer advanced by 7 points to 'W' and prints from there to the null character.",
+   "t": "5.5 Arrays, Strings, Pointers"
+  },
+  {
+   "q": "char *S = \"MySQL\"; S += 2; printf(\"%s\", S); prints:",
+   "o": [
+    "MySQL",
+    "SQL",
+    "My",
+    "QL"
+   ],
+   "a": 1,
+   "e": "S now points to the third character, so it prints SQL.",
+   "t": "5.5 Arrays, Strings, Pointers"
+  },
+  {
+   "q": "What is the difference between int *arr[5] and int (*arr)[5]?",
+   "o": [
+    "Both are arrays of 5 pointers",
+    "First is an array of 5 int pointers; second is a pointer to an array of 5 ints",
+    "First is a pointer to an array; second is an array of pointers",
+    "There is no difference"
+   ],
+   "a": 1,
+   "e": "Parentheses change the binding: *arr[5] is an array of pointers, (*arr)[5] is a pointer to an array.",
+   "t": "5.5 Arrays, Strings, Pointers"
+  },
+  {
+   "q": "What does scanf(\"%4s\", str) store if the input is HelloWorld?",
+   "o": [
+    "HelloWorld",
+    "Hell",
+    "Hello",
+    "Worl"
+   ],
+   "a": 1,
+   "e": "%4s reads at most 4 characters.",
+   "t": "5.5 Arrays, Strings, Pointers"
+  },
+  {
+   "q": "Which function writes formatted output into a character buffer and returns the number of characters written?",
+   "o": [
+    "printf",
+    "sprintf",
+    "puts",
+    "fprintf"
+   ],
+   "a": 1,
+   "e": "sprintf writes into a buffer and returns the character count.",
+   "t": "5.5 Arrays, Strings, Pointers"
+  },
+  {
+   "q": "How do you access the member price of a structure variable book, and of a pointer p to the structure?",
+   "o": [
+    "book->price and p.price",
+    "book.price and p->price",
+    "book.price and p.price",
+    "book->price and p->price"
+   ],
+   "a": 1,
+   "e": "Dot is for a structure variable; arrow is for a pointer to a structure.",
+   "t": "5.6 Structures and Files"
+  },
+  {
+   "q": "In fopen, which mode allows both reading and appending?",
+   "o": [
+    "r",
+    "w+",
+    "a+",
+    "wb"
+   ],
+   "a": 2,
+   "e": "\"a+\" reads and appends; w+ reads/writes but truncates; r only reads.",
+   "t": "5.6 Structures and Files"
+  },
+  {
+   "q": "Which call rewinds a file to its beginning?",
+   "o": [
+    "ftell(fp)",
+    "fseek(fp, 0, SEEK_SET)",
+    "fclose(fp)",
+    "fwrite(fp)"
+   ],
+   "a": 1,
+   "e": "fseek with SEEK_SET and offset 0 goes to the start; ftell only reports the position.",
+   "t": "5.6 Structures and Files"
+  },
+  {
+   "q": "Which of the following is NOT an OOP concept?",
+   "o": [
+    "Data hiding",
+    "Message passing",
+    "Platform independence",
+    "Encapsulation"
+   ],
+   "a": 2,
+   "e": "Platform independence comes from a virtual machine, not from OOP itself.",
+   "t": "5.7 OOP Concepts"
+  },
+  {
+   "q": "Which of the following was the first object-oriented language?",
+   "o": [
+    "Java",
+    "C++",
+    "Simula",
+    "LISP"
+   ],
+   "a": 2,
+   "e": "Simula was the first OOP language.",
+   "t": "5.7 OOP Concepts"
+  },
+  {
+   "q": "Wrapping data and the functions that operate on it into a single unit is called:",
+   "o": [
+    "Abstraction",
+    "Encapsulation",
+    "Polymorphism",
+    "Inheritance"
+   ],
+   "a": 1,
+   "e": "Encapsulation bundles data and functions together; abstraction only exposes essential features.",
+   "t": "5.7 OOP Concepts"
+  },
+  {
+   "q": "Which statement about a constructor is FALSE?",
+   "o": [
+    "It is called when an object is created",
+    "It has no return type",
+    "The compiler provides a default one if none is defined",
+    "It must have a return type"
+   ],
+   "a": 3,
+   "e": "Constructors have no return type, not even void.",
+   "t": "5.7 OOP Concepts"
+  },
+  {
+   "q": "What is the default access of members in a C++ class and in a C++ struct respectively?",
+   "o": [
+    "public, public",
+    "private, public",
+    "private, private",
+    "public, private"
+   ],
+   "a": 1,
+   "e": "A class defaults to private; a struct defaults to public.",
+   "t": "5.8 C++ Classes"
+  },
+  {
+   "q": "Private members of a base class, in a derived class, are:",
+   "o": [
+    "Inherited and accessible",
+    "Inherited but not accessible",
+    "Not inherited at all and accessible",
+    "Converted to protected"
+   ],
+   "a": 1,
+   "e": "Private members are inherited but cannot be accessed directly in the derived class.",
+   "t": "5.8 C++ Classes"
+  },
+  {
+   "q": "A friend function can access which members of a class?",
+   "o": [
+    "Only public",
+    "Only public and protected",
+    "Public, private and protected",
+    "None"
+   ],
+   "a": 2,
+   "e": "A friend, though a non-member, can access all members of the class.",
+   "t": "5.8 C++ Classes"
+  },
+  {
+   "q": "A pointer pp is created by new[] for an array. How should the memory be released?",
+   "o": [
+    "delete pp;",
+    "delete [] pp;",
+    "free(pp);",
+    "pp = NULL;"
+   ],
+   "a": 1,
+   "e": "Memory from new[] must be released with delete [].",
+   "t": "5.8 C++ Classes"
+  },
+  {
+   "q": "Which operator is the stream insertion operator in C++?",
+   "o": [
+    "<<",
+    ">>",
+    "::",
+    "->"
+   ],
+   "a": 0,
+   "e": "<< is the insertion operator used with cout; >> with cin is extraction.",
+   "t": "5.8 C++ Classes"
+  },
+  {
+   "q": "Which C++ keyword/mechanism enables run-time polymorphism?",
+   "o": [
+    "Function overloading",
+    "Template",
+    "Virtual functions",
+    "Inline functions"
+   ],
+   "a": 2,
+   "e": "Virtual functions give dynamic binding (run-time polymorphism); overloading and templates are compile-time.",
+   "t": "5.9 C++ Inheritance and Polymorphism"
+  },
+  {
+   "q": "Which of the following can NOT distinguish overloaded functions?",
+   "o": [
+    "Number of parameters",
+    "Types of parameters",
+    "Return type alone",
+    "Order of parameter types"
+   ],
+   "a": 2,
+   "e": "Return type alone can never distinguish overloads.",
+   "t": "5.9 C++ Inheritance and Polymorphism"
+  },
+  {
+   "q": "A class containing at least one pure virtual function is called:",
+   "o": [
+    "Concrete class",
+    "Abstract class",
+    "Friend class",
+    "Template class"
+   ],
+   "a": 1,
+   "e": "Such a class is abstract and cannot be instantiated.",
+   "t": "5.9 C++ Inheritance and Polymorphism"
+  },
+  {
+   "q": "Multiple inheritance means:",
+   "o": [
+    "A class derived from many base classes",
+    "A chain of derived classes",
+    "One base class with many derived classes",
+    "Many objects of one class"
+   ],
+   "a": 0,
+   "e": "Multiple inheritance = one derived class from many bases; the chain is multilevel and one-base-many-children is hierarchical.",
+   "t": "5.9 C++ Inheritance and Polymorphism"
+  },
+  {
+   "q": "What does the scope resolution operator :: allow in an overriding scenario?",
+   "o": [
+    "Call the base-class version of an overridden function",
+    "Create a virtual function",
+    "Delete an object",
+    "Overload an operator"
+   ],
+   "a": 0,
+   "e": "Base::func() calls the base version from the derived class.",
+   "t": "5.9 C++ Inheritance and Polymorphism"
+  },
+  {
+   "q": "In Java, how is multiple inheritance achieved?",
+   "o": [
+    "Using extends with many classes",
+    "Through interfaces",
+    "Using the super keyword",
+    "Using final classes"
+   ],
+   "a": 1,
+   "e": "Java does not allow multiple class inheritance; it achieves it via interfaces.",
+   "t": "5.10 Java"
+  },
+  {
+   "q": "Which Java statement about 'final' is TRUE?",
+   "o": [
+    "A final method can be overridden",
+    "A final class cannot be subclassed",
+    "A final class can be extended once",
+    "final applies only to variables"
+   ],
+   "a": 1,
+   "e": "final classes (e.g. String) cannot be subclassed and final methods cannot be overridden.",
+   "t": "5.10 Java"
+  },
+  {
+   "q": "Arrange Java access levels from most restrictive to least restrictive:",
+   "o": [
+    "private, default, protected, public",
+    "default, private, protected, public",
+    "public, protected, default, private",
+    "private, protected, default, public"
+   ],
+   "a": 0,
+   "e": "Order is private < default (package) < protected < public.",
+   "t": "5.10 Java"
+  },
+  {
+   "q": "In Java, 'try' can be followed by:",
+   "o": [
+    "Only one catch and many finally blocks",
+    "Many catch blocks but only one finally block",
+    "Only one catch and one finally",
+    "Many finally blocks"
+   ],
+   "a": 1,
+   "e": "A try may have many catches but only one finally.",
+   "t": "5.10 Java"
+  },
+  {
+   "q": "What is printed by System.out.println(\"exam:\" + 9 + 9 + 9);",
+   "o": [
+    "exam:27",
+    "exam:999",
+    "exam:99",
+    "Compile error"
+   ],
+   "a": 1,
+   "e": "String concatenation proceeds left to right, so each 9 is appended as text.",
+   "t": "5.10 Java"
+  },
+  {
+   "q": "Which of the following is NOT a feature of ADO.NET?",
+   "o": [
+    "Interoperability",
+    "Scalability",
+    "Maintainability",
+    "Reachability"
+   ],
+   "a": 3,
+   "e": "Reachability is not an ADO.NET feature.",
+   "t": "5.11 .NET"
+  },
+  {
+   "q": "In the .NET pipeline, the execution engine that manages programs (with JIT inside) is:",
+   "o": [
+    "IL",
+    "CLR",
+    "MSIL",
+    "ADO"
+   ],
+   "a": 1,
+   "e": "CLR is the virtual-machine-like execution engine; IL/MSIL is the CPU-independent instruction set.",
+   "t": "5.11 .NET"
+  }
+ ],
+ "tf": [
+  {
+   "s": "In C, an uninitialised local variable automatically holds 0.",
+   "a": false,
+   "n": "It holds an indeterminate (garbage) value."
+  },
+  {
+   "s": "The comma operator returns the value of its right operand.",
+   "a": true,
+   "n": "In k = (v = 20, v + 2), k becomes 22."
+  },
+  {
+   "s": "&& is an arithmetic operator in C.",
+   "a": false,
+   "n": "&& is a logical operator."
+  },
+  {
+   "s": "In a switch statement, control falls through to the next case until a break or the end is reached.",
+   "a": true,
+   "n": "That is why case 5 without break prints FiveDefault."
+  },
+  {
+   "s": "A do-while loop's condition is tested before the body is executed.",
+   "a": false,
+   "n": "The body runs first, then the condition is tested."
+  },
+  {
+   "s": "In C, arr[i] is equivalent to *(arr + i).",
+   "a": true,
+   "n": "Both access element i of the array."
+  },
+  {
+   "s": "The size of the whole array int arr[5] given by sizeof is the size of a pointer.",
+   "a": false,
+   "n": "sizeof an array gives the whole array size (20 bytes with 4-byte int)."
+  },
+  {
+   "s": "In C++, a struct has private members by default.",
+   "a": false,
+   "n": "A struct is public by default; a class is private by default."
+  },
+  {
+   "s": "A friend function can access private and protected members of a class.",
+   "a": true,
+   "n": "A friend is a non-member with access to all members."
+  },
+  {
+   "s": "Method overloading is resolved at run time in Java.",
+   "a": false,
+   "n": "Overloading is compile-time (static binding); overriding is run-time (dynamic binding)."
+  },
+  {
+   "s": "An abstract class cannot be instantiated.",
+   "a": true,
+   "n": "A class with a pure virtual/abstract method must be derived and defined first."
+  },
+  {
+   "s": "In Java, a final method can be overridden in a subclass.",
+   "a": false,
+   "n": "final methods cannot be overridden."
+  },
+  {
+   "s": "The fseek function reports the current file position.",
+   "a": false,
+   "n": "ftell reports the position; fseek sets it."
+  },
+  {
+   "s": "A destructor is mandatory when objects are created dynamically and own resources.",
+   "a": true,
+   "n": "Destructors deallocate the resources held by such objects."
+  }
+ ],
+ "fill": [
+  {
+   "q": "The C language was created by ______ at Bell Labs.",
+   "d": "Dennis Ritchie",
+   "alts": "dennisritchie~ritchie"
+  },
+  {
+   "q": "FORTRAN stands for Formula ______.",
+   "d": "Translation",
+   "alts": "translation"
+  },
+  {
+   "q": "The only ternary operator in C is ______.",
+   "d": "?:",
+   "alts": "?:~conditionaloperator~conditional"
+  },
+  {
+   "q": "The result of 4 ^ 3 in C is ______.",
+   "d": "7",
+   "alts": "7"
+  },
+  {
+   "q": "In C++, members of a class are ______ by default.",
+   "d": "private",
+   "alts": "private"
+  },
+  {
+   "q": "The stream ______ operator << is used with cout to display values.",
+   "d": "insertion",
+   "alts": "insertion"
+  },
+  {
+   "q": "A class that has at least one pure virtual function is called a(n) ______ class.",
+   "d": "abstract",
+   "alts": "abstract"
+  },
+  {
+   "q": "In Java, ______ is the parent class of all classes (java.lang.____).",
+   "d": "Object",
+   "alts": "object"
+  },
+  {
+   "q": "Java source code is compiled into ______ code, which the JVM executes.",
+   "d": "byte",
+   "alts": "byte~bytecode"
+  },
+  {
+   "q": "The operator used to access a structure member through a pointer is ______.",
+   "d": "->",
+   "alts": "->~arrow"
+  }
+ ]
+}

@@ -1,0 +1,1249 @@
+{
+"mcq": [
+{
+"q": "Which set of three elements make up a protocol?",
+"o": [
+"Syntax, semantics and timing",
+"Bandwidth, latency and jitter",
+"Framing, routing and addressing",
+"Encoding, modulation and sampling"
+],
+"a": 0,
+"e": "A protocol is a set of rules whose three elements are syntax, semantics and timing.",
+"t": "10.1 Data Communication Basics"
+},
+{
+"q": "Which of the following is NOT a protocol?",
+"o": [
+"CPU",
+"HTTP",
+"DHCP",
+"DNS"
+],
+"a": 0,
+"e": "A protocol is a set of rules, never hardware. HTTP, DHCP and DNS are all internet protocols.",
+"t": "10.1 Data Communication Basics"
+},
+{
+"q": "Data flowing from a keyboard to the computer is an example of which transmission mode?",
+"o": [
+"Simplex",
+"Half duplex",
+"Full duplex",
+"Parallel duplex"
+],
+"a": 0,
+"e": "Simplex is one-way only, always; the keyboard can only send to the computer.",
+"t": "10.1 Data Communication Basics"
+},
+{
+"q": "In which mode can data travel in both directions, but only one direction at a time?",
+"o": [
+"Half duplex",
+"Simplex",
+"Full duplex",
+"Multiplex"
+],
+"a": 0,
+"e": "Half duplex allows both ways but only one at a time, like a walkie-talkie.",
+"t": "10.1 Data Communication Basics"
+},
+{
+"q": "Which of the following is NOT a mode of data exchange?",
+"o": [
+"Multiplex",
+"Simplex",
+"Half duplex",
+"Full duplex"
+],
+"a": 0,
+"e": "Multiplexing is sharing one medium among several signals, not a transmission mode.",
+"t": "10.1 Data Communication Basics"
+},
+{
+"q": "A telephone call is an example of which transmission mode?",
+"o": [
+"Full duplex",
+"Half duplex",
+"Simplex",
+"Serial simplex"
+],
+"a": 0,
+"e": "Full duplex lets both directions carry data simultaneously, as in a phone call.",
+"t": "10.1 Data Communication Basics"
+},
+{
+"q": "In parallel transmission, data is sent as:",
+"o": [
+"Multiple bits simultaneously over several pathways",
+"One bit at a time over a single path",
+"Only one direction at a time",
+"Whole messages stored and forwarded"
+],
+"a": 0,
+"e": "Parallel transmission uses multiple pathways to send many bits at once; serial sends bits one by one.",
+"t": "10.1 Data Communication Basics"
+},
+{
+"q": "What does a multiplexer do?",
+"o": [
+"Combines many low-speed lines into one high-speed line",
+"Splits one high-speed line into many low-speed lines",
+"Regenerates a weak signal",
+"Translates between different protocols"
+],
+"a": 0,
+"e": "A multiplexer combines low-speed lines into one high-speed line; the demultiplexer reverses this.",
+"t": "10.1 Data Communication Basics"
+},
+{
+"q": "The bandwidth of a communication channel refers to:",
+"o": [
+"Its transmission capacity, i.e. data it can carry per second",
+"How fast a signal travels through it",
+"The loss of signal power along it",
+"The number of devices attached to it"
+],
+"a": 0,
+"e": "Bandwidth is channel capacity, not signal propagation speed.",
+"t": "10.1 Data Communication Basics"
+},
+{
+"q": "A periodic analog signal (sine wave) is fully described by all of these EXCEPT:",
+"o": [
+"Wavelength",
+"Peak amplitude",
+"Frequency",
+"Phase"
+],
+"a": 0,
+"e": "A sine wave is defined by amplitude, frequency and phase; wavelength is derived.",
+"t": "10.1 Signals, Modulation and Encoding"
+},
+{
+"q": "The wavelength of a signal equals:",
+"o": [
+"Propagation speed divided by frequency",
+"Propagation speed multiplied by frequency",
+"Frequency divided by propagation speed",
+"Period divided by propagation speed"
+],
+"a": 0,
+"e": "Wavelength = propagation speed x period = propagation speed / frequency.",
+"t": "10.1 Signals, Modulation and Encoding"
+},
+{
+"q": "Attenuation of a signal means:",
+"o": [
+"Loss of energy as the signal propagates",
+"Change in the shape of the signal",
+"Unwanted addition to the signal",
+"Sharing of a medium by several signals"
+],
+"a": 0,
+"e": "Attenuation is loss of power; distortion changes shape; noise is unwanted addition.",
+"t": "10.1 Signals, Modulation and Encoding"
+},
+{
+"q": "Representing bits by changing the frequency of the carrier while keeping its amplitude constant is called:",
+"o": [
+"Frequency modulation",
+"Amplitude modulation",
+"Pulse code modulation",
+"Manchester encoding"
+],
+"a": 0,
+"e": "FM varies the carrier frequency; AM varies its height (amplitude).",
+"t": "10.1 Signals, Modulation and Encoding"
+},
+{
+"q": "Pulse Code Modulation (PCM) is used to:",
+"o": [
+"Convert an analog signal into a digital bit stream",
+"Convert a digital signal into a sine wave",
+"Combine several lines into one",
+"Detect errors in frames"
+],
+"a": 0,
+"e": "PCM samples, quantises and encodes an analog signal into digital bits.",
+"t": "10.1 Signals, Modulation and Encoding"
+},
+{
+"q": "A 10 Mbps token ring uses differential Manchester encoding. At what signalling rate does it run?",
+"o": [
+"20 Mbaud",
+"10 Mbaud",
+"5 Mbaud",
+"40 Mbaud"
+],
+"a": 0,
+"e": "Manchester has a mid-bit transition, so pulse widths halve and the signalling rate doubles to 20 Mbaud.",
+"t": "10.1 Signals, Modulation and Encoding"
+},
+{
+"q": "A channel has 3 kHz bandwidth and a signal-to-noise ratio of 30 dB (power ratio 1000). Its Shannon capacity is approximately:",
+"o": [
+"30 kbps",
+"3 kbps",
+"300 kbps",
+"90 kbps"
+],
+"a": 0,
+"e": "C = 3000 x log2(1001) is about 3000 x 10 = 30 kbps.",
+"t": "10.1 Signals, Modulation and Encoding"
+},
+{
+"q": "Which of the following is NOT a guided (wired) medium?",
+"o": [
+"Infrared",
+"Twisted pair",
+"Coaxial cable",
+"Optical fibre"
+],
+"a": 0,
+"e": "Infrared is wireless (unguided); the other three confine the signal inside a physical conductor.",
+"t": "10.2 Transmission Media"
+},
+{
+"q": "Which of the following is NOT an unguided medium?",
+"o": [
+"Coaxial cable",
+"Radio",
+"Microwave",
+"Infrared"
+],
+"a": 0,
+"e": "Coaxial cable is a guided medium.",
+"t": "10.2 Transmission Media"
+},
+{
+"q": "Unshielded twisted pair cable terminates in which connector?",
+"o": [
+"RJ45",
+"RJ11",
+"RG-59",
+"SC fibre plug"
+],
+"a": 0,
+"e": "UTP Ethernet uses the 8-pin RJ45; RJ11 is the 4-pin telephone connector.",
+"t": "10.2 Transmission Media"
+},
+{
+"q": "Coaxial cables are categorised by which type of rating?",
+"o": [
+"RG (Radio Government)",
+"UTP category",
+"Baud rating",
+"CIDR prefix"
+],
+"a": 0,
+"e": "Coax types are graded by RG ratings such as RG-59 and RG-6.",
+"t": "10.2 Transmission Media"
+},
+{
+"q": "Light stays inside an optical fibre core because:",
+"o": [
+"The core's refractive index is greater than the cladding's, causing total internal reflection",
+"The cladding's refractive index is greater than the core's",
+"The fibre carries electric current",
+"The fibre is twisted to cancel interference"
+],
+"a": 0,
+"e": "Core index > cladding index gives total internal reflection.",
+"t": "10.2 Transmission Media"
+},
+{
+"q": "Which medium is the best choice where electrical interference is present?",
+"o": [
+"Optical fibre",
+"Unshielded twisted pair",
+"Coaxial cable",
+"Telephone copper wire"
+],
+"a": 0,
+"e": "Fibre carries light, not current, so it is immune to electrical interference; it is also the fastest medium.",
+"t": "10.2 Transmission Media"
+},
+{
+"q": "Which statement about a point-to-point connection is correct?",
+"o": [
+"It is a dedicated link between two devices and is not time-shared",
+"It is shared by many stations",
+"It is the link used by bus topology",
+"It always needs a central hub"
+],
+"a": 0,
+"e": "A point-to-point link is dedicated between two devices; shared links are multipoint.",
+"t": "10.3 Network Types and Topologies"
+},
+{
+"q": "Which topology requires a multipoint connection?",
+"o": [
+"Bus",
+"Star",
+"Mesh",
+"Point-to-point ring"
+],
+"a": 0,
+"e": "In a bus all stations share one backbone cable, a multipoint connection.",
+"t": "10.3 Network Types and Topologies"
+},
+{
+"q": "A network covering a city and carrying both data and voice is a:",
+"o": [
+"MAN",
+"LAN",
+"WAN",
+"PAN"
+],
+"a": 0,
+"e": "A Metropolitan Area Network is a collection of LANs covering a city and can carry data and voice.",
+"t": "10.3 Network Types and Topologies"
+},
+{
+"q": "Which statement about WAN is correct?",
+"o": [
+"It can communicate via satellites and microwaves and is slower than a LAN",
+"It covers only one floor of a building",
+"It is faster than a LAN",
+"It is limited to a single campus"
+],
+"a": 0,
+"e": "WANs span countries, use satellites/microwaves and are slower than LANs.",
+"t": "10.3 Network Types and Topologies"
+},
+{
+"q": "Which claim about a peer-to-peer network is FALSE?",
+"o": [
+"It has a dedicated server",
+"All computers are equal",
+"Any peer can access any other",
+"It suits small setups of about 10 machines"
+],
+"a": 0,
+"e": "Peer-to-peer has no dedicated server; every computer is an equal peer.",
+"t": "10.3 Network Types and Topologies"
+},
+{
+"q": "In a client/server network, the central controller is the:",
+"o": [
+"Server",
+"Client",
+"Peer",
+"Hub"
+],
+"a": 0,
+"e": "The server is the central controller and all others are clients.",
+"t": "10.3 Network Types and Topologies"
+},
+{
+"q": "Which topology gives each device a dedicated point-to-point link to a central controller?",
+"o": [
+"Star",
+"Bus",
+"Ring",
+"Mesh"
+],
+"a": 0,
+"e": "Star connects every device to a central hub/controller by its own dedicated link.",
+"t": "10.3 Network Types and Topologies"
+},
+{
+"q": "Which topology has the highest reliability but needs the most ports and cabling?",
+"o": [
+"Mesh",
+"Star",
+"Bus",
+"Ring"
+],
+"a": 0,
+"e": "In a mesh every device is linked to every other, giving n(n-1)/2 links.",
+"t": "10.3 Network Types and Topologies"
+},
+{
+"q": "Which of the following is NOT a network topology?",
+"o": [
+"Stack",
+"Bus",
+"Ring",
+"Star"
+],
+"a": 0,
+"e": "Stack is a data structure; real topologies are bus, star, ring, mesh, tree, hybrid.",
+"t": "10.3 Network Types and Topologies"
+},
+{
+"q": "Which switching technique needs a dedicated communication path held for the whole call?",
+"o": [
+"Circuit switching",
+"Packet switching",
+"Message switching",
+"Datagram switching"
+],
+"a": 0,
+"e": "Circuit switching reserves a dedicated physical path; packet switching shares links.",
+"t": "10.3 Network Types and Topologies"
+},
+{
+"q": "Which OSI layer is responsible for dialogue control and token management?",
+"o": [
+"Session",
+"Transport",
+"Presentation",
+"Data link"
+],
+"a": 0,
+"e": "The Session layer (layer 5) manages dialogue and tokens.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "Which OSI layer is responsible for routing?",
+"o": [
+"Network",
+"Data link",
+"Transport",
+"Session"
+],
+"a": 0,
+"e": "Routing and logical addressing are Network layer jobs.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "Which is NOT a function of the network layer?",
+"o": [
+"Error control and flow control",
+"Routing",
+"Congestion control",
+"Logical addressing"
+],
+"a": 0,
+"e": "Error and flow control belong to the data link and transport layers.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "The data link layer encapsulates what it receives from the network layer into:",
+"o": [
+"Frames",
+"Segments",
+"Packets",
+"Bits"
+],
+"a": 0,
+"e": "The DLL takes packets and puts them into frames.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "Which OSI layer deals with translation, compression and encryption?",
+"o": [
+"Presentation",
+"Application",
+"Session",
+"Transport"
+],
+"a": 0,
+"e": "Presentation layer handles translation, compression and encryption.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "Which of these layers is NOT an end-to-end (host-to-host) layer?",
+"o": [
+"Network",
+"Transport",
+"Session",
+"Application"
+],
+"a": 0,
+"e": "Layers 1-3 are chained (hop-by-hop); layers 4-7 are end-to-end.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "A repeater, which regenerates a signal, operates at which layer?",
+"o": [
+"Physical only",
+"Data link",
+"Network",
+"Transport"
+],
+"a": 0,
+"e": "A repeater works only in the physical layer.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "A bridge forwarding frames from one LAN to another operates at which layer?",
+"o": [
+"Data link",
+"Physical",
+"Network",
+"Application"
+],
+"a": 0,
+"e": "Bridges and switches work at the data link layer.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "Which device connects networks that use different protocols and translates messages between them?",
+"o": [
+"Gateway",
+"Router",
+"Bridge",
+"Repeater"
+],
+"a": 0,
+"e": "A gateway understands format and contents and translates; a router works at the network layer.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "Which TCP/IP layer corresponds to the OSI Transport layer?",
+"o": [
+"Host-to-host",
+"Internet",
+"Link",
+"Application"
+],
+"a": 0,
+"e": "The host-to-host layer is the TCP/IP counterpart of OSI transport and holds TCP and UDP.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "Which of these is NOT an application-layer protocol?",
+"o": [
+"RSVP",
+"RTP",
+"FTP",
+"Telnet"
+],
+"a": 0,
+"e": "RSVP is a signalling protocol below the application layer; RTP is application-layer.",
+"t": "10.4 OSI and TCP/IP Models"
+},
+{
+"q": "The Ethernet Start Frame Delimiter (SFD) is:",
+"o": [
+"10101011",
+"10101010",
+"01111110",
+"11111111"
+],
+"a": 0,
+"e": "The SFD 10101011 follows the 10101010 preamble.",
+"t": "10.5 Data Link Layer"
+},
+{
+"q": "10Base5 is also known as:",
+"o": [
+"Thick Ethernet",
+"Thin Ethernet",
+"Fast Ethernet",
+"Token ring"
+],
+"a": 0,
+"e": "10Base5 uses 500 m thick coax; 10Base2 is thin Ethernet.",
+"t": "10.5 Data Link Layer"
+},
+{
+"q": "An Ethernet has a propagation time of 25.6 microseconds and runs at 10 Mbps. The minimum frame size for CSMA/CD is:",
+"o": [
+"64 bytes",
+"32 bytes",
+"128 bytes",
+"512 bytes"
+],
+"a": 0,
+"e": "2 x 25.6 us x 10 Mbps = 512 bits = 64 bytes.",
+"t": "10.5 Data Link Layer"
+},
+{
+"q": "Token ring switches are housed in which unit?",
+"o": [
+"MAU",
+"NIC",
+"DTE",
+"MUX"
+],
+"a": 0,
+"e": "The Multistation Access Unit makes the ring logically a ring but physically a star.",
+"t": "10.5 Data Link Layer"
+},
+{
+"q": "How many parity bits are needed in a Hamming code for 32 data bits?",
+"o": [
+"6",
+"5",
+"7",
+"4"
+],
+"a": 0,
+"e": "Need 2^r >= m + r + 1; r = 6 gives 64 >= 39, while r = 5 gives 32 < 38.",
+"t": "10.5 Data Link Layer"
+},
+{
+"q": "Which statement about Hamming code is correct?",
+"o": [
+"Parity bits are placed at power-of-two positions",
+"It can correct multiple errors",
+"Data bits occupy even positions",
+"It cannot correct any error"
+],
+"a": 0,
+"e": "Parity sits at powers of 2; Hamming corrects only a single error.",
+"t": "10.5 Data Link Layer"
+},
+{
+"q": "Which technique allows multiple packets to be sent before an acknowledgment is received?",
+"o": [
+"Sliding window",
+"Stop-and-wait",
+"Bit stuffing",
+"Jamming"
+],
+"a": 0,
+"e": "Sliding window gives higher throughput than stop-and-wait.",
+"t": "10.5 Data Link Layer"
+},
+{
+"q": "How does a switched network prevent sniffing?",
+"o": [
+"It forwards each frame only to its destination port",
+"It broadcasts frames to all ports",
+"It encrypts every frame",
+"It stuffs extra bits"
+],
+"a": 0,
+"e": "A switch sends each frame only to the destination port.",
+"t": "10.5 Data Link Layer"
+},
+{
+"q": "Which of the following is an INVALID IPv4 address?",
+"o": [
+"256.10.12.5",
+"255.255.255.10",
+"240.12.1.7",
+"10.231.241.1"
+],
+"a": 0,
+"e": "Each octet must be 0-255; 256 overflows a byte.",
+"t": "10.6 IP Addressing"
+},
+{
+"q": "The IP address 10.231.241.1 belongs to which class?",
+"o": [
+"Class A",
+"Class B",
+"Class C",
+"Class D"
+],
+"a": 0,
+"e": "First octet 1-126 means Class A.",
+"t": "10.6 IP Addressing"
+},
+{
+"q": "Subnet mask 255.255.240.0 gives how many usable hosts per subnet?",
+"o": [
+"4094",
+"4096",
+"2046",
+"65534"
+],
+"a": 0,
+"e": "12 host bits: 2^12 - 2 = 4094.",
+"t": "10.6 IP Addressing"
+},
+{
+"q": "What is the purpose of the TTL field in an IPv4 header?",
+"o": [
+"To stop datagrams circulating forever in routing loops",
+"To identify fragments",
+"To indicate type of service",
+"To give total datagram length"
+],
+"a": 0,
+"e": "TTL is decremented per hop and the datagram is discarded at zero.",
+"t": "10.6 IP Addressing"
+},
+{
+"q": "Which field is NOT used for IPv4 fragmentation?",
+"o": [
+"TOS",
+"Identification",
+"Flags",
+"Fragment Offset"
+],
+"a": 0,
+"e": "Fragmentation uses Identification, Flags and Fragment Offset.",
+"t": "10.6 IP Addressing"
+},
+{
+"q": "The maximum length of an IPv4 datagram is:",
+"o": [
+"65,535 bytes",
+"65,536 bytes",
+"1500 bytes",
+"32,767 bytes"
+],
+"a": 0,
+"e": "The 16-bit total-length field limits it to 65,535 bytes.",
+"t": "10.6 IP Addressing"
+},
+{
+"q": "DHCP is an extension of which protocol?",
+"o": [
+"BOOTP",
+"ARP",
+"ICMP",
+"SMTP"
+],
+"a": 0,
+"e": "DHCP extends the bootstrap protocol and supports manual and automatic assignment.",
+"t": "10.6 IP Addressing"
+},
+{
+"q": "APIPA self-assigned addresses fall in which range?",
+"o": [
+"169.254.0.1 to 169.254.255.254",
+"192.168.0.1 to 192.168.255.254",
+"10.0.0.1 to 10.255.255.254",
+"172.16.0.1 to 172.31.255.254"
+],
+"a": 0,
+"e": "APIPA addresses are used when DHCP fails.",
+"t": "10.6 IP Addressing"
+},
+{
+"q": "In DNS, the client is called the:",
+"o": [
+"Resolver",
+"Gateway",
+"Daemon",
+"Proxy"
+],
+"a": 0,
+"e": "DNS converts domain names to IPs; its client is the resolver.",
+"t": "10.6 IP Addressing"
+},
+{
+"q": "Which routing algorithm is described as Dijkstra-based, while distance vector uses Bellman-Ford?",
+"o": [
+"Link state",
+"Flooding",
+"Hot potato",
+"Static"
+],
+"a": 0,
+"e": "Link state = Dijkstra; distance vector = Bellman-Ford.",
+"t": "10.7 Routing and Congestion"
+},
+{
+"q": "A hierarchical network has 630 routers in 7 clusters, each of 9 regions with 10 routers. How many routing table entries does each router need?",
+"o": [
+"24",
+"16",
+"26",
+"630"
+],
+"a": 0,
+"e": "10 + (9-1) + (7-1) = 10 + 8 + 6 = 24.",
+"t": "10.7 Routing and Congestion"
+},
+{
+"q": "Sending each incoming packet on every outgoing line except the one it arrived on is called:",
+"o": [
+"Flooding",
+"Distance vector routing",
+"Link state routing",
+"Selective repeat"
+],
+"a": 0,
+"e": "Flooding is robust but wasteful and is a static algorithm.",
+"t": "10.7 Routing and Congestion"
+},
+{
+"q": "Which network requires circuit setup before data transfer?",
+"o": [
+"Virtual-circuit network",
+"Datagram network",
+"Connectionless network",
+"UDP network"
+],
+"a": 0,
+"e": "Virtual circuits need setup; datagram networks do not.",
+"t": "10.7 Routing and Congestion"
+},
+{
+"q": "A socket is concretely made up of:",
+"o": [
+"IP address + port number",
+"MAC address + IP address",
+"Port number + sequence number",
+"Host name + domain name"
+],
+"a": 0,
+"e": "A socket is the IPC endpoint: IP address plus port number.",
+"t": "10.8 Transport Layer"
+},
+{
+"q": "How many bytes is the UDP header, and which field does it lack that TCP has?",
+"o": [
+"8 bytes; sequence number",
+"20 bytes; checksum",
+"8 bytes; source port",
+"20 bytes; length"
+],
+"a": 0,
+"e": "UDP has only source port, destination port, length and checksum, so no sequence number.",
+"t": "10.8 Transport Layer"
+},
+{
+"q": "The TCP connection setup three-way handshake is:",
+"o": [
+"SYN, SYN-ACK, ACK",
+"SYN, ACK, FIN",
+"FIN, ACK, RST",
+"SYN, RST, ACK"
+],
+"a": 0,
+"e": "The exchange SYN -> SYN-ACK -> ACK indicates successful establishment.",
+"t": "10.8 Transport Layer"
+},
+{
+"q": "In TCP, the acknowledgement number indicates:",
+"o": [
+"The next byte expected",
+"The last byte received",
+"The window size",
+"The number of segments lost"
+],
+"a": 0,
+"e": "ACK is cumulative and names the next byte expected.",
+"t": "10.8 Transport Layer"
+},
+{
+"q": "A TCP segment with the RST flag set causes:",
+"o": [
+"Immediate termination of the connection",
+"A clean close with FIN and ACK",
+"Slow start to begin",
+"Window size to double"
+],
+"a": 0,
+"e": "RST aborts the connection at once.",
+"t": "10.8 Transport Layer"
+},
+{
+"q": "During TCP slow start, the congestion window approximately:",
+"o": [
+"Doubles every round-trip time",
+"Increases by 1 MSS per RTT",
+"Halves every RTT",
+"Stays constant"
+],
+"a": 0,
+"e": "Slow start is exponential; congestion avoidance adds 1 MSS per RTT.",
+"t": "10.8 Transport Layer"
+},
+{
+"q": "Which port number is used by IMAP?",
+"o": [
+"143",
+"25",
+"53",
+"80"
+],
+"a": 0,
+"e": "IMAP = 143; SMTP 25, DNS 53, HTTP 80.",
+"t": "10.8 Transport Layer"
+},
+{
+"q": "Which of these is the FALSE characteristic of SSL?",
+"o": [
+"It works between the network and transport layer",
+"It requires a server certificate",
+"It uses a dedicated socket",
+"It operates above the transport layer"
+],
+"a": 0,
+"e": "SSL operates above the transport layer, not between network and transport.",
+"t": "10.8 Transport Layer"
+},
+{
+"q": "HTTP is called a stateless protocol because:",
+"o": [
+"It keeps no memory between requests",
+"It uses no port",
+"It needs no TCP",
+"It only sends e-mail"
+],
+"a": 0,
+"e": "HTTP runs on TCP port 80 and keeps no state; cookies add state.",
+"t": "10.9 Application Protocols"
+},
+{
+"q": "FTP uses which ports for control and data?",
+"o": [
+"21 control, 20 data",
+"20 control, 21 data",
+"25 control, 53 data",
+"80 control, 443 data"
+],
+"a": 0,
+"e": "Control port 21, data port 20.",
+"t": "10.9 Application Protocols"
+},
+{
+"q": "Which RTSP state means the server breaks down the connection and frees resources?",
+"o": [
+"TEARDOWN",
+"PLAY",
+"SETUP",
+"PAUSE"
+],
+"a": 0,
+"e": "TEARDOWN ends the session and frees resources.",
+"t": "10.9 Application Protocols"
+},
+{
+"q": "Which protocol is the EDI protocol for electronic data interchange between businesses?",
+"o": [
+"X.12",
+"X.25",
+"XMPP",
+"XMODEM"
+],
+"a": 0,
+"e": "X.12 is EDI; X.25 is DTE/DCE; XMPP is IM; XMODEM is file transfer.",
+"t": "10.9 Application Protocols"
+},
+{
+"q": "Which protocol carries real-time audio and video multimedia?",
+"o": [
+"RTP",
+"SMTP",
+"MIME",
+"FTP"
+],
+"a": 0,
+"e": "RTP carries real-time multimedia content.",
+"t": "10.9 Application Protocols"
+},
+{
+"q": "Which IEEE standard is the WLAN security standard from which WPA2 comes?",
+"o": [
+"802.11i",
+"802.3",
+"802.1x",
+"802.11 alone"
+],
+"a": 0,
+"e": "802.11i is WLAN security; 802.3 is wired Ethernet.",
+"t": "10.10 Wireless and Mobile"
+},
+{
+"q": "Which is the correct ascending order of speed?",
+"o": [
+"GSM < GPRS < EDGE < LTE",
+"GPRS < GSM < LTE < EDGE",
+"EDGE < GPRS < GSM < LTE",
+"GSM < EDGE < GPRS < LTE"
+],
+"a": 0,
+"e": "Speed order is GSM, GPRS, EDGE, LTE.",
+"t": "10.10 Wireless and Mobile"
+},
+{
+"q": "Bluetooth 5.0 has a maximum speed of:",
+"o": [
+"2 Mbps",
+"1 Mbps",
+"5 Mbps",
+"24 Mbps"
+],
+"a": 0,
+"e": "Bluetooth 5.0 = 2 Mbps, double 4.x.",
+"t": "10.10 Wireless and Mobile"
+},
+{
+"q": "Which entity informs the HLR of a mobile station's location changes?",
+"o": [
+"VLR",
+"BTS",
+"Foreign agent",
+"MAU"
+],
+"a": 0,
+"e": "The VLR informs the HLR.",
+"t": "10.10 Wireless and Mobile"
+},
+{
+"q": "Which is NOT a location-update scheme in mobile networks?",
+"o": [
+"Cost-based",
+"Periodic",
+"Movement-based",
+"Distance-based"
+],
+"a": 0,
+"e": "The notes list periodic, movement-based and distance-based only.",
+"t": "10.10 Wireless and Mobile"
+},
+{
+"q": "IPSec tunnel mode protects:",
+"o": [
+"The entire packet",
+"Only the payload",
+"Only the header",
+"Only the TCP port"
+],
+"a": 0,
+"e": "Tunnel mode protects the whole packet; transport mode only the payload.",
+"t": "10.10 Wireless and Mobile"
+},
+{
+"q": "The key sizes of DES, Triple DES and IDEA respectively are:",
+"o": [
+"56, 168 and 128 bits",
+"64, 192 and 256 bits",
+"56, 112 and 64 bits",
+"128, 168 and 56 bits"
+],
+"a": 0,
+"e": "DES 56, 3DES 168, IDEA 128 bits.",
+"t": "10.11 Cryptography"
+},
+{
+"q": "Which of the following is NOT a symmetric-key algorithm?",
+"o": [
+"RSA",
+"AES",
+"RC4",
+"DES"
+],
+"a": 0,
+"e": "RSA is asymmetric (public key).",
+"t": "10.11 Cryptography"
+},
+{
+"q": "A digital signature is created using:",
+"o": [
+"The sender's private key",
+"The sender's public key",
+"The receiver's private key",
+"The session key"
+],
+"a": 0,
+"e": "Sign with sender's private key; verify with sender's public key.",
+"t": "10.11 Cryptography"
+},
+{
+"q": "The man-in-the-middle attack on Diffie-Hellman is called:",
+"o": [
+"Bucket brigade attack",
+"Teardrop attack",
+"Smurf attack",
+"Byzantine attack"
+],
+"a": 0,
+"e": "The bucket brigade attack is the Diffie-Hellman MITM.",
+"t": "10.11 Cryptography"
+},
+{
+"q": "Which of these is NOT a DoS attack?",
+"o": [
+"Code Red",
+"Teardrop",
+"Smurf",
+"SYN flood"
+],
+"a": 0,
+"e": "Code Red is a worm.",
+"t": "10.12 Network Security"
+},
+{
+"q": "What is the most common IDS detection method?",
+"o": [
+"Signature-based",
+"Anomaly-based",
+"Stack-based",
+"Honeypot-based"
+],
+"a": 0,
+"e": "Signature-based detection matches known attack patterns.",
+"t": "10.12 Network Security"
+},
+{
+"q": "A virus that corrupts the partition table makes the hard disk:",
+"o": [
+"Totally inaccessible",
+"Lose only some files",
+"Slower only",
+"Read-only"
+],
+"a": 0,
+"e": "Corrupting the FAT only loses files; the partition table makes the disk inaccessible.",
+"t": "10.12 Network Security"
+},
+{
+"q": "In a reverse auction:",
+"o": [
+"The buyer posts a need and sellers bid successively lower",
+"Sellers post items and buyers bid higher",
+"Price is fixed",
+"Only one bid is allowed"
+],
+"a": 0,
+"e": "Sellers bid lower until one remains.",
+"t": "10.13 Internet and E-commerce"
+},
+{
+"q": "A VPN is best described as:",
+"o": [
+"A private network using a public network to connect remote sites or users",
+"A single physical network",
+"A wireless-only network",
+"A dedicated leased line"
+],
+"a": 0,
+"e": "VPN traffic is tunnelled and encrypted over public networks.",
+"t": "10.13 Internet and E-commerce"
+},
+{
+"q": "Which network first initiated the internet and first used packet switching?",
+"o": [
+"ARPANET",
+"Ethernet",
+"Bluetooth",
+"Token ring"
+],
+"a": 0,
+"e": "ARPANET, 1969.",
+"t": "10.13 Internet and E-commerce"
+}
+],
+"tf": [
+{
+"s": "Half duplex allows data in both directions simultaneously.",
+"a": false,
+"n": "Half duplex is both ways but only one at a time; full duplex is simultaneous."
+},
+{
+"s": "A sine wave is described by amplitude, frequency and phase.",
+"a": true,
+"n": "Wavelength is derived, not a defining parameter."
+},
+{
+"s": "Optical fibre is a guided medium.",
+"a": true,
+"n": "It confines light inside the fibre."
+},
+{
+"s": "Peer-to-peer networks require a dedicated server.",
+"a": false,
+"n": "Peer-to-peer has no dedicated server; all peers are equal."
+},
+{
+"s": "Packet switching is used by ARPANET and the internet.",
+"a": true,
+"n": "Circuit switching needs a dedicated path."
+},
+{
+"s": "Layers 1-3 of OSI are end-to-end and layers 4-7 are chained.",
+"a": false,
+"n": "Reversed: layers 1-3 are chained, layers 4-7 end-to-end."
+},
+{
+"s": "A router operates at the network layer.",
+"a": true,
+"n": "It connects multiple networks and uses routing tables."
+},
+{
+"s": "Hamming code can correct multiple errors.",
+"a": false,
+"n": "It corrects a single error only."
+},
+{
+"s": "IPv6 addresses are 128 bits long.",
+"a": true,
+"n": "IPv4 is 32 bits."
+},
+{
+"s": "In IPv4 translation to IPv6 headers, the flow label is considered.",
+"a": false,
+"n": "The flow label has no IPv4 counterpart and is not considered."
+},
+{
+"s": "Link state routing uses the Bellman-Ford algorithm.",
+"a": false,
+"n": "Link state uses Dijkstra; distance vector uses Bellman-Ford."
+},
+{
+"s": "UDP is connectionless and unreliable.",
+"a": true,
+"n": "It sends datagrams without establishing a connection."
+},
+{
+"s": "SSL operates between the network and transport layers.",
+"a": false,
+"n": "SSL operates above the transport layer."
+},
+{
+"s": "DES uses a 56-bit key.",
+"a": true,
+"n": "Triple DES uses 168 bits."
+},
+{
+"s": "A certificate contains the owner's private key.",
+"a": false,
+"n": "It contains the public key, owner information and validity period."
+}
+],
+"fill": [
+{
+"q": "The three elements of a protocol are syntax, semantics and ______.",
+"d": "timing",
+"alts": "timing"
+},
+{
+"q": "The OSI layer number 5 is the ______ layer.",
+"d": "Session",
+"alts": "session"
+},
+{
+"q": "The data unit of the transport layer is called a ______.",
+"d": "segment",
+"alts": "segment~segments"
+},
+{
+"q": "A mesh network of n devices has n(n-1)/2 ______.",
+"d": "links",
+"alts": "links~link~cables~connections"
+},
+{
+"q": "The TCP three-way handshake is SYN, SYN-ACK and ______.",
+"d": "ACK",
+"alts": "ack"
+},
+{
+"q": "The default HTTP port number is ______.",
+"d": "80",
+"alts": "80"
+},
+{
+"q": "The Ethernet SFD pattern is ______.",
+"d": "10101011",
+"alts": "10101011"
+},
+{
+"q": "A subnet mask of 255.255.240.0 allows ______ usable hosts.",
+"d": "4094",
+"alts": "4094"
+},
+{
+"q": "______ stands for Classless Inter Domain Routing.",
+"d": "CIDR",
+"alts": "cidr"
+},
+{
+"q": "The three security goals are Confidentiality, Integrity and ______.",
+"d": "Availability",
+"alts": "availability"
+}
+]
+}

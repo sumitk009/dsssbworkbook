@@ -1,0 +1,875 @@
+{
+ "pyq": [
+  {
+   "q": "Processor needs software interrupt to:",
+   "o": [
+    "Return from subroutine",
+    "Implement co-routines",
+    "Test the interrupt system of the processor",
+    "Obtain system services which need execution of privileged instructions"
+   ],
+   "a": 3,
+   "e": "A software interrupt is a deliberate call into the OS, used when a program needs a service only the OS may perform, such as I/O. Software interrupt = system call; hardware interrupt comes from a device.",
+   "src": "CGPSC C.S. 2020 Set-A",
+   "ch": 1,
+   "topic": "CPU, Registers, ALU & Microprocessor",
+   "chg": false
+  },
+  {
+   "q": "Consider Column - 1 and Column - 2 :\nColumn-I | Column-II\nI. Microsoft Office | A. File Archiver and Compressor\nII. Windows-10 | B. Digital Library\nIII. WinZip | C. Application Software\nIV. A. V. G | D. Operating System\nV. N. D. L. I. | E. Antivirus\nMatch of Column-1 and Column-2 is :",
+   "o": [
+    "I-E, II-A, III-B, IV-C, V-D",
+    "I-C, II-E, III-B, IV-D, V-A",
+    "I-D, II-A, III-C, IV-B, V-E",
+    "I-C, II-D, III-A, IV-E, V-B"
+   ],
+   "a": 3,
+   "e": "Microsoft Office is application software, Windows-10 an OS, WinZip an archiver, AVG antivirus and NDLI the National Digital Library of India: I-C, II-D, III-A, IV-E, V-B.",
+   "src": "HTET PGT C.S. 2018",
+   "ch": 1,
+   "topic": "System Software, Utilities & File Extensions",
+   "chg": false
+  },
+  {
+   "q": "What is the value of F̅? F = AB + C̅D̅ + B̅ D",
+   "o": [
+    "A̅ B̅ + C̅ D̅ + BD̅",
+    "(A̅ + B̅ )(C + D)(B + D̅ )",
+    "(A + B)(C̅ + D̅ )(B̅ + D)",
+    "(A + B̅ )(C + D̅ )(B + D̅ )"
+   ],
+   "a": 1,
+   "e": "Complement with De Morgan: F̅ = (AB)′·(C̅D̅)′·(B̅D)′ = (A̅ + B̅)(C + D)(B + D̅), option (b).",
+   "src": "DSSSB TGT CS 2021 | 01/08/2021 | Shift-2",
+   "ch": 2,
+   "topic": "Boolean Algebra, Laws & Simplification",
+   "chg": false
+  },
+  {
+   "q": "What is the meaning of this arithmetic micro-operation?\nR3 ← R1 + R̅2 + 1",
+   "o": [
+    "Content of R1 plus R2 transferred to R3",
+    "Content of R1 plus the 2’s complement of R2 transferred to R3",
+    "Content of R1 plus the 1’s complement of R2 transferred to R3",
+    "Content of R1 plus R2 after increments transferred to R3"
+   ],
+   "a": 1,
+   "e": "R̅2 is the 1's complement of R2 and adding 1 makes it the 2's complement, so R3 ← R1 − R2.",
+   "src": "DSSSB TGT CS 2021 | 07/08/2021 | Shift-1",
+   "ch": 2,
+   "topic": "Boolean Algebra, Laws & Simplification",
+   "chg": false
+  },
+  {
+   "q": "Which of the following is correct for Digital Circuits?",
+   "o": [
+    "They use analog signals for communication",
+    "They process information using continuous voltage levels",
+    "They are not suitable for high speed operations",
+    "More than one of the above",
+    "None of the above"
+   ],
+   "a": 4,
+   "e": "Digital circuits use discrete 0/1 levels and are used in the fastest devices, so (a), (b), (c) are false, hence (d) is false too; the answer is (e).",
+   "src": "BPSC TRE 3.0 Exam-22.07.2024 (11-12)",
+   "ch": 2,
+   "topic": "Logic Families, ICs & Digital Devices",
+   "chg": false
+  },
+  {
+   "q": "A computer system has 7 tape drives. There are ‘n’ processes competing for them. Each process may need 3 tape drives. What is the maximum value of ‘n’ for which the system is guaranteed to be deadlock free?",
+   "o": [
+    "2",
+    "3",
+    "4",
+    "1"
+   ],
+   "a": 1,
+   "e": "Deadlock-free if n(k−1)+1 ≤ R, i.e. 2n+1 ≤ 7, so n ≤ 3. With n = 4 all 7 drives can be held with every process waiting.",
+   "src": "DSSSB TGT CS 2021 | 07/08/2021 | Shift-1",
+   "ch": 3,
+   "topic": "Process Management, PCB & CPU Scheduling",
+   "chg": false
+  },
+  {
+   "q": "Assume that the following jobs are to be executed on a single processor system. All jobs have arrived at 0 msec.\nJob Id | CPU\na | 4\nb | 1\nc | 7\nd | 2\nIf scheduling is round robin with time slice 1 msec, then what is the completion time for job ‘a’?",
+   "o": [
+    "4",
+    "10",
+    "7",
+    "11"
+   ],
+   "a": 1,
+   "e": "Gantt: a b c d a c d a c a (1 ms each); job a's 4th slice is 9–10, so it completes at 10 ms.",
+   "src": "DSSSB TGT CS 2021 | 07/08/2021 | Shift-2",
+   "ch": 3,
+   "topic": "Process Management, PCB & CPU Scheduling",
+   "chg": false
+  },
+  {
+   "q": "Consider a set of n tasks with known run times r1, r2, ......, rn to be run on a uniprocessor machine. Which of the following processor scheduling algorithms will result in the maximum throughput?",
+   "o": [
+    "Round robin",
+    "SJF",
+    "Highest response ratio next",
+    "First-come-first served"
+   ],
+   "a": 1,
+   "e": "Shortest Job First picks the smallest task each time, finishing the most tasks per unit time (and minimum average waiting time).",
+   "src": "CGPSC C.S. 2020 Set-A",
+   "ch": 3,
+   "topic": "Process Management, PCB & CPU Scheduling",
+   "chg": false
+  },
+  {
+   "q": "Turnaround time in operating systems is",
+   "o": [
+    "The sum of periods spent in waiting to get into memory, waiting in the ready queue, executing on the CPU, and doing I/O.",
+    "The amount of time a job spends waiting in the ready queue.",
+    "The time from the submission of a request until the first response is produced.",
+    "The amount of time spent waiting in the device queue."
+   ],
+   "a": 0,
+   "e": "Turnaround time is the total elapsed time from submission to completion, including memory wait, ready queue wait, CPU execution and I/O.",
+   "src": "Haryana PGT C.S. Asstt. Prof. 2024",
+   "ch": 3,
+   "topic": "Process Management, PCB & CPU Scheduling",
+   "chg": false
+  },
+  {
+   "q": "______ systems have well defined fixed time constraints on processing of special events.",
+   "o": [
+    "Multiprocessor",
+    "Time sharing",
+    "Interactive",
+    "Real time"
+   ],
+   "a": 3,
+   "e": "Real-time operating systems have well-defined fixed time constraints; a result after the deadline is worthless.",
+   "src": "NVS PGT C.S. 15.12.2022 (Shift-II)",
+   "ch": 3,
+   "topic": "Process Management, PCB & CPU Scheduling",
+   "chg": false
+  },
+  {
+   "q": "What will be the output of the Linux shell command 'rm doc*'?",
+   "o": [
+    "Erase all files beginning with the pattern 'doc'",
+    "Erase all files ending with the pattern 'doc'",
+    "List filenames ending with the pattern 'doc'",
+    "List filenames beginning with the pattern 'doc'"
+   ],
+   "a": 0,
+   "e": "rm deletes files, and the wildcard * matches every name beginning with 'doc'.",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-1",
+   "ch": 3,
+   "topic": "OS Types, Shell & Linux/UNIX Commands",
+   "chg": false
+  },
+  {
+   "q": "Consider a system with ten units of resource R and three processes: X, Y, and Z. The maximum resource requirement and current allocation to these processes are as follows:\n | X | Y | Z\nMaximum Resource Requirement | 8 | 7 | 5\nCurrent Allocation | 4 | 1 | 3\nNow, consider the following resource requests: (i) X makes a request for 2 resource units (ii) Y makes a request for 2 resource units (iii) Z makes a request for 2 resource units For the system to be in safe state, which of the following must be granted?",
+   "o": [
+    "Only request (i) must be granted",
+    "Only requests (i) and (ii) must be granted",
+    "Only request (iii) must be granted",
+    "Only request (i) and (iii) must be granted"
+   ],
+   "a": 2,
+   "e": "Two units are free; remaining needs are X 4, Y 6, Z 2. Granting Z lets it finish and release 5 units, so X and Y can finish; granting X or Y leaves nothing free and is unsafe.",
+   "src": "DSSSB PGT C.S. (Male) 27.07.2018 (Shift-II)",
+   "ch": 3,
+   "topic": "Deadlock: Prevention, Avoidance & Banker's Algorithm",
+   "chg": false
+  },
+  {
+   "q": "How many times will the innermost loop execute in the below code?\n#include <stdio.h>\nint main() {\nfor(int i=0; i<3; i++) {\nfor(int j=0; j<2; j++) {\nprintf(\"%d \", i);\n}\n}\nreturn 0;\n}",
+   "o": [
+    "2 times",
+    "6 times",
+    "3 times",
+    "5 times"
+   ],
+   "a": 1,
+   "e": "The outer loop runs 3 times and the inner 2 times each, so the innermost body executes 3×2 = 6 times.",
+   "src": "DSSSB TGT CS 2025 | 12/09/2025 | 9:00 AM - 11:00 AM",
+   "ch": 5,
+   "topic": "C — Control Flow: Loops, if-else & switch",
+   "chg": false
+  },
+  {
+   "q": "Which statement in this code is unreachable?\nswitch(x) {\ncase 1: a1 = 100;\ncase 2: a2 = 1000; a3 = 10; break;\na4 = 10000;\n}",
+   "o": [
+    "a1 = 100;",
+    "a2 = 1000;",
+    "a3 = 10;",
+    "a4 = 10000;"
+   ],
+   "a": 3,
+   "e": "a4 = 10000; follows break with no case label, so no path can reach it (dead code).",
+   "src": "DSSSB TGT CS 2021 | 01/08/2021 | Shift-2",
+   "ch": 5,
+   "topic": "C — Control Flow: Loops, if-else & switch",
+   "chg": false
+  },
+  {
+   "q": "Consider the code segment written below in C++ :\nif (count < 10)//if#1\nif ((count%4) ==2)//if#2\ncout<<\" condition;white/n\";\nelse//(Indentation is wrong)\ncout<<\" condition is:tan/n\";\nThere are 2 if statements and one else. To which if, the else statement belong?",
+   "o": [
+    "It belongs to if # 1",
+    "It belongs to if # 2",
+    "It belongs to both the if statements.",
+    "It is independent."
+   ],
+   "a": 1,
+   "e": "An else binds to the nearest unmatched if (dangling else), so it belongs to if #2.",
+   "src": "KVS PGT C.S. 2018",
+   "ch": 5,
+   "topic": "C — Control Flow: Loops, if-else & switch",
+   "chg": false
+  },
+  {
+   "q": "Consider the following C declaration. Assume that objects of data type short, float and long occupy 2 bytes, 4 bytes and 8 bytes respectively. What is memory requirement for variable t?\nstruct {\nshort a[5];\nunion{ float v; long z;} u;\n}t;",
+   "o": [
+    "22 bytes",
+    "18 bytes",
+    "24 bytes",
+    "10 bytes"
+   ],
+   "a": 1,
+   "e": "short a[5] = 10 bytes; the union takes its largest member, 8 bytes; total 18 bytes (padding ignored, as in the official key).",
+   "src": "DSSSB TGT CS 2021 | 08/08/2021 | Shift-1",
+   "ch": 5,
+   "topic": "C — Data Types, Operators & Precedence",
+   "chg": false
+  },
+  {
+   "q": "What is the output of following C program?\n#include<stdio.h>\nint main() {\nint x = 8, *y, z;\ny = &x;\nprintf(\"%d\\n\", x * *y * x + *y);\nreturn 0;\n}",
+   "o": [
+    "8",
+    "Runtime error",
+    "520",
+    "Compilation error"
+   ],
+   "a": 2,
+   "e": "*y = 8, so the expression is 8×8×8 + 8 = 520.",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-1",
+   "ch": 5,
+   "topic": "C — Functions, Recursion & Scope",
+   "chg": false
+  },
+  {
+   "q": "Given the following code snippet, what is the value of the variable c?\nint a, b, c;\na = b = c = 15;\nc = c + 10;",
+   "o": [
+    "Undefined",
+    "10",
+    "25",
+    "15"
+   ],
+   "a": 2,
+   "e": "a = b = c = 15 sets all to 15, then c = c + 10 gives 25.",
+   "src": "DSSSB TGT CS 2025 | 12/09/2025 | 9:00 AM - 11:00 AM",
+   "ch": 5,
+   "topic": "C — Output Tracing / Miscellaneous",
+   "chg": false
+  },
+  {
+   "q": "Consider the following code segment:\nif (Y < 0) {X = –X; Y = –Y;}\nZ = 0;\nwhile (Y > 0) {Z = Z + X; Y = Y – 1;}\nAssume that X, Y and Z are integer variables, and that X and Y have been initialized. Which of the following best describes what this code segment does?",
+   "o": [
+    "Sets Z to be the product X* Y",
+    "Sets Z to be the sum X+ Y",
+    "Sets Z to be the absolute value of X",
+    "Sets Z to be the value of Y"
+   ],
+   "a": 0,
+   "e": "The loop adds X to Z once per unit of Y (repeated addition); the sign swap handles negative Y, so Z = X × Y.",
+   "src": "KVS PGT C.S. 2017",
+   "ch": 5,
+   "topic": "C — Output Tracing / Miscellaneous",
+   "chg": false
+  },
+  {
+   "q": "Which of the following is a pillar of OOP?",
+   "o": [
+    "Inheritance",
+    "Encapsulation",
+    "Abstraction",
+    "More than one of the above"
+   ],
+   "a": 3,
+   "e": "Inheritance, encapsulation and abstraction (and polymorphism) are all pillars of OOP, so more than one is correct.",
+   "src": "BPSC TRE 3.0 Exam-22.07.2024 (11-12)",
+   "ch": 5,
+   "topic": "C++ — Classes, Objects & Access Specifiers",
+   "chg": false
+  },
+  {
+   "q": "Which of the following file stream function will move the file pointer to Nth record in a binary file F created with the help of objects of class EMP ?",
+   "o": [
+    "F.tellg(N)",
+    "F.seekp(N)",
+    "F.seekp((N−1)*sizeof(EMP))",
+    "F.seekp(sizeof(EMP)/N)"
+   ],
+   "a": 2,
+   "e": "To reach the N-th record skip N−1 records of sizeof(EMP) bytes each: offset = (N−1)×sizeof(EMP).",
+   "src": "NVS PGT C.S. 15.12.2022 (Shift-II)",
+   "ch": 5,
+   "topic": "C++ — Classes, Objects & Access Specifiers",
+   "chg": false
+  },
+  {
+   "q": "What is the output of the given java code?\nbyte x = 64, y;\ny = (byte) (x << 4);\nSystem.out.println(y);",
+   "o": [
+    "0",
+    "128",
+    "256",
+    "32"
+   ],
+   "a": 0,
+   "e": "x << 4 = 1024; casting to byte keeps the low 8 bits, which are all zero, so y = 0.",
+   "src": "DSSSB TGT CS 2021 | 01/08/2021 | Shift-1",
+   "ch": 5,
+   "topic": "Java — Control Flow & Output Prediction",
+   "chg": false
+  },
+  {
+   "q": "Which of the following is/are feature(s) of inheritance in OOPs? Features: i) Sub Class ii) Super Class iii) Reusability iv) Operator Overloading",
+   "o": [
+    "Only i, ii and iii",
+    "Only ii and iii",
+    "Only iii",
+    "Only i and ii"
+   ],
+   "a": 0,
+   "e": "Sub class, super class and reusability are inheritance features; operator overloading belongs to polymorphism.",
+   "src": "DSSSB TGT CS 2023 | 24/06/2023 | Shift-2",
+   "ch": 5,
+   "topic": "C++ — Inheritance, Polymorphism & Overloading",
+   "chg": false
+  },
+  {
+   "q": "What is the expected output of the following Python code?\nprint(\"\\nDictionary Iteration\")\nd = dict()\nd['lmn'] = 123\nd['abc'] = 345\nfor i in d :\nprint(\"%s %d\" %(i, d[i]))",
+   "o": [
+    "Dictionary Iteration lmn 123 abc 345",
+    "Dictionary Iteration 123 lmn abc 345",
+    "Dictionary Iteration 123 lmn 345 abc",
+    "Dictionary Iteration lmn 345 abc 123"
+   ],
+   "a": 0,
+   "e": "Iterating a dict yields keys in insertion order, printing 'lmn 123' then 'abc 345'.",
+   "src": "DSSSB TGT CS 2023 | 24/06/2023 | Shift-2",
+   "ch": 6,
+   "topic": "Data Types, Variables & Type Casting",
+   "chg": false
+  },
+  {
+   "q": "Which of the given options best describes the truthfulness of the following statements?\ni) A tuple is a sequence of immutable Python objects, in the given tuple course = \"l\", \"m\", \"n\", \"o\", has four elements.\nii) To explicitly remove an entire tuple, use the drop statement.",
+   "o": [
+    "i-True, ii-True",
+    "i-False, ii-True",
+    "i-True, ii-False",
+    "i-False, ii-False"
+   ],
+   "a": 2,
+   "e": "Statement i is true; statement ii is false because a tuple is removed with del, and Python has no drop statement.",
+   "src": "DSSSB TGT CS 2023 | 24/06/2023 | Shift-2",
+   "ch": 6,
+   "topic": "Data Types, Variables & Type Casting",
+   "chg": false
+  },
+  {
+   "q": "Time complexity of Merge Sort Algorithm and Binary Search Algorithm are respectively ______.",
+   "o": [
+    "O(log2 n) and O(n log2 n)",
+    "O(n log2 n) and O(log2 n)",
+    "O(n2) and O(log2 n)",
+    "O(2n) and O(n2)"
+   ],
+   "a": 1,
+   "e": "Merge sort is O(n log n); binary search halves the range each step, O(log n).",
+   "src": "HTET PGT C.S. 2018",
+   "ch": 8,
+   "topic": "Sorting Algorithms & Their Complexity",
+   "chg": false
+  },
+  {
+   "q": "Which of the following statement is false about a B- tree of order M?",
+   "o": [
+    "The root has at least two child nodes and at most M child nodes.",
+    "The internal nodes except the root have at least ⌈M/2⌉ child nodes.",
+    "Leaf nodes are not at the same level.",
+    "A node is full if it has (M – 1) keys."
+   ],
+   "a": 2,
+   "e": "All leaves of a B-tree lie at the same level, so the claim that they do not is false.",
+   "src": "DSSSB PGT C.S. M/F 11.07.2021",
+   "ch": 8,
+   "topic": "Trees: BST, AVL, Heap & Traversals",
+   "chg": false
+  },
+  {
+   "q": "Time complexity of f(x) = 4x2– 5x + 3 is:",
+   "o": [
+    "O(x)",
+    "O(x2)",
+    "O(x3/2)",
+    "O(x0.5)"
+   ],
+   "a": 1,
+   "e": "Only the fastest-growing term matters, so it is O(x²).",
+   "src": "CGPSC C.S. 2020 Set-A",
+   "ch": 8,
+   "topic": "Complexity Analysis & Asymptotic Notation",
+   "chg": false
+  },
+  {
+   "q": "Which of the following recurrence relation is related to worst case time complexity of quick sort ?",
+   "o": [
+    "T(n) = T(n/2) + C",
+    "T(n) = 2 . T(n/2) + Cn",
+    "T(n) = T(n–1) + Cn",
+    "T(n) = 7 . T(n/2) + Cn2"
+   ],
+   "a": 2,
+   "e": "In the worst case the pivot splits n into 1 and n−1, giving T(n) = T(n−1) + cn, which is O(n²).",
+   "src": "HTET PGT C.S. 2022",
+   "ch": 8,
+   "topic": "Complexity Analysis & Asymptotic Notation",
+   "chg": false
+  },
+  {
+   "q": "The minimum number of edges in a spanning tree of a connected graph with \"n\" vertices is:",
+   "o": [
+    "n",
+    "n – 1",
+    "n + 1",
+    "n(n–1)/2"
+   ],
+   "a": 1,
+   "e": "A spanning tree on n vertices has exactly n−1 edges.",
+   "src": "Bihar STET C.S. 12.09.2023 (Shift-II)",
+   "ch": 8,
+   "topic": "Graphs: Representation, BFS, DFS & Spanning Trees",
+   "chg": false
+  },
+  {
+   "q": "Which of the following statements is correct about the divide and conquer approach of binary search technique?",
+   "o": [
+    "The best-case time complexity of binary search is O(log n).",
+    "The recurrence relation of binary search is written as T(n) = 2T(n/2) + O(1), where n is the number of elements in the array.",
+    "The worst-case time complexity of binary search is O(log n).",
+    "The average-case time complexity of binary search is O(n)."
+   ],
+   "a": 2,
+   "e": "Binary search recurrence is T(n)=T(n/2)+O(1); best case is O(1), average and worst O(log n).",
+   "src": "DSSSB TGT CS 2025 | 12/09/2025 | 9:00 AM - 11:00 AM",
+   "ch": 8,
+   "topic": "Searching Algorithms (Linear, Binary)",
+   "chg": false
+  },
+  {
+   "q": "The average number of comparisons performed in sequential search on a list of n elements is:-",
+   "o": [
+    "n2",
+    "n(n+1)/2",
+    "n(n–1)/2",
+    "(n+1)/2"
+   ],
+   "a": 3,
+   "e": "A successful sequential search examines on average (n+1)/2 elements.",
+   "src": "RPSC C.S. 2016 (Paper-II)",
+   "ch": 8,
+   "topic": "Searching Algorithms (Linear, Binary)",
+   "chg": false
+  },
+  {
+   "q": "Which of the following SQL queries correctly returns the second-highest result from the student table?",
+   "o": [
+    "SELECT result FROM student ORDER BY result DESC LIMIT 1 OFFSET 1;",
+    "SELECT MAX(result) FROM student WHERE result < (SELECT MAX(result) FROM student);",
+    "SELECT result FROM student WHERE ROWNUM = 2 ORDER BY result DESC;",
+    "SELECT TOP 2 result FROM student ORDER BY result DESC;"
+   ],
+   "a": 1,
+   "e": "Nested MAX below the overall MAX returns the second-highest distinct value; (a) repeats on ties, (c) returns nothing in Oracle, (d) returns two rows.",
+   "src": "DSSSB TGT CS 2025 | 12/09/2025 | 1:00 PM - 3:00 PM",
+   "ch": 9,
+   "topic": "SQL: DDL, DML, DCL, Clauses & Joins",
+   "chg": false
+  },
+  {
+   "q": "Match the following operators with their definition in data definition language.\nList-I (Operator) | List-II (Definition)\n1. { }: | i. optional data\n2. ( ): | ii. selection\n3. [, ,]: | iii. iterative",
+   "o": [
+    "1-iii, 2-i, 3-ii",
+    "1-i, 2-ii, 3-iii",
+    "1-ii, 2-iii, 3-i",
+    "1-iii, 2-ii, 3-i"
+   ],
+   "a": 0,
+   "e": "In data-dictionary notation { } is iteration, ( ) is optional data and [ , ] is selection: 1-iii, 2-i, 3-ii.",
+   "src": "DSSSB TGT CS 2021 | 07/08/2021 | Shift-1",
+   "ch": 9,
+   "topic": "SQL: DDL, DML, DCL, Clauses & Joins",
+   "chg": false
+  },
+  {
+   "q": "Find the output of the MySQL query SELECT COUNT(GAME), AVG(SALARY) FROM COACH; based on the given Table : COACH (ignore the output header).\nCID | CNAME | GAME | SALARY\nG03 | VSHALI | NULL | 60000\nG05 | YUVRAJA | CRICKET | NULL\nG08 | MALKHAN | ATHLATIC S | 80000\nG09 | SACINDRA | CRICKET | NULL",
+   "o": [
+    "3 70000",
+    "4 35000",
+    "4 70000",
+    "3 35000"
+   ],
+   "a": 0,
+   "e": "Aggregates ignore NULLs: COUNT(GAME) = 3 and AVG(SALARY) = (60000+80000)/2 = 70000.",
+   "src": "KVS PGT 23.03.2023 (Shift-II)",
+   "ch": 9,
+   "topic": "SQL: DDL, DML, DCL, Clauses & Joins",
+   "chg": false
+  },
+  {
+   "q": "Following are the two tables in a MySQL database\nDatabase : COMPARTMENT\nTable : SUBJECTS\nSUBCODE | SUBNAME | MAXT | MAXP\n065 | Informatics Practices | 70 | 30\n083 | Computer Science | 70 | 30\n301 | English Core | 80 | 20\nTable : RESULT\nROLL | SUBCODE | TMARKS | PMARKS\n10045 | 083 | 70 | 30\n10135 | 065 | 56 | 29\n10231 | 065 | 63 | 30\n10345 | 083 | 56 | 29\nSelect the command from the following options to display subjects (SUBNAME) and number of students registered in that subject in table RESULT.",
+   "o": [
+    "SELECT SUBNAME, COUNT (*) FROM SUBJECTS, RESULT GROUP BY SUBNAME;",
+    "SELECT SUBNAME, COUNT (*) FROM SUBJECTS, RESULT ORDER BY SUBNAME;",
+    "SELECT SUBNAME, COUNT (*) FROM SUBJECTS NATURAL JOIN RESULT ORDER BY SUBNAME;",
+    "SELECT SUBNAME, COUNT (*) FROM SUBJECTS NATURAL JOIN RESULT GROUP BY SUBNAME;"
+   ],
+   "a": 3,
+   "e": "Natural join matches rows on SUBCODE and GROUP BY SUBNAME gives the count per subject.",
+   "src": "KVS PGT 23.03.2023 (Shift-II)",
+   "ch": 9,
+   "topic": "SQL: DDL, DML, DCL, Clauses & Joins",
+   "chg": false
+  },
+  {
+   "q": "Consider the following EMP table. Which of the following select statement should be executed if we need to display the average salary of employees who belong to grade \"E4\"?\nEMP_NO | SALARY | GRADE\nE001 | 1000 | E1\nE002 | 2000 | E4\nE003 | 1500 | E2\nE004 | 4000 | E4",
+   "o": [
+    "Select avg(salary) from EMP whose grade = \"E4\";",
+    "Select avg(salary) from EMP having grade = \"E4\";",
+    "Select avg(salary) from EMP group by grade where grade = \"E4\";",
+    "Select avg(salary) from EMP group by grade having grade =\"E4\";"
+   ],
+   "a": 3,
+   "e": "Group by grade and use HAVING to keep only the E4 group; WHERE cannot follow GROUP BY.",
+   "src": "KVS PGT C.S. 2013",
+   "ch": 9,
+   "topic": "SQL: DDL, DML, DCL, Clauses & Joins",
+   "chg": false
+  },
+  {
+   "q": "Consider the following SQL query:\nPROJ (Pnum, Dnum)\nDEPT (Dnumber, Mgr_SSn)\nEMP (fname, lname, SSn)\nWorks_ON (Pno, ESSn)\n(SELECT DISTINCT Pnum FROM PROJ, DEPT, EMP WHERE Dnum = Dnumber AND Mgr_SSn = SSn AND Lname = 'XXXX')\nUNION\n(SELECT DISTINCT Pnum FROM PROJ, WORKS_ON, EMP WHERE Pnum = Pno AND ESSn = SSn AND Lname = 'XXXX')\nThe above query retrieves:",
+   "o": [
+    "All project numbers for projects that involve an employee with last name 'XXXX', either as worker or as manager",
+    "All project numbers for projects that involve an employee with last name 'XXXX' as manager.",
+    "Records of all employees with last name as 'XXXX' working in a project as manager.",
+    "All project number for projects in department Dnumber and where 'XXXX' is involved either as worker or as manager."
+   ],
+   "a": 0,
+   "e": "The first block finds projects managed via a department by XXXX, the second projects XXXX works on; the union gives projects involving XXXX as manager or worker.",
+   "src": "KVS PGT C.S. 2018",
+   "ch": 9,
+   "topic": "SQL: DDL, DML, DCL, Clauses & Joins",
+   "chg": false
+  },
+  {
+   "q": "Which of the following refers to the art of recording, classifying and summarising in a significant manner, and in terms of money, transactions and events that are in part at least of a financial character, and interpreting the results thereof?",
+   "o": [
+    "Financial Accounting",
+    "Cost Accounting",
+    "Management Accounting",
+    "Book Keeping"
+   ],
+   "a": 0,
+   "e": "Recording, classifying, summarising in money terms and interpreting the results is the definition of financial accounting; book-keeping is only recording.",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-1",
+   "ch": 9,
+   "topic": "Transactions, ACID & Concurrency Control",
+   "chg": false
+  },
+  {
+   "q": "Which of the following notation of ERD (Entity – Relationship Diagram) shows the ‘Weak Entity’?",
+   "o": [
+    "Single rectangle",
+    "Diamond",
+    "Double rectangle",
+    "Double diamond"
+   ],
+   "a": 2,
+   "e": "A weak entity is drawn as a double rectangle; a double diamond is the identifying relationship.",
+   "src": "DSSSB TGT CS 2024 | 07/02/2024 | Shift-2",
+   "ch": 9,
+   "topic": "ER Model, Cardinality & Schema Design",
+   "chg": false
+  },
+  {
+   "q": "Match the building blocks in Entity relationship diagram.\nList-I (Symbol) | List-II\ni. Oval (ellipse) | a. Relationship\nii. —O|— (line with a small circle and one bar) | b. Attributes\niii. ——|| (line with two bars) | c. Optional one\niv. Diamond | d. Mandatory one",
+   "o": [
+    "i-b, ii-c, iii-a, iv-d",
+    "i-b, ii-c, iii-d, iv-a",
+    "i-c, ii-b, iii-d, iv-a",
+    "i-b, ii-a, iii-d, iv-c"
+   ],
+   "a": 1,
+   "e": "Oval = attribute, circle+bar = optional one, two bars = mandatory one, diamond = relationship: i-b, ii-c, iii-d, iv-a.",
+   "src": "DSSSB TGT CS 2021 | 07/08/2021 | Shift-1",
+   "ch": 9,
+   "topic": "ER Model, Cardinality & Schema Design",
+   "chg": false
+  },
+  {
+   "q": "If X1, X2, X3,..., XN are the domains in a relational database model, then the relation (table) is a subset of which of the following?",
+   "o": [
+    "X1 × X2 × X3 × ... × XN",
+    "X1 + X2 + X3 + ... + XN",
+    "X1 ∪ X2 ∪ X3 ∪ ... ∪ XN",
+    "X1 ∩ X2 ∩ X3 ∩ ... ∩ XN"
+   ],
+   "a": 0,
+   "e": "A relation is a subset of the Cartesian product of its domains.",
+   "src": "DSSSB PGT C.S. (Male) 27.07.2018 (Shift-II)",
+   "ch": 9,
+   "topic": "Relational Model & Relational Algebra",
+   "chg": false
+  },
+  {
+   "q": "Consider the following tables and their respective degrees and cardinalities in a database called SCHOOL :\nDatabase : SCHOOL\nTable | Degree | Cardinality\nSTUDENT | 20 | 300\nTEACHER | 10 | 25\nSelect the degree and cardinality of the Cartesian product of the tables STUDENT × TEACHER from the following options :",
+   "o": [
+    "30 7500",
+    "200 325",
+    "30 325",
+    "200 7500"
+   ],
+   "a": 0,
+   "e": "Degrees add (20+10 = 30) and cardinalities multiply (300×25 = 7500).",
+   "src": "KVS PGT 23.03.2023 (Shift-II)",
+   "ch": 9,
+   "topic": "Relational Model & Relational Algebra",
+   "chg": false
+  },
+  {
+   "q": "In the TEARDOWN state of the Real Time Streaming Protocol, ______",
+   "o": [
+    "The server frees resources for client",
+    "Server delivers the stream to client",
+    "Server suspends delivery of stream",
+    "Server breaks down the connection"
+   ],
+   "a": 3,
+   "e": "TEARDOWN ends the RTSP session; the exam key takes breaking down the connection as the defining action (freeing resources is also defensible per RFC 2326).",
+   "src": "Bihar STET C.S. 12.09.2023 (Shift-I)",
+   "ch": 10,
+   "topic": "Topologies, Transmission Media & Network Types",
+   "chg": false
+  },
+  {
+   "q": "A high-speed communication equipment typically would not be needed for",
+   "o": [
+    "E-mail",
+    "Transferring large volume of data",
+    "Supporting communication between nodes in a LAN",
+    "More than one of the above"
+   ],
+   "a": 0,
+   "e": "E-mail messages are small and delay-tolerant; bulk transfer and LAN communication need high speed.",
+   "src": "BPSC TRE 2.0 2023 (11-12)",
+   "ch": 10,
+   "topic": "Application Layer Protocols (HTTP, DNS, FTP, SMTP)",
+   "chg": false
+  },
+  {
+   "q": "Consider Column - 1 and Column - 2 :\nColumn-I | Column-II\nI. Bing | A. Social Networking\nII. Flipkart | B. e-mail\nIII. Facebook | C. Search Engine\nIV. Google Chrome | D. Online Shopping\nV. gmail | E. Web Browser\nMatch of Column-1 and Column-2 is :",
+   "o": [
+    "I-D, II-A, III-C, IV-B, V-E",
+    "I-C, II-D, III-A, IV-E, V-B",
+    "I-E, II-A, III-B, IV-C, V-D",
+    "I-C, II-E, III-B, IV-D, V-A"
+   ],
+   "a": 1,
+   "e": "Bing is a search engine, Flipkart online shopping, Facebook social networking, Chrome a web browser, Gmail e-mail: I-C, II-D, III-A, IV-E, V-B.",
+   "src": "HTET PGT C.S. 2018",
+   "ch": 10,
+   "topic": "Internet, WWW, VPN & Network Applications",
+   "chg": false
+  },
+  {
+   "q": "Any time you include JavaScript verbiage in HTML document, you must enclose those lines inside a ______ tag pair.",
+   "o": [
+    "<HTML> and </HTML>",
+    "<Body> and <\\Body>",
+    "<Div> and <\\Div>",
+    "<Script> and </script>"
+   ],
+   "a": 3,
+   "e": "JavaScript must be enclosed in a script element so the browser treats it as code.",
+   "src": "DSSSB PGT C.S. (Male) 27.07.2018 (Shift-II)",
+   "ch": 11,
+   "topic": "HTML Tags, Forms & Attributes",
+   "chg": false
+  },
+  {
+   "q": "To jump from one page to another page, which of the following is used?",
+   "o": [
+    "<A HREF> .......</A>",
+    "<link>",
+    "<jump>",
+    "None of the above"
+   ],
+   "a": 0,
+   "e": "The anchor element with an href creates a link to another page; <link> is for stylesheets.",
+   "src": "LT Grade C.S. 2018; DSSSB PGT C.S. (Male) 27.07.2018 (Shift-II)",
+   "ch": 11,
+   "topic": "HTML Tags, Forms & Attributes",
+   "chg": false
+  },
+  {
+   "q": "In HTML link for e-mail can be created using which of the following ?",
+   "o": [
+    "<email = pqr@example.com> This is link to write me an email </email>",
+    "<email> <SetID> pqr@example.com </SetID> This is link to write me an email </email>",
+    "<a href = \"mailto: pqr@example.com\"> This is link to write me an email </a>",
+    "<a herf = \"<SetID> pqr@example.com </SetID\"> This is link to write me an email </a>"
+   ],
+   "a": 2,
+   "e": "A mailto URL in an anchor's href opens a new message to that address.",
+   "src": "HTET PGT C.S. 2018",
+   "ch": 11,
+   "topic": "HTML Tags, Forms & Attributes",
+   "chg": false
+  },
+  {
+   "q": "Which of the following is suitable tag for java script in HTML ?",
+   "o": [
+    "<java> </java>",
+    "<script> </script>",
+    "<jvm> </jvm>",
+    "<JS> </JS>"
+   ],
+   "a": 1,
+   "e": "JavaScript goes inside script tags.",
+   "src": "HTET PGT C.S. 2018",
+   "ch": 11,
+   "topic": "HTML Tags, Forms & Attributes",
+   "chg": false
+  },
+  {
+   "q": "Identify the incorrect statement.",
+   "o": [
+    "DHTML is a programming language",
+    "JavaScript is the scripting standard for HTML",
+    "DHTML is the art of combining HTML, JavaScript, DOM, and CSS",
+    "DHTML is a term used to describe the technologies used to make web pages dynamic and interactive"
+   ],
+   "a": 0,
+   "e": "DHTML is a combination of HTML, CSS, DOM and JavaScript, not a language itself.",
+   "src": "DSSSB PGT C.S. (Male) 27.07.2018 (Shift-II)",
+   "ch": 11,
+   "topic": "JavaScript, DOM & Events",
+   "chg": false
+  },
+  {
+   "q": "How do you comment a single line in PHP?",
+   "o": [
+    "// This is a comment",
+    "/* This is a comment */",
+    "<!-- This is a comment -->",
+    "** This is a comment **"
+   ],
+   "a": 0,
+   "e": "Two slashes begin a single-line comment in PHP.",
+   "src": "Bihar STET C.S. 12.09.2023 (Shift-II)",
+   "ch": 11,
+   "topic": "ASP / .NET & Server-Side Technologies",
+   "chg": false
+  },
+  {
+   "q": "To declare the version of XML. the correct syntax is :",
+   "o": [
+    "</xml version = '1.0'/>",
+    "<?xml version = \"1.0\"/>",
+    "<*xml version = '1.0'/>",
+    "<?xml version = 1.0\"/>"
+   ],
+   "a": 1,
+   "e": "The declaration begins with '<?xml' and quotes the version; (b) is the best of the four (strictly it should close with '?>').",
+   "src": "KVS PGT C.S. 2017",
+   "ch": 11,
+   "topic": "XML, DTD & Schema",
+   "chg": false
+  },
+  {
+   "q": "Match the symbol used in DFD with their function.\nList-I (Symbol) | List-II (Function)\n1 [symbol 1: open-topped box ⊔ — bottom line and two short sides, top edge missing] | i Output\n2 [symbol 2: two short parallel horizontal lines =] | ii Process\n3 [symbol 3: rectangle with its top-right corner cut off diagonally] | iii Data store\n4 [symbol 4: plain circle ○] | iv External entity",
+   "o": [
+    "1-iv, 2-iii, 3-i, 4-ii",
+    "1-ii, 2-iii, 3-i, 4-ii",
+    "1-iv, 2-i, 3-iii, 4-ii",
+    "1-i, 2-iii, 3-iv, 4-ii"
+   ],
+   "a": 0,
+   "e": "Circle = process, two parallel lines = data store, open-topped box = external entity, clipped-corner box = output: 1-iv, 2-iii, 3-i, 4-ii.",
+   "src": "DSSSB TGT CS 2021 | 07/08/2021 | Shift-2",
+   "ch": 12,
+   "topic": "Requirements, DFD, UML & CASE Tools",
+   "chg": false
+  },
+  {
+   "q": "The normal form of the matrix M = [[1,1,0,−2],[2,0,2,2],[4,1,3,1]] is _____.",
+   "o": [
+    "[[1,0,0,0],[0,1,0,0],[0,0,0,0]]",
+    "[[1,0,0,0],[0,0,0,0],[0,0,0,0]]",
+    "[[1,0,0,0],[0,1,0,0],[0,0,1,0]]",
+    "[[1,0,0,0],[0,1,1,0],[0,0,1,0]]"
+   ],
+   "a": 0,
+   "e": "R3 = R1 + (3/2)R2, so the rank is 2 and the normal form is the 2×2 identity in the top-left corner with zeros elsewhere.",
+   "src": "DSSSB TGT CS 2025 | 12/09/2025 | 1:00 PM - 3:00 PM",
+   "ch": 17,
+   "topic": "Matrices, Determinants & Linear Algebra",
+   "chg": false
+  },
+  {
+   "q": "The series Σ 1/∛(n²) is:",
+   "o": [
+    "None of the given options",
+    "divergent",
+    "oscillatory convergent",
+    "convergent"
+   ],
+   "a": 1,
+   "e": "The term is 1/n^(2/3), a p-series with p = 2/3 ≤ 1, so it diverges. The official key gives (d), which is incorrect.",
+   "src": "DSSSB TGT CS 2023 | 25/06/2023 | Shift-2",
+   "ch": 17,
+   "topic": "Arithmetic, Algebra & Aptitude",
+   "chg": true
+  },
+  {
+   "q": "The particular solution of the differential equation (D⁴ − 18D² + 81)y = 72e³ˣ is ________ .",
+   "o": [
+    "12 x²e³ˣ",
+    "72x²e³ˣ / 104",
+    "2 x²e³ˣ",
+    "x²e³ˣ"
+   ],
+   "a": 3,
+   "e": "(D−3)²(D+3)²y: root 3 has multiplicity 2, so PI = 72x²e³ˣ/[2!·(6)²] = x²e³ˣ.",
+   "src": "DSSSB TGT CS 2025 | 12/09/2025 | 9:00 AM - 11:00 AM",
+   "ch": 17,
+   "topic": "Calculus, Differential Equations & Transforms",
+   "chg": false
+  },
+  {
+   "q": "Which of the following options is the particular solution of the differential equation y″ − 6y′ + 9y = 2e³ᵗ?",
+   "o": [
+    "e³ᵗ / 2",
+    "t²e³ᵗ",
+    "e³ᵗ",
+    "e³ᵗ / 9"
+   ],
+   "a": 1,
+   "e": "The auxiliary equation (m−3)² = 0 has a double root 3, so PI = 2·t²e³ᵗ/2! = t²e³ᵗ.",
+   "src": "DSSSB TGT CS 2025 | 12/09/2025 | 9:00 AM - 11:00 AM",
+   "ch": 17,
+   "topic": "Calculus, Differential Equations & Transforms",
+   "chg": false
+  }
+ ]
+}

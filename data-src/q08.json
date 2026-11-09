@@ -1,0 +1,983 @@
+{
+ "mcq": [
+  {
+   "q": "The overall design of a database is called the ______, while the data stored at a given point of time is the ______.",
+   "o": [
+    "schema; instance",
+    "instance; schema",
+    "metadata; schema",
+    "data model; catalog"
+   ],
+   "a": 0,
+   "e": "Schema is the design; instance is the state (data) at a moment in time.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "Metadata, i.e. data about data, is kept in the:",
+   "o": [
+    "Data catalog / data dictionary",
+    "Instance",
+    "Transaction log",
+    "Fact table"
+   ],
+   "a": 0,
+   "e": "The data catalog (data dictionary) is the system database describing the data.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "Which is the OLDEST of these database models?",
+   "o": [
+    "Hierarchical",
+    "Relational",
+    "Object-oriented",
+    "Network"
+   ],
+   "a": 0,
+   "e": "Hierarchical came first, then network, relational and object-oriented.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "A filing cabinet holding a folder for each customer is an example of which data model?",
+   "o": [
+    "Hierarchical",
+    "Relational",
+    "Deductive",
+    "Network"
+   ],
+   "a": 0,
+   "e": "The customer-folder filing cabinet is the standard hierarchical example.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "Which of the following is NOT a category of DBMS?",
+   "o": [
+    "Sequential",
+    "Hierarchical",
+    "Network",
+    "Relational"
+   ],
+   "a": 0,
+   "e": "Sequential is a file organisation, not a DBMS type.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "Which of the following is NOT a database design approach?",
+   "o": [
+    "Up-down",
+    "Top-down",
+    "Bottom-up",
+    "Inside-out"
+   ],
+   "a": 0,
+   "e": "The approaches are top-down, bottom-up and inside-out; there is no up-down.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "The deductive database model is also known as the:",
+   "o": [
+    "Inference model",
+    "Tabular model",
+    "Hierarchy model",
+    "Object model"
+   ],
+   "a": 0,
+   "e": "Deductive = inference model.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "In the three-level architecture, which level describes the physical storage of data on disk?",
+   "o": [
+    "Internal schema",
+    "Conceptual schema",
+    "External schema",
+    "Logical schema"
+   ],
+   "a": 0,
+   "e": "Internal = physical storage; conceptual = logical design of whole database; external = user views.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "Logical data independence means the ability to change the ______ schema without changing the ______ schemas.",
+   "o": [
+    "conceptual; external",
+    "internal; conceptual",
+    "external; internal",
+    "internal; external"
+   ],
+   "a": 0,
+   "e": "Conceptual changes are hidden from user views (external schemas).",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "Which is NOT a feature or function of a DBMS?",
+   "o": [
+    "Single-user access only",
+    "ACID support",
+    "High security",
+    "Managing data"
+   ],
+   "a": 0,
+   "e": "A DBMS is built for many users, so single-user-only access is not a feature.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "Which of the following is NOT an element of a database?",
+   "o": [
+    "Frontend",
+    "Schema",
+    "Relationships",
+    "Constraints"
+   ],
+   "a": 0,
+   "e": "Database elements are schema, relationships and constraints, not the frontend.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "Deliberately increasing redundancy in a database to improve performance is called:",
+   "o": [
+    "Denormalization",
+    "Normalization",
+    "Fragmentation",
+    "Serialization"
+   ],
+   "a": 0,
+   "e": "Denormalization walks back down the normal forms for speed.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "Which is a tested disadvantage of a distributed database?",
+   "o": [
+    "Data inconsistency",
+    "Fragmentation of the OS",
+    "Lack of sites",
+    "Lack of ODBC"
+   ],
+   "a": 0,
+   "e": "Distributed databases may suffer data inconsistency.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "In a distributed database, breaking the database into logical units for the sites is called:",
+   "o": [
+    "Data fragmentation",
+    "Data allocation",
+    "Defragmentation",
+    "Denormalization"
+   ],
+   "a": 0,
+   "e": "Fragmentation splits the DB into logical units; allocation decides which site stores what.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "In a data warehouse environment, the intermediate stop of the ETL process is the:",
+   "o": [
+    "Staging area",
+    "Fact table",
+    "Star schema",
+    "Data catalog"
+   ],
+   "a": 0,
+   "e": "The staging area is the ETL intermediate store.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "A star schema consists of:",
+   "o": [
+    "One central fact table plus one table per dimension",
+    "One fact table per dimension",
+    "Only dimension tables",
+    "Two fact tables linked by a key"
+   ],
+   "a": 0,
+   "e": "Star schema = one fact table surrounded by dimension tables.",
+   "t": "9.1 DBMS Basics"
+  },
+  {
+   "q": "A relation has 50 tuples and 20 attributes. Its degree and cardinality are:",
+   "o": [
+    "20 and 50",
+    "50 and 20",
+    "70 and 1000",
+    "20 and 20"
+   ],
+   "a": 0,
+   "e": "Degree = number of attributes (20); cardinality = number of tuples (50).",
+   "t": "9.2 Relational Model"
+  },
+  {
+   "q": "Table STUDENT has degree 20 and cardinality 300; TEACHER has degree 10 and cardinality 25. The Cartesian product has degree and cardinality:",
+   "o": [
+    "30 and 7500",
+    "30 and 325",
+    "200 and 7500",
+    "200 and 325"
+   ],
+   "a": 0,
+   "e": "Degrees add (20+10=30), cardinalities multiply (300x25=7500).",
+   "t": "9.2 Relational Model"
+  },
+  {
+   "q": "A table of degree 4 and cardinality 3 gets 3 more attributes and 4 more tuples. Its new degree and cardinality are:",
+   "o": [
+    "7 and 7",
+    "7 and 12",
+    "12 and 7",
+    "3 and 4"
+   ],
+   "a": 0,
+   "e": "Degree 4+3=7; cardinality 3+4=7.",
+   "t": "9.2 Relational Model"
+  },
+  {
+   "q": "Natural join of R (3 tuples) and S (2 tuples) can give at most how many tuples?",
+   "o": [
+    "6",
+    "5",
+    "3",
+    "2"
+   ],
+   "a": 0,
+   "e": "At most |R| x |S| = 6.",
+   "t": "9.2 Relational Model"
+  },
+  {
+   "q": "Which operation needs two tables that share a common column?",
+   "o": [
+    "JOIN",
+    "Projection",
+    "Cartesian product",
+    "Selection on one table"
+   ],
+   "a": 0,
+   "e": "A join requires a common column; Cartesian product does not.",
+   "t": "9.2 Relational Model"
+  },
+  {
+   "q": "Which statement about set operations is correct?",
+   "o": [
+    "Intersection is both commutative and associative",
+    "Difference is commutative",
+    "Difference is associative",
+    "Intersection is neither commutative nor associative"
+   ],
+   "a": 0,
+   "e": "Intersection is commutative and associative; difference is neither.",
+   "t": "9.2 Relational Model"
+  },
+  {
+   "q": "In an ER diagram, a double rectangle represents:",
+   "o": [
+    "A weak entity",
+    "A multivalued attribute",
+    "A total participation",
+    "An identifying relationship"
+   ],
+   "a": 0,
+   "e": "Double box = weak entity; double diamond = identifying relationship.",
+   "t": "9.3 ER Model"
+  },
+  {
+   "q": "The partial key of a weak entity set is called the:",
+   "o": [
+    "Discriminator",
+    "Foreign key",
+    "Candidate key",
+    "Super key"
+   ],
+   "a": 0,
+   "e": "Discriminator + owner's PK forms the full key.",
+   "t": "9.3 ER Model"
+  },
+  {
+   "q": "In an ER diagram, a dashed ellipse represents a ______ attribute.",
+   "o": [
+    "derived",
+    "multivalued",
+    "key",
+    "composite"
+   ],
+   "a": 0,
+   "e": "Dashed ellipse = derived attribute, e.g. age from date of birth.",
+   "t": "9.3 ER Model"
+  },
+  {
+   "q": "The degree of a relationship in the ER model is the number of:",
+   "o": [
+    "Participating entity types",
+    "Attributes of the relationship",
+    "Entity instances",
+    "Primary keys"
+   ],
+   "a": 0,
+   "e": "Degree = number of participating entity types.",
+   "t": "9.3 ER Model"
+  },
+  {
+   "q": "The top-down division of a higher-level entity set into sub-entity sets is called:",
+   "o": [
+    "Specialisation",
+    "Generalisation",
+    "Aggregation",
+    "Normalisation"
+   ],
+   "a": 0,
+   "e": "Specialisation is top-down; generalisation is bottom-up.",
+   "t": "9.3 ER Model"
+  },
+  {
+   "q": "A candidate key is best described as a:",
+   "o": [
+    "Minimal superkey",
+    "Superkey with a NULL value",
+    "Foreign key",
+    "Non-unique key"
+   ],
+   "a": 0,
+   "e": "Candidate key = minimal superkey; a superkey need not be minimal.",
+   "t": "9.4 Keys and Integrity"
+  },
+  {
+   "q": "Which statement about keys is correct?",
+   "o": [
+    "A table can have only one primary key but multiple foreign keys",
+    "A table can have several primary keys",
+    "A superkey must always be minimal",
+    "A table can have only one foreign key"
+   ],
+   "a": 0,
+   "e": "One PK (maybe composite), but many secondary and foreign keys.",
+   "t": "9.4 Keys and Integrity"
+  },
+  {
+   "q": "The column that points to the primary key of another table and links tables is the:",
+   "o": [
+    "Foreign key",
+    "Candidate key",
+    "Super key",
+    "Alternate key"
+   ],
+   "a": 0,
+   "e": "The foreign key links tables.",
+   "t": "9.4 Keys and Integrity"
+  },
+  {
+   "q": "Referential integrity between R1 (parent) and R2 (child) can be violated by:",
+   "o": [
+    "INSERT into R2 and DELETE from R1",
+    "INSERT into R1 and DELETE from R2",
+    "UPDATE of R1 only",
+    "SELECT from either"
+   ],
+   "a": 0,
+   "e": "Inserting into the child or deleting from the parent can leave dangling FK values.",
+   "t": "9.4 Keys and Integrity"
+  },
+  {
+   "q": "Entity integrity states that:",
+   "o": [
+    "No primary key value can be NULL",
+    "Every foreign key must be NULL",
+    "All attributes must be unique",
+    "Every table must have a foreign key"
+   ],
+   "a": 0,
+   "e": "Entity integrity pairs with the primary key; referential integrity with the foreign key.",
+   "t": "9.4 Keys and Integrity"
+  },
+  {
+   "q": "Which is NOT an SQL constraint?",
+   "o": [
+    "UNION",
+    "CHECK",
+    "DEFAULT",
+    "UNIQUE"
+   ],
+   "a": 0,
+   "e": "UNION is a set operator.",
+   "t": "9.4 Keys and Integrity"
+  },
+  {
+   "q": "In a functional dependency X -> Y, X is called the:",
+   "o": [
+    "Determinant",
+    "Dependent",
+    "Domain",
+    "Discriminator"
+   ],
+   "a": 0,
+   "e": "Left side is the determinant, right side the dependent.",
+   "t": "9.5 Normalisation"
+  },
+  {
+   "q": "Which is NOT a primary Armstrong's axiom?",
+   "o": [
+    "Pseudo-transitivity",
+    "Reflexivity",
+    "Augmentation",
+    "Transitivity"
+   ],
+   "a": 0,
+   "e": "Pseudo-transitivity is a derived rule.",
+   "t": "9.5 Normalisation"
+  },
+  {
+   "q": "Given F = {P->RT, Q->S, R->PS, QS->TU}, the closure of PQ is:",
+   "o": [
+    "PQRSTU",
+    "PQRT",
+    "PQS",
+    "PQTU"
+   ],
+   "a": 0,
+   "e": "P gives R,T; Q gives S; QS gives U; so every attribute is included.",
+   "t": "9.5 Normalisation"
+  },
+  {
+   "q": "Second Normal Form (2NF) removes:",
+   "o": [
+    "Partial dependency",
+    "Transitive dependency",
+    "Multivalued dependency",
+    "Atomic values"
+   ],
+   "a": 0,
+   "e": "2NF needs full functional dependence on the whole primary key.",
+   "t": "9.5 Normalisation"
+  },
+  {
+   "q": "Which normal form is considered adequate/satisfactory for normal RDBMS design?",
+   "o": [
+    "3NF",
+    "1NF",
+    "2NF",
+    "4NF"
+   ],
+   "a": 0,
+   "e": "3NF is the adequate form for practical design.",
+   "t": "9.5 Normalisation"
+  },
+  {
+   "q": "A relation is in BCNF if, whenever a non-trivial FD X -> A holds:",
+   "o": [
+    "X is a superkey",
+    "X is a candidate key attribute only",
+    "A is a prime attribute",
+    "X is atomic"
+   ],
+   "a": 0,
+   "e": "BCNF: every determinant is a superkey.",
+   "t": "9.5 Normalisation"
+  },
+  {
+   "q": "Which is a DDL command?",
+   "o": [
+    "TRUNCATE",
+    "UPDATE",
+    "INSERT",
+    "GRANT"
+   ],
+   "a": 0,
+   "e": "DDL = CREATE, ALTER, DROP, TRUNCATE; UPDATE and INSERT are DML.",
+   "t": "9.6 SQL Command Families"
+  },
+  {
+   "q": "Which command belongs to DCL?",
+   "o": [
+    "GRANT",
+    "COMMIT",
+    "SAVEPOINT",
+    "DELETE"
+   ],
+   "a": 0,
+   "e": "DCL = GRANT and REVOKE.",
+   "t": "9.6 SQL Command Families"
+  },
+  {
+   "q": "Which statement adds a column FEES to table TEACHER?",
+   "o": [
+    "ALTER TABLE TEACHER ADD COLUMN FEES FLOAT;",
+    "MODIFY TABLE TEACHER ADD FEES FLOAT;",
+    "EDIT TABLE TEACHER ADD FEES FLOAT;",
+    "UPDATE TABLE TEACHER ADD FEES FLOAT;"
+   ],
+   "a": 0,
+   "e": "ALTER TABLE adds, deletes or modifies columns; MODIFY/EDIT TABLE do not exist.",
+   "t": "9.6 SQL Command Families"
+  },
+  {
+   "q": "Which statement is TRUE about TRUNCATE TABLE?",
+   "o": [
+    "It removes all rows quickly, is DDL and is faster than DELETE",
+    "It is DML and can be rolled back like DELETE",
+    "It removes the table structure too",
+    "It deletes only rows matching a WHERE clause"
+   ],
+   "a": 0,
+   "e": "TRUNCATE keeps the structure, removes all rows fast, and is DDL.",
+   "t": "9.6 SQL Command Families"
+  },
+  {
+   "q": "ROLLBACK to a savepoint does NOT:",
+   "o": [
+    "Erase all modifications from the start of the transaction",
+    "Erase savepoints created after the target",
+    "Keep the target savepoint",
+    "Free the held resources"
+   ],
+   "a": 0,
+   "e": "Erasing everything from the start is a full ROLLBACK; savepoint rollback keeps the target and later savepoints are erased.",
+   "t": "9.6 SQL Command Families"
+  },
+  {
+   "q": "Which SQL statement increases every student's fees by 10 percent?",
+   "o": [
+    "UPDATE STUDENT SET FEES = FEES * 1.1;",
+    "MODIFY STUDENT SET FEES = FEES * 1.1;",
+    "CHANGE STUDENT SET FEES = FEES * 1.1;",
+    "ASSIGN STUDENT SET FEES = FEES * 1.1;"
+   ],
+   "a": 0,
+   "e": "UPDATE ... SET is the SQL form; MODIFY/CHANGE/ASSIGN are not SQL.",
+   "t": "9.6 SQL Command Families"
+  },
+  {
+   "q": "The logical evaluation order of a SELECT query is:",
+   "o": [
+    "FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY",
+    "SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY",
+    "FROM, SELECT, WHERE, GROUP BY, HAVING, ORDER BY",
+    "WHERE, FROM, GROUP BY, SELECT, HAVING, ORDER BY"
+   ],
+   "a": 0,
+   "e": "Written order starts with SELECT, but evaluation begins at FROM and SELECT comes after HAVING.",
+   "t": "9.7 SELECT"
+  },
+  {
+   "q": "Which clause filters groups after GROUP BY has formed them?",
+   "o": [
+    "HAVING",
+    "WHERE",
+    "ORDER BY",
+    "DISTINCT"
+   ],
+   "a": 0,
+   "e": "WHERE filters rows before grouping; HAVING filters groups.",
+   "t": "9.7 SELECT"
+  },
+  {
+   "q": "Which pattern retrieves values that contain the text INDIA anywhere?",
+   "o": [
+    "LIKE '%INDIA%'",
+    "LIKE '_INDIA_'",
+    "LIKE 'INDIA'",
+    "= '%INDIA%'"
+   ],
+   "a": 0,
+   "e": "% matches any run of characters; _ matches exactly one.",
+   "t": "9.7 SELECT"
+  },
+  {
+   "q": "Which query correctly finds rows where Address has no value?",
+   "o": [
+    "WHERE Address IS NULL",
+    "WHERE Address = NULL",
+    "WHERE Address == NULL",
+    "WHERE Address LIKE NULL"
+   ],
+   "a": 0,
+   "e": "Nothing equals NULL; use IS NULL.",
+   "t": "9.7 SELECT"
+  },
+  {
+   "q": "What does ORDER BY title, name DESC do?",
+   "o": [
+    "Titles ascending; names within each title descending",
+    "Both columns descending",
+    "Both columns ascending",
+    "Names ascending; titles descending"
+   ],
+   "a": 0,
+   "e": "Each column carries its own direction; ASC is the default.",
+   "t": "9.7 SELECT"
+  },
+  {
+   "q": "Which join returns all rows from both tables, with NULLs for non-matches?",
+   "o": [
+    "FULL JOIN",
+    "SELF JOIN",
+    "NATURAL JOIN",
+    "CROSS JOIN"
+   ],
+   "a": 0,
+   "e": "FULL JOIN keeps unmatched rows of both sides.",
+   "t": "9.7 SELECT"
+  },
+  {
+   "q": "A view in SQL is best described as a:",
+   "o": [
+    "Virtual table derived from other tables",
+    "Physical copy of a table",
+    "Stored index",
+    "Temporary backup"
+   ],
+   "a": 0,
+   "e": "A view stores no real rows; the base table does.",
+   "t": "9.7 SELECT"
+  },
+  {
+   "q": "WITH CHECK OPTION on a view ensures that:",
+   "o": [
+    "Inserted or updated rows satisfy the view's WHERE clause",
+    "The view uses ORDER BY",
+    "Duplicates are removed",
+    "The view is materialised"
+   ],
+   "a": 0,
+   "e": "It forces writes through the view to satisfy its WHERE condition.",
+   "t": "9.7 SELECT"
+  },
+  {
+   "q": "Among Minus, Intersect, Union and Count, which is an aggregate function?",
+   "o": [
+    "Count",
+    "Minus",
+    "Intersect",
+    "Union"
+   ],
+   "a": 0,
+   "e": "The others are set operators.",
+   "t": "9.8 Functions and Operators"
+  },
+  {
+   "q": "A table has column GAME values (x, y, z, NULL) and SALARY 60000, 80000, NULL. COUNT(GAME) and AVG(SALARY) are:",
+   "o": [
+    "3 and 70000",
+    "4 and 70000",
+    "3 and 46666.67",
+    "4 and 46666.67"
+   ],
+   "a": 0,
+   "e": "Column counts and AVG skip NULLs: AVG = (60000+80000)/2.",
+   "t": "9.8 Functions and Operators"
+  },
+  {
+   "q": "ROUND(65.726, -1) returns:",
+   "o": [
+    "70",
+    "65.7",
+    "66",
+    "60"
+   ],
+   "a": 0,
+   "e": "Negative precision rounds to tens, giving 70.",
+   "t": "9.8 Functions and Operators"
+  },
+  {
+   "q": "Which operator concatenates strings in standard SQL?",
+   "o": [
+    "||",
+    "=>",
+    "+/",
+    "//"
+   ],
+   "a": 0,
+   "e": "|| is concatenation.",
+   "t": "9.8 Functions and Operators"
+  },
+  {
+   "q": "Which of these is NOT a valid SQL:1999 data type?",
+   "o": [
+    "ENUM",
+    "DATE",
+    "BOOLEAN",
+    "TIMESTAMP"
+   ],
+   "a": 0,
+   "e": "ENUM is MySQL-only.",
+   "t": "9.8 Functions and Operators"
+  },
+  {
+   "q": "Valid SQL comment styles are:",
+   "o": [
+    "-- and /* ... */",
+    "// and /* ... */",
+    "# and //",
+    "-- and //"
+   ],
+   "a": 0,
+   "e": "// is not valid SQL.",
+   "t": "9.8 Functions and Operators"
+  },
+  {
+   "q": "Which is NOT a member of ACID?",
+   "o": [
+    "Instance",
+    "Atomicity",
+    "Isolation",
+    "Durability"
+   ],
+   "a": 0,
+   "e": "ACID = Atomicity, Consistency, Isolation, Durability.",
+   "t": "9.9 Transactions"
+  },
+  {
+   "q": "Which is NOT a timestamp-ordering variant?",
+   "o": [
+    "Multilevel",
+    "Total",
+    "Partial",
+    "Multiversion"
+   ],
+   "a": 0,
+   "e": "Variants are total, partial and multiversion.",
+   "t": "9.9 Transactions"
+  },
+  {
+   "q": "In two-phase locking, lock requests occur in the ______ phase and unlocks in the ______ phase.",
+   "o": [
+    "growing; shrinking",
+    "shrinking; growing",
+    "preparing; committing",
+    "read; write"
+   ],
+   "a": 0,
+   "e": "2PL has a growing then a shrinking phase.",
+   "t": "9.9 Transactions"
+  },
+  {
+   "q": "A lost update occurs when:",
+   "o": [
+    "Both transactions read X and then both write X",
+    "A transaction reads uncommitted data",
+    "A transaction crashes after COMMIT",
+    "Two transactions only read X"
+   ],
+   "a": 0,
+   "e": "The R1 R2 W1 W2 trace loses one write. Reading uncommitted data is a dirty read.",
+   "t": "9.9 Transactions"
+  },
+  {
+   "q": "Reading data written by an uncommitted transaction is called a:",
+   "o": [
+    "Dirty read",
+    "Lost update",
+    "Unrepeatable read",
+    "Write skew"
+   ],
+   "a": 0,
+   "e": "Dirty read = reading uncommitted data.",
+   "t": "9.9 Transactions"
+  },
+  {
+   "q": "Conflict serializability of a schedule is tested using a:",
+   "o": [
+    "Precedence graph",
+    "Star schema",
+    "B-tree",
+    "Checkpoint"
+   ],
+   "a": 0,
+   "e": "If the precedence graph is acyclic, the schedule is conflict serializable.",
+   "t": "9.9 Transactions"
+  },
+  {
+   "q": "A checkpoint is the synchronisation point between:",
+   "o": [
+    "The database and the log",
+    "The client and the server",
+    "Two sites",
+    "The index and the table"
+   ],
+   "a": 0,
+   "e": "It limits the recovery work after a crash.",
+   "t": "9.9 Transactions"
+  },
+  {
+   "q": "Which deadlock-prevention scheme is preemptive?",
+   "o": [
+    "Wound-wait",
+    "Wait-die",
+    "Timestamp",
+    "Shadow paging"
+   ],
+   "a": 0,
+   "e": "Wait-die is non-preemptive; wound-wait is preemptive.",
+   "t": "9.9 Transactions"
+  },
+  {
+   "q": "Which index is best suited for range queries?",
+   "o": [
+    "B-tree index",
+    "Hash index",
+    "Star schema",
+    "Sequential file"
+   ],
+   "a": 0,
+   "e": "B-tree = ranges; hash = exact match.",
+   "t": "9.10 Indexing and File Org"
+  },
+  {
+   "q": "DEFRAGMENTATION refers to:",
+   "o": [
+    "Relocating small non-contiguous disk blocks into contiguous ones",
+    "Splitting a database across sites",
+    "Removing duplicate rows",
+    "Normalising a table"
+   ],
+   "a": 0,
+   "e": "Do not confuse with data fragmentation in distributed databases.",
+   "t": "9.10 Indexing and File Org"
+  },
+  {
+   "q": "ISAM stands for:",
+   "o": [
+    "Indexed Sequential Access Method",
+    "Indexed Serial Access Model",
+    "Integrated Sequential Access Method",
+    "Indirect Sequential Access Mode"
+   ],
+   "a": 0,
+   "e": "ISAM = Indexed Sequential Access Method.",
+   "t": "9.10 Indexing and File Org"
+  }
+ ],
+ "tf": [
+  {
+   "s": "The instance of a database is its overall design.",
+   "a": false,
+   "n": "The schema is the design; the instance is the state at a point in time."
+  },
+  {
+   "s": "Hierarchical is the oldest data model, followed by network and relational.",
+   "a": true,
+   "n": "That is the historical order."
+  },
+  {
+   "s": "In a relation, degree is the number of tuples and cardinality is the number of attributes.",
+   "a": false,
+   "n": "Degree = attributes (columns); cardinality = tuples (rows)."
+  },
+  {
+   "s": "A superkey must always be a minimal set of attributes.",
+   "a": false,
+   "n": "Minimality is required for a candidate key, not a superkey."
+  },
+  {
+   "s": "Nulls reduce the space requirement of an RDBMS.",
+   "a": false,
+   "n": "Nulls do not reduce space."
+  },
+  {
+   "s": "A weak entity is drawn with a double rectangle.",
+   "a": true,
+   "n": "Its identifying relationship is a double diamond."
+  },
+  {
+   "s": "Higher normal forms mean less redundancy.",
+   "a": true,
+   "n": "4NF is more immune to inconsistencies than 3NF."
+  },
+  {
+   "s": "UPDATE and INSERT are DDL commands.",
+   "a": false,
+   "n": "They are DML; DDL = CREATE, ALTER, DROP, TRUNCATE."
+  },
+  {
+   "s": "HAVING needs GROUP BY, and HAVING executes before WHERE.",
+   "a": false,
+   "n": "HAVING works with GROUP BY, but runs after WHERE."
+  },
+  {
+   "s": "BETWEEN 10 AND 20 includes both 10 and 20.",
+   "a": true,
+   "n": "BETWEEN is inclusive at both ends."
+  },
+  {
+   "s": "NULL <= NULL evaluates to TRUE in SQL.",
+   "a": false,
+   "n": "It evaluates to UNKNOWN; only NULL IS NULL is TRUE."
+  },
+  {
+   "s": "A SQL:1999 view definition may use ORDER BY.",
+   "a": false,
+   "n": "Views may use subqueries and aggregates but not ORDER BY."
+  },
+  {
+   "s": "An exclusive lock allows both reading and writing.",
+   "a": true,
+   "n": "Shared lock = read only; exclusive = read and write."
+  },
+  {
+   "s": "DROP TABLE removes both the data and the structure of the table.",
+   "a": true,
+   "n": "DELETE removes only rows; DROP removes the table itself."
+  }
+ ],
+ "fill": [
+  {
+   "q": "The database language used by MySQL, Informix and SQL Server is ______.",
+   "d": "SQL",
+   "alts": "sql"
+  },
+  {
+   "q": "CRUD stands for Create, Read, Update and ______.",
+   "d": "Delete",
+   "alts": "delete"
+  },
+  {
+   "q": "The ER-model term for the partial key of a weak entity set is the ______.",
+   "d": "Discriminator",
+   "alts": "discriminator"
+  },
+  {
+   "q": "The SQL command used to give access rights, e.g. SELECT on Customers to a user, is ______.",
+   "d": "GRANT",
+   "alts": "grant"
+  },
+  {
+   "q": "The DDL command that removes all rows quickly but keeps the table structure is ______.",
+   "d": "TRUNCATE",
+   "alts": "truncate~truncatetable"
+  },
+  {
+   "q": "The default sort order of ORDER BY is ______ (ascending/descending).",
+   "d": "Ascending",
+   "alts": "ascending~asc"
+  },
+  {
+   "q": "The SQL keyword that makes the changes of a transaction permanent is ______.",
+   "d": "COMMIT",
+   "alts": "commit"
+  },
+  {
+   "q": "A shared lock allows a transaction to only ______ the data item.",
+   "d": "Read",
+   "alts": "read"
+  },
+  {
+   "q": "A database design approach in which design starts from the whole and goes down to details is called ______-down.",
+   "d": "Top",
+   "alts": "top"
+  },
+  {
+   "q": "In two-phase locking, the phase in which locks are released is called the ______ phase.",
+   "d": "Shrinking",
+   "alts": "shrinking"
+  },
+  {
+   "q": "The ER-model term for treating a relationship as an entity is ______.",
+   "d": "Aggregation",
+   "alts": "aggregation"
+  },
+  {
+   "q": "The data warehouse is used for ______ (analysis), whereas operational databases are used for OLTP.",
+   "d": "OLAP",
+   "alts": "olap"
+  },
+  {
+   "q": "The SQL join of a table with itself is called a ______ join.",
+   "d": "Self",
+   "alts": "self"
+  }
+ ]
+}

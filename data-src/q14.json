@@ -1,0 +1,270 @@
+{
+ "mcq": [
+  {
+   "q": "Internet etiquette is commonly referred to as:",
+   "o": [
+    "Netiquette",
+    "Cyber ethics",
+    "Web manners",
+    "Digital conduct"
+   ],
+   "a": 0,
+   "e": "Netiquette = network + etiquette.",
+   "t": "15.1 Netiquette and Digital Citizenship"
+  },
+  {
+   "q": "Which is good netiquette in an online forum?",
+   "o": [
+    "Using proper grammar and punctuation",
+    "Sharing others' personal information",
+    "Ignoring thread rules",
+    "Posting spam links"
+   ],
+   "a": 0,
+   "e": "The others are netiquette violations.",
+   "t": "15.1 Netiquette and Digital Citizenship"
+  },
+  {
+   "q": "Before posting a comment, you should ensure it is:",
+   "o": [
+    "Respectful and relevant",
+    "Long and detailed",
+    "Humorous and viral",
+    "Anonymous and brief"
+   ],
+   "a": 0,
+   "e": "Comments should be respectful and relevant.",
+   "t": "15.1 Netiquette and Digital Citizenship"
+  },
+  {
+   "q": "The main privacy concern with Instant Messaging applications is:",
+   "o": [
+    "Free calls",
+    "Nice interface",
+    "Data security",
+    "Fast delivery"
+   ],
+   "a": 2,
+   "e": "Whether messages and personal data are protected from interception is data security.",
+   "t": "15.1 Netiquette and Digital Citizenship"
+  },
+  {
+   "q": "Which statement about social media is correct?",
+   "o": [
+    "Children's sharing must be monitored at all times",
+    "Social media addiction does not affect studies",
+    "Rumours and fake news cannot risk law and order",
+    "Children need no monitoring online"
+   ],
+   "a": 0,
+   "e": "The other options wrongly deny real risks.",
+   "t": "15.1 Netiquette and Digital Citizenship"
+  },
+  {
+   "q": "Which of the following is a cyber crime?",
+   "o": [
+    "Stealing an LED monitor",
+    "Posting pictures of people online without their permission",
+    "Buying a computer from a shop",
+    "Accessing your own bank account online"
+   ],
+   "a": 1,
+   "e": "The means (electronic) decides. Stealing a monitor is plain theft.",
+   "t": "15.2 Cyber Crime and Malicious Software"
+  },
+  {
+   "q": "Gaining illegal entry to computer files through remote terminals or microcomputers is called:",
+   "o": [
+    "Hacking",
+    "Spoofing",
+    "Netiquette",
+    "Phishing"
+   ],
+   "a": 0,
+   "e": "This is the definition of hacking.",
+   "t": "15.2 Cyber Crime and Malicious Software"
+  },
+  {
+   "q": "Perverse software is another name for:",
+   "o": [
+    "Malicious software",
+    "Application software",
+    "System software",
+    "Open-source software"
+   ],
+   "a": 0,
+   "e": "Perverse software = malware.",
+   "t": "15.2 Cyber Crime and Malicious Software"
+  },
+  {
+   "q": "Which malware does not perform any destructive action directly but only consumes system resources?",
+   "o": [
+    "Virus",
+    "Trojan",
+    "Worm",
+    "Spyware"
+   ],
+   "a": 2,
+   "e": "A worm self-replicates across the network, consuming resources.",
+   "t": "15.2 Cyber Crime and Malicious Software"
+  },
+  {
+   "q": "In cyber security, the law provides which remedy?",
+   "o": [
+    "An apology",
+    "Imprisonment",
+    "Warning only",
+    "Community service only"
+   ],
+   "a": 1,
+   "e": "Remedy is imprisonment (and fines).",
+   "t": "15.3 Cyber Law, the IT Act and Data Protection"
+  },
+  {
+   "q": "Under the Digital Personal Data Protection Act, 2023, a 'Child' is an individual who has not completed the age of:",
+   "o": [
+    "Fourteen years",
+    "Sixteen years",
+    "Eighteen years",
+    "Twenty-one years"
+   ],
+   "a": 2,
+   "e": "The Act defines child as under eighteen.",
+   "t": "15.3 Cyber Law, the IT Act and Data Protection"
+  },
+  {
+   "q": "The e-commerce model selling products or services online directly from producer to consumer without an intermediary is:",
+   "o": [
+    "Brick-and-mortar",
+    "Online direct marketing",
+    "Wholesale trading",
+    "Barter exchange"
+   ],
+   "a": 1,
+   "e": "Brick-and-mortar is a physical shop.",
+   "t": "15.3 Cyber Law, the IT Act and Data Protection"
+  },
+  {
+   "q": "Which term describes the right that enables a creator or owner to earn recognition or financial benefit from a creation or invention?",
+   "o": [
+    "Copyright",
+    "Intellectual property right",
+    "Trademark",
+    "Netiquette"
+   ],
+   "a": 1,
+   "e": "IPR is the umbrella term; copyright covers only creative works.",
+   "t": "15.4 Intellectual Property Rights"
+  },
+  {
+   "q": "Which right protects inventions?",
+   "o": [
+    "Copyright",
+    "Trademark",
+    "Patent",
+    "Netiquette"
+   ],
+   "a": 2,
+   "e": "Patent protects inventions; copyright protects creative works; trademark protects brands.",
+   "t": "15.4 Intellectual Property Rights"
+  },
+  {
+   "q": "Irreparable computers and other electronic goods are known as:",
+   "o": [
+    "Electronic waste",
+    "Scrap software",
+    "Perverse waste",
+    "Digital debris"
+   ],
+   "a": 0,
+   "e": "They are called e-waste.",
+   "t": "15.5 E-Waste Management"
+  },
+  {
+   "q": "Exposure variability in e-waste handling comes mainly from the:",
+   "o": [
+    "Colour of the device",
+    "Type of e-waste",
+    "Age of the worker",
+    "Country of purchase"
+   ],
+   "a": 1,
+   "e": "Different devices carry different hazardous materials.",
+   "t": "15.5 E-Waste Management"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Insults, personal attacks and spam are netiquette violations.",
+   "a": true,
+   "n": "They are all wrong online behaviour."
+  },
+  {
+   "s": "Stealing an LED monitor is a cyber crime.",
+   "a": false,
+   "n": "False: it is ordinary theft; the means, not the object, decides."
+  },
+  {
+   "s": "A virus needs a host program, whereas a worm self-replicates without a host.",
+   "a": true,
+   "n": "Worm spreads over the network without a host."
+  },
+  {
+   "s": "Hacking is an offence under the IT Act only if damage follows.",
+   "a": false,
+   "n": "False: unauthorised access is an offence whether or not damage follows."
+  },
+  {
+   "s": "Under the DPDP Act 2023, digital personal data means data in physical form.",
+   "a": false,
+   "n": "False: it means data in digital form."
+  },
+  {
+   "s": "Patents are granted for a fixed period, typically 20 years.",
+   "a": true,
+   "n": "After the term the work enters the public domain."
+  },
+  {
+   "s": "Copyright protects inventions.",
+   "a": false,
+   "n": "False: copyright protects creative works; patents protect inventions."
+  },
+  {
+   "s": "E-Waste (Management) Rules 2016 include fluorescent and mercury-containing material.",
+   "a": true,
+   "n": "Both are included."
+  }
+ ],
+ "fill": [
+  {
+   "q": "The privacy concern with Instant Messaging applications is data ______.",
+   "d": "security",
+   "alts": "security"
+  },
+  {
+   "q": "Perverse software is another name for ______ software.",
+   "d": "malicious",
+   "alts": "malicious~malware"
+  },
+  {
+   "q": "A ______ consumes system resources by self-replicating over the network without a host.",
+   "d": "worm",
+   "alts": "worm"
+  },
+  {
+   "q": "Under the DPDP Act 2023 a child has not completed the age of ______ years.",
+   "d": "eighteen",
+   "alts": "18~eighteen"
+  },
+  {
+   "q": "IPR rights are granted to the creator or inventor for a certain ______ of time.",
+   "d": "period",
+   "alts": "period"
+  },
+  {
+   "q": "Irreparable computers and other electronic goods are called ______ waste.",
+   "d": "electronic",
+   "alts": "electronic~ewaste"
+  }
+ ]
+}

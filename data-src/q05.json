@@ -1,0 +1,39 @@
+{
+"mcq":[
+{"q":"In Python interactive mode, what does the >>> prompt indicate?","o":["The interpreter is ready to take the next instruction","A shift operator is being applied","A comment has started","A block of code is being continued"],"a":0,"e":"The >>> is the shell prompt showing the interpreter is ready. A continuation line is shown with three dots, not >>>.","t":"6.1 Python Basics"},
+{"q":"Which symbol is used to start a single-line comment in Python?","o":["//","#","/*","--"],"a":1,"e":"Python comments start with #; they improve readability and are ignored by the interpreter.","t":"6.1 Python Basics"},
+{"q":"Which statement about Python identifiers is correct?","o":["They cannot contain an underscore","They may start with a digit","They have a maximum length limit","They can contain an underscore"],"a":3,"e":"An identifier can contain the underscore. It cannot be a keyword or start with a digit, and it has no length restriction.","t":"6.1 Identifiers"},
+{"q":"How does Python define a block of statements?","o":["Curly braces { }","begin and end keywords","Colon and indentation","Parentheses ( )"],"a":2,"e":"Python uses a colon to open a block and indentation to show which lines belong to it, not braces.","t":"6.1 Python Basics"},
+{"q":"Which Python collection is similar to a list but is immutable?","o":["Set","Dictionary","List","Tuple"],"a":3,"e":"A tuple is an immutable list-like sequence; elements cannot be added, removed or altered after creation.","t":"6.2 Data Types and Collections"},
+{"q":"Which collection is unordered and does not allow duplicate elements?","o":["List","Tuple","Set","Dictionary"],"a":2,"e":"A set { } is unordered and holds unique elements. Lists and tuples allow duplicates.","t":"6.2 Data Types and Collections"},
+{"q":"In a Python dictionary, which statement is true?","o":["Keys must be unique but values can repeat","Values must be unique but keys can repeat","Both keys and values must be unique","Neither keys nor values need be unique"],"a":0,"e":"A dictionary organises information by key association; keys must be unique while values may be repeated.","t":"6.2 Dictionary"},
+{"q":"Which list method adds an element at the END of the list?","o":["insert()","pop()","append()","index()"],"a":2,"e":"append() adds at the end. pop() removes, insert(i, x) places anywhere and index() finds a position.","t":"6.2 List methods"},
+{"q":"Given course = \"l\", \"m\", \"n\", \"o\" in Python, what is the type of course and how many elements does it have?","o":["List with 4 elements","Tuple with 4 elements","Set with 4 elements","String with 7 characters"],"a":1,"e":"Parentheses are optional when assigning, so comma-separated values form a tuple of four elements.","t":"6.2 Tuple"},
+{"q":"What does the statement del tuple_name do for a tuple?","o":["Deletes only the last element","Raises an error because tuples are immutable","Deletes the entire tuple","Empties the tuple but keeps the name"],"a":2,"e":"Elements cannot be changed, but del removes the whole tuple object.","t":"6.2 Tuple"},
+{"q":"What is printed?\na = 20\nb = 35\nif a >= b:\n    print(\"Yes\")\nelse:\n    print(\"No\")","o":["Yes","No","Yes and No","Error"],"a":1,"e":"20 >= 35 is false, so the else branch runs and prints No.","t":"6.3 Control Flow"},
+{"q":"Which of these are the logical operators in Python?","o":["&&, ||, !","and, or, not","in, not in","is, is not"],"a":1,"e":"Python logical operators are the words and, or, not. in/not in are membership and is is identity.","t":"6.3 Operators"},
+{"q":"What does range(n) supply in a Python for loop?","o":["1 to n","0 to n","1 to n-1","0 to n-1"],"a":3,"e":"range(n) gives the values 0 up to n-1.","t":"6.3 Loops"},
+{"q":"Which string method returns the string with leading and trailing white spaces removed?","o":["split()","capitalize()","strip()","pow()"],"a":2,"e":"strip() trims both ends. split() returns a list and capitalize() changes case.","t":"6.4 Strings"},
+{"q":"What does max() return when applied to a string such as \"Hello\"?","o":["The first character, 'H'","The character with the highest ASCII value, 'o'","The length of the string","The character that occurs most often, 'l'"],"a":1,"e":"max() on a string gives the character with the highest ASCII code; 'o' (111) is higher than 'H', 'e' and 'l'.","t":"6.4 Built-in Functions"},
+{"q":"What does ord('A') return?","o":["65","97","'A'","1"],"a":0,"e":"ord() converts a character to its integer code; ord('A') = 65, and chr(65) gives back 'A'.","t":"6.4 Built-in Functions"},
+{"q":"Which file mode opens a file for both reading and writing with the pointer at the start, without truncating it?","o":["w+","a+","r","r+"],"a":3,"e":"r+ reads and writes from the start without truncating. w+ truncates first and a+ appends with pointer at the end.","t":"6.5 File Handling"},
+{"q":"Which operation on a file does NOT need actual I/O?","o":["Reading","Seek (repositioning)","Truncating","Deleting"],"a":1,"e":"seek() only moves the file-offset pointer; reading, truncating and deleting touch the data.","t":"6.5 File Handling"}
+],
+"tf":[
+{"s":"In Python, a variable must be declared with its type before use.","a":false,"n":"Python is dynamically typed; the type is attached to the value and a name may later hold another type."},
+{"s":"A tuple can be used as a dictionary key whereas a list cannot.","a":true,"n":"A tuple is immutable, so it can serve as a key; a list is mutable."},
+{"s":"Python is a case-sensitive language.","a":true,"n":"Python is interpreted, dynamically typed and case-sensitive."},
+{"s":"A Python identifier cannot be longer than 31 characters.","a":false,"n":"Identifiers have no length restriction."},
+{"s":"len() works only on strings.","a":false,"n":"len() returns the size of any sequence such as a list, tuple, dict or set, as well as the number of characters in a string."},
+{"s":"Files with extensions such as .txt, .py and .csv are text files.","a":true,"n":"They are human-readable byte streams; binary files need the b modes."},
+{"s":"Dictionary iteration follows insertion order in Python 3.7 and later.","a":true,"n":"Looping over a dict yields keys in the order they were inserted."},
+{"s":"Mode w opens a file for writing without erasing its existing contents.","a":false,"n":"w truncates the file; use a to append."}
+],
+"fill":[
+{"q":"The symbol ______ is used to begin a comment in Python.","d":"#","alts":"#~hash"},
+{"q":"A list-like Python sequence that cannot be altered after creation is called a ______.","d":"tuple","alts":"tuple"},
+{"q":"The ______ method adds an element at the end of a Python list.","d":"append()","alts":"append~append()"},
+{"q":"The function that converts a character to its integer code is ______().","d":"ord","alts":"ord~ord()"},
+{"q":"File mode ______ opens a file for reading and writing from the start without truncating it.","d":"r+","alts":"r+"}
+]
+}

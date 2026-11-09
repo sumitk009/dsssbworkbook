@@ -1,0 +1,44 @@
+{
+"mcq":[
+{"q":"Artificial Intelligence is best described as:","o":["Making a machine perform tasks that would need intelligence if a person did them","Putting a person's intelligence into a computer","Adding more memory to a computer","Making computers run faster"],"a":0,"e":"AI means getting a machine to reason, learn, perceive or understand language. It is not about adding memory.","t":"14.1 Artificial Intelligence"},
+{"q":"FOPL in AI stands for:","o":["First Order Predicate Logic","Fast Order Processing Language","Formal Object Programming Logic","First Object Propositional Learning"],"a":0,"e":"FOPL extends propositional logic with objects, predicates and quantifiers.","t":"14.1 Artificial Intelligence"},
+{"q":"Which kind of statistics helps make predictions from data by generalising from a sample to the population?","o":["Inferential statistics","Descriptive statistics","Summary statistics","Frequency tables"],"a":0,"e":"Descriptive statistics only summarises collected data; inferential statistics predicts.","t":"14.1 Artificial Intelligence"},
+{"q":"Which category of AI acts intelligently in only one limited domain, with no awareness of what it is doing?","o":["ANI","AGI","ASI","FOPL"],"a":0,"e":"Artificial Narrow Intelligence describes today's systems; AGI is human-level and ASI is beyond human.","t":"14.1 Artificial Intelligence"},
+{"q":"Artificial Super Intelligence (ASI) refers to AI that is:","o":["General and strong, smarter than humans","Limited to one domain","Equal to human breadth across domains","Dependent on labelled data only"],"a":0,"e":"ASI is AI smarter than humans; AGI is only human-level.","t":"14.1 Artificial Intelligence"},
+{"q":"In AI ethics, the standard metric that measures how many users in a database share a particular attribute is:","o":["K-anonymity","L-diversity","Deepfake","Data privacy"],"a":0,"e":"L-diversity extends the idea by merging several sensitive attributes; data privacy is the data-vs-performance trade-off.","t":"14.1 Artificial Intelligence"},
+{"q":"Data privacy in AI ethics is described as the trade-off between:","o":["The amount of data collected and the performance of a product or service","Speed and memory","Training time and accuracy of labels","Hardware cost and software cost"],"a":0,"e":"Collecting more data may improve performance but harms privacy.","t":"14.1 Artificial Intelligence"},
+{"q":"A common issue with AI bias is that many AI models are:","o":["Black boxes whose internal decision-making is hard to interpret","Always fully transparent","Deepfakes","Based only on K-anonymity"],"a":0,"e":"Black-box models are opaque; deepfakes and K-anonymity are different concepts.","t":"14.1 Artificial Intelligence"},
+{"q":"Which type of learning uses inputs only, without explicit labels, to find patterns or groupings?","o":["Unsupervised learning","Supervised learning","Reinforcement learning","Inferential learning"],"a":0,"e":"Supervised learning has labelled data; reinforcement learns from rewards; unsupervised finds patterns, e.g. clustering.","t":"14.2 Machine Learning"},
+{"q":"Which learning type learns a policy by trial and error using rewards and penalties?","o":["Reinforcement learning","Supervised learning","Unsupervised learning","Clustering"],"a":0,"e":"Reinforcement learning is driven by rewards and penalties from actions.","t":"14.2 Machine Learning"},
+{"q":"In deep learning, the vanishing gradient problem means that:","o":["Gradients become too small, slowing down learning","Gradients become too large","Labels disappear from data","The model has no hidden layers"],"a":0,"e":"Gradients shrink as they are back-propagated through many layers; the too-large case is exploding gradients.","t":"14.2 Machine Learning"},
+{"q":"In an expert system, who acts as the intermediary that elicits and encodes the expert's knowledge?","o":["Knowledge engineer","Inference engine","User interface","Domain specialist"],"a":0,"e":"The knowledge engineer sits between the specialist and the system; the inference engine only applies rules.","t":"14.3 Expert Systems"},
+{"q":"Which is NOT a characteristic of an expert system?","o":["Information produced by analysis of operational and external data","Interaction directed from machine to user","A narrow domain of knowledge","A knowledge base with an inference engine"],"a":0,"e":"Analysing operational and external data describes an MIS/DSS, not an expert system.","t":"14.3 Expert Systems"},
+{"q":"What is the biggest adoption challenge of the Internet of Things (IoT)?","o":["Security","Deepfakes","Black boxes","Vanishing gradients"],"a":0,"e":"Many weakly-protected devices create a large attack surface.","t":"14.4 IoT, Industry 4.0, AR/VR"},
+{"q":"Which is the lightweight publish/subscribe protocol used for low-power IoT devices?","o":["MQTT","HTTP","FTP","SMTP"],"a":0,"e":"MQTT has tiny headers; HTTP and FTP are too heavy for such devices.","t":"14.4 IoT, Industry 4.0, AR/VR"},
+{"q":"Which of the following is NOT an IoT platform?","o":["Flipkart","Amazon Web Services","Microsoft Azure","Azure IoT"],"a":0,"e":"Flipkart is an e-commerce company, not an IoT platform.","t":"14.4 IoT, Industry 4.0, AR/VR"},
+{"q":"Haptic technology in AR/VR provides:","o":["Tactile feedback such as forces and vibrations","Better screen resolution","Audio surround sound","Faster network speed"],"a":0,"e":"Haptics lets users feel virtual interactions rather than just see or hear them.","t":"14.4 IoT, Industry 4.0, AR/VR"},
+{"q":"Industry 4.0 is the era marked by:","o":["IoT, real-time data and cyber-physical systems","Steam engines","Mass production using electricity","The introduction of computers"],"a":0,"e":"It is the fourth industrial revolution after steam, electricity and computers.","t":"14.4 IoT, Industry 4.0, AR/VR"},
+{"q":"Which are the key features of cloud computing?","o":["Scalability, self-service and pay-per-use","Fixed capacity, manual setup and flat fee","Offline access only","Single-user hardware ownership"],"a":0,"e":"Resources scale on demand, users provision them themselves, and pay only for use.","t":"14.5 Cloud Computing"},
+{"q":"A virtual machine with a specified CPU, memory and disk is an example of which cloud model?","o":["IaaS","PaaS","SaaS","MIS"],"a":0,"e":"A bare VM is raw infrastructure (IaaS). PaaS provides OS plus web and database servers.","t":"14.5 Cloud Computing"},
+{"q":"Which cloud service model delivers a ready environment with OS, web server and database server?","o":["PaaS","IaaS","SaaS","ANI"],"a":0,"e":"PaaS gives a ready platform; SaaS gives the finished application.","t":"14.5 Cloud Computing"}
+],
+"tf":[
+{"s":"AI means putting a person's intelligence into a computer by adding more memory.","a":false,"n":"False. AI is making a machine perform tasks that would need intelligence if a person did them."},
+{"s":"Descriptive statistics helps make predictions from data.","a":false,"n":"False. Inferential statistics predicts; descriptive statistics only summarises collected data."},
+{"s":"Artificial General Intelligence (AGI) acts like a smart human across domains.","a":true,"n":"True. AGI is human-level breadth."},
+{"s":"L-diversity extends K-anonymity by merging several sensitive attributes.","a":true,"n":"True. K-anonymity counts users sharing an attribute; L-diversity extends this idea."},
+{"s":"In supervised learning, labels are not given with the inputs.","a":false,"n":"False. Supervised learning uses inputs with labels; unsupervised has no explicit labels."},
+{"s":"The vanishing gradient problem is when gradients become too large during back-propagation.","a":false,"n":"False. Vanishing gradients are too small; too large is exploding gradients."},
+{"s":"A knowledge engineer elicits and encodes an expert's knowledge into an expert system.","a":true,"n":"True. The knowledge engineer is the intermediary between specialist and system."},
+{"s":"HTTP is the lightweight protocol preferred for IoT devices.","a":false,"n":"False. MQTT is the lightweight IoT protocol; HTTP is too heavy."},
+{"s":"A bare virtual machine with CPU, memory and disk is PaaS.","a":false,"n":"False. It is IaaS (Infrastructure as a Service)."}
+],
+"fill":[
+{"q":"AI models whose internal decision-making is hard to interpret are called ______ models.","d":"black box","alts":"blackbox"},
+{"q":"The knowledge-representation logic that supports objects, predicates and quantifiers is called ______ (full form).","d":"First Order Predicate Logic","alts":"firstorderpredicatelogic~fopl"},
+{"q":"The biggest challenge in IoT adoption is ______.","d":"Security","alts":"security"},
+{"q":"______ technology provides tactile feedback in AR/VR.","d":"Haptic","alts":"haptic"},
+{"q":"The lightweight publish/subscribe IoT messaging protocol is ______.","d":"MQTT","alts":"mqtt"},
+{"q":"The cloud model that delivers the finished application over the network is abbreviated ______.","d":"SaaS","alts":"saas"}
+]
+}

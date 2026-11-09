@@ -1,0 +1,462 @@
+{
+ "mcq": [
+  {
+   "q": "Which of the following is NOT a required property of an algorithm?",
+   "o": [
+    "Definiteness",
+    "Finiteness",
+    "Effectiveness",
+    "Producing zero outputs"
+   ],
+   "a": 3,
+   "e": "An algorithm must produce at least one output, so producing no output is not a property.",
+   "t": "4.1 Problem Solving and Algorithms"
+  },
+  {
+   "q": "An algorithm's instructions must be clear and unambiguous. Which property is this?",
+   "o": [
+    "Definiteness",
+    "Finiteness",
+    "Effectiveness",
+    "Efficiency"
+   ],
+   "a": 0,
+   "e": "Definiteness means each instruction is clear and unambiguous. Finiteness is about termination.",
+   "t": "4.1 Problem Solving and Algorithms"
+  },
+  {
+   "q": "Which property says an algorithm must terminate after a finite number of instructions in all cases?",
+   "o": [
+    "Input",
+    "Definiteness",
+    "Finiteness",
+    "Effectiveness"
+   ],
+   "a": 2,
+   "e": "Finiteness requires termination after finitely many steps.",
+   "t": "4.1 Problem Solving and Algorithms"
+  },
+  {
+   "q": "Space complexity of an algorithm refers to:",
+   "o": [
+    "The running time of the algorithm",
+    "The amount of memory required to execute it",
+    "The number of instructions written",
+    "The number of outputs produced"
+   ],
+   "a": 1,
+   "e": "Space complexity is memory needed; running time is time complexity.",
+   "t": "4.1 Problem Solving and Algorithms"
+  },
+  {
+   "q": "Which statement about randomised algorithms is correct?",
+   "o": [
+    "Las Vegas algorithms may give wrong answers but run in fixed time",
+    "Las Vegas algorithms always give the correct output, but running time depends on the randomiser",
+    "Monte Carlo algorithms always give correct output with variable time",
+    "Las Vegas algorithms do not depend on a randomiser for execution time"
+   ],
+   "a": 1,
+   "e": "Las Vegas: guaranteed correct answer, variable time. Monte Carlo is the mirror: fixed (polynomial) time, possible error.",
+   "t": "4.1 Problem Solving and Algorithms"
+  },
+  {
+   "q": "Algorithms that always run in polynomial time but may return erroneous answers are called:",
+   "o": [
+    "Las Vegas algorithms",
+    "Monte Carlo algorithms",
+    "Greedy algorithms",
+    "Backtracking algorithms"
+   ],
+   "a": 1,
+   "e": "Monte Carlo algorithms trade correctness for guaranteed time.",
+   "t": "4.1 Problem Solving and Algorithms"
+  },
+  {
+   "q": "Which traversal explores as far as possible along each branch before backtracking?",
+   "o": [
+    "BFS",
+    "DFS",
+    "Level-order traversal",
+    "Round robin"
+   ],
+   "a": 1,
+   "e": "DFS goes deep then backtracks (stack); BFS goes level by level (queue).",
+   "t": "4.1 Problem Solving and Algorithms"
+  },
+  {
+   "q": "Which of these is a subprogram?",
+   "o": [
+    "Only a function",
+    "Only a subroutine",
+    "Both functions and subroutines",
+    "Neither; subprograms are macros"
+   ],
+   "a": 2,
+   "e": "Subprograms include both functions and subroutines.",
+   "t": "4.1 Problem Solving and Algorithms"
+  },
+  {
+   "q": "In computational thinking, which skill does efficiently solving a Sudoku rest on most?",
+   "o": [
+    "Decomposition",
+    "Pattern recognition",
+    "Abstraction of data",
+    "Sorting"
+   ],
+   "a": 1,
+   "e": "Sudoku solving relies mainly on pattern recognition.",
+   "t": "4.1 Problem Solving and Algorithms"
+  },
+  {
+   "q": "Which flowchart symbol represents a decision?",
+   "o": [
+    "Oval",
+    "Parallelogram",
+    "Diamond",
+    "Rectangle"
+   ],
+   "a": 2,
+   "e": "A diamond denotes a decision/branch; the rectangle is process.",
+   "t": "4.2 Flowcharts and Pseudocode"
+  },
+  {
+   "q": "In a flowchart, a parallelogram is used for:",
+   "o": [
+    "Start/End",
+    "Input/Output",
+    "Process",
+    "Connector"
+   ],
+   "a": 1,
+   "e": "Parallelogram = input/output; oval = start/end.",
+   "t": "4.2 Flowcharts and Pseudocode"
+  },
+  {
+   "q": "Which flowchart symbol is used to link one part of a flowchart with another?",
+   "o": [
+    "Circle",
+    "Oval",
+    "Diamond",
+    "Rectangle"
+   ],
+   "a": 0,
+   "e": "The circle is the connector symbol.",
+   "t": "4.2 Flowcharts and Pseudocode"
+  },
+  {
+   "q": "Among algorithm, flowchart and pseudocode, which is the easiest to transform into a computer program?",
+   "o": [
+    "Algorithm",
+    "Flowchart",
+    "Pseudocode",
+    "Machine code"
+   ],
+   "a": 2,
+   "e": "Pseudocode is written in code-like plain language, so it converts most easily.",
+   "t": "4.2 Flowcharts and Pseudocode"
+  },
+  {
+   "q": "Which statement about the sequence control construct is correct?",
+   "o": [
+    "Statements may execute in any order",
+    "Each statement is executed once, in written order, with none repeated",
+    "Statements are repeated until a condition fails",
+    "It chooses between two branches"
+   ],
+   "a": 1,
+   "e": "Sequence = once each, in order. Repetition is loop; branching is selection.",
+   "t": "4.2 Flowcharts and Pseudocode"
+  },
+  {
+   "q": "Which of the following is NOT true of a compiler?",
+   "o": [
+    "It translates source code into object code",
+    "It reads the entire source program",
+    "It reads and executes the program line by line",
+    "It is not involved in program execution"
+   ],
+   "a": 2,
+   "e": "Line-by-line translation and execution is an interpreter's behaviour.",
+   "t": "4.3 Language Translators"
+  },
+  {
+   "q": "Which tool translates and executes a program one statement at a time?",
+   "o": [
+    "Compiler",
+    "Assembler",
+    "Linker",
+    "Interpreter"
+   ],
+   "a": 3,
+   "e": "An interpreter translates and executes each statement one at a time.",
+   "t": "4.3 Language Translators"
+  },
+  {
+   "q": "In the translation pipeline, which component places the executable in memory for execution?",
+   "o": [
+    "Compiler",
+    "Linker",
+    "Loader",
+    "Assembler"
+   ],
+   "a": 2,
+   "e": "Compiler gives object code, linker makes an executable, loader puts it in memory.",
+   "t": "4.3 Language Translators"
+  },
+  {
+   "q": "In the compiler phases, the semantic analyser gathers type information and saves it in the syntax tree or:",
+   "o": [
+    "Symbol table",
+    "Token stream",
+    "Object file",
+    "Stack frame"
+   ],
+   "a": 0,
+   "e": "Type information is stored in the symbol table for intermediate code generation.",
+   "t": "4.3 Language Translators"
+  },
+  {
+   "q": "Which of the following is an assembler directive rather than an executable instruction?",
+   "o": [
+    "MOV",
+    "ORG",
+    "ADD",
+    "JMP"
+   ],
+   "a": 1,
+   "e": "DB, ORG and END are directives; MOV is an executable instruction.",
+   "t": "4.3 Language Translators"
+  },
+  {
+   "q": "Which statement about macros is FALSE?",
+   "o": [
+    "A macro name is used as an operation mnemonic",
+    "Macro calls are replaced by the macro body at assembly time",
+    "A macro is invoked by writing its name with required parameters",
+    "The macro definition also appears in the expanded source code"
+   ],
+   "a": 3,
+   "e": "The definition is consumed; only the expansions appear in the expanded source.",
+   "t": "4.3 Language Translators"
+  },
+  {
+   "q": "Which statement about machine language is FALSE?",
+   "o": [
+    "It is made of 1s and 0s",
+    "It is machine dependent",
+    "It is difficult to program",
+    "It is easy to modify"
+   ],
+   "a": 3,
+   "e": "Machine language is hard to modify.",
+   "t": "4.3 Language Translators"
+  },
+  {
+   "q": "Prolog is an example of which generation of languages?",
+   "o": [
+    "Third generation",
+    "Fourth generation",
+    "Fifth generation",
+    "Second generation"
+   ],
+   "a": 2,
+   "e": "Prolog (and LISP) belong to 5GL, logic and AI languages.",
+   "t": "4.4 Language Generations and Software Types"
+  },
+  {
+   "q": "Which statement about system software is FALSE?",
+   "o": [
+    "It plays a vital role in the effective functioning of the system",
+    "It is typically written in low-level language",
+    "It is written in a high-level language",
+    "Application software is written in high-level languages"
+   ],
+   "a": 2,
+   "e": "System software is typically written in low-level language.",
+   "t": "4.4 Language Generations and Software Types"
+  },
+  {
+   "q": "What happens to automatic variables in each call of a recursive function?",
+   "o": [
+    "They keep values from the previous call",
+    "They are initialised afresh in each call",
+    "They are shared among all calls",
+    "They become global"
+   ],
+   "a": 1,
+   "e": "Each call gets a new activation record, so nothing carries over unless static is used.",
+   "t": "4.5 Variables, Data Types, Scope and Recursion"
+  },
+  {
+   "q": "Which statement about an external (global) variable is true?",
+   "o": [
+    "It is initialised to 0 by default",
+    "It is accessible only in the function that declares it",
+    "It cannot be declared with extern in other functions",
+    "It is destroyed when any function returns"
+   ],
+   "a": 0,
+   "e": "External variables are global, declared with extern elsewhere, and default to 0.",
+   "t": "4.5 Variables, Data Types, Scope and Recursion"
+  },
+  {
+   "q": "A run-time error gives rise to a condition called:",
+   "o": [
+    "Syntax violation",
+    "Exception",
+    "Compile-time warning",
+    "Logic fault"
+   ],
+   "a": 1,
+   "e": "A run-time error such as divide by zero raises an exception.",
+   "t": "4.6 Errors, Debugging and Testing"
+  },
+  {
+   "q": "Loading a program with print statements to reveal the faulty statement is which debugging method?",
+   "o": [
+    "Backtracking",
+    "Cause elimination",
+    "Brute force",
+    "Program slicing"
+   ],
+   "a": 2,
+   "e": "Print-statement debugging is the brute force method.",
+   "t": "4.6 Errors, Debugging and Testing"
+  }
+ ],
+ "tf": [
+  {
+   "s": "An algorithm is dependent on the programming language in which it is coded.",
+   "a": false,
+   "n": "False: an algorithm is language independent."
+  },
+  {
+   "s": "Algorithms are easy to debug because their steps are precise.",
+   "a": true,
+   "n": "Precise steps make correctness easy to check."
+  },
+  {
+   "s": "Efficiency of an algorithm is measured in terms of time and space.",
+   "a": true,
+   "n": "Time complexity and space complexity."
+  },
+  {
+   "s": "Top-down design order is: analyse the problem, write the main module, write remaining modules, connect modules, revise and resequence.",
+   "a": true,
+   "n": "This is the stated top-down order."
+  },
+  {
+   "s": "fork() and join() together make a complete process subroutine.",
+   "a": true,
+   "n": "fork creates, join waits."
+  },
+  {
+   "s": "A diamond-based branch in a flowchart represents the decision structure.",
+   "a": true,
+   "n": "Diamond = decision."
+  },
+  {
+   "s": "A compiler reads the source program line by line.",
+   "a": false,
+   "n": "False: a compiler reads the entire source program."
+  },
+  {
+   "s": "Assembly languages are machine dependent.",
+   "a": true,
+   "n": "Each assembly language is tied to a machine."
+  },
+  {
+   "s": "JIT stands for First-In-Time compiling.",
+   "a": false,
+   "n": "False: JIT is Just-In-Time, compiling intermediate language to machine language before execution."
+  },
+  {
+   "s": "BASIC is an interactive language, and C is typically compiled.",
+   "a": true,
+   "n": "BASIC is interactive; C is compiled while Perl is interpreted."
+  },
+  {
+   "s": "A pseudo-instruction is given to the assembler.",
+   "a": true,
+   "n": "Pseudo-instructions (directives) guide the assembler."
+  },
+  {
+   "s": "A variable has a storage location and a data type.",
+   "a": true,
+   "n": "These are essentials of a variable."
+  },
+  {
+   "s": "A namespace in C++ defines a scope for identifiers.",
+   "a": true,
+   "n": "For example std::cout."
+  },
+  {
+   "s": "A syntax error is caught at compile time.",
+   "a": true,
+   "n": "Syntax errors are grammar violations found at compile time."
+  },
+  {
+   "s": "A semantic (logic) error crashes the program at compile time.",
+   "a": false,
+   "n": "False: it is legal code with wrong meaning, giving wrong output without a crash."
+  },
+  {
+   "s": "Software package is a set of computer programs with the necessary documentation.",
+   "a": true,
+   "n": "Programs plus documentation."
+  }
+ ],
+ "fill": [
+  {
+   "q": "The five properties of an algorithm are input, output, definiteness, finiteness and ______.",
+   "d": "effectiveness",
+   "alts": "effectiveness"
+  },
+  {
+   "q": "______ algorithms always run in polynomial time but may return erroneous answers.",
+   "d": "Monte Carlo",
+   "alts": "montecarlo"
+  },
+  {
+   "q": "In a flowchart, the oval symbol represents ______ and End.",
+   "d": "Start",
+   "alts": "start~terminator~startend"
+  },
+  {
+   "q": "The ______ symbol in a flowchart is a rectangle used for the processing phase.",
+   "d": "Process",
+   "alts": "process~processing"
+  },
+  {
+   "q": "A ______ is a single-line abbreviation for a group of instructions, invoked simply by writing its name.",
+   "d": "macro",
+   "alts": "macro~macros"
+  },
+  {
+   "q": "DB, ORG and END are examples of assembler ______.",
+   "d": "directives",
+   "alts": "directives~directive~pseudoinstructions~pseudoinstruction"
+  },
+  {
+   "q": "A program that translates an assembly-language program into machine language is called an ______.",
+   "d": "assembler",
+   "alts": "assembler"
+  },
+  {
+   "q": "The fifth-generation language asked in exams is ______.",
+   "d": "Prolog",
+   "alts": "prolog"
+  },
+  {
+   "q": "A ______ is a symbolic name given to a memory location whose value can change.",
+   "d": "variable",
+   "alts": "variable"
+  },
+  {
+   "q": "The brute force debugging method loads the program with ______ statements to display intermediate values.",
+   "d": "print",
+   "alts": "print~printf~output"
+  }
+ ]
+}

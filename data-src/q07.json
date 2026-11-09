@@ -1,0 +1,994 @@
+{
+ "mcq": [
+  {
+   "q": "Which of the following is NOT a basic operation on a data structure?",
+   "o": [
+    "Traversal",
+    "Merging",
+    "Encryption",
+    "Searching"
+   ],
+   "a": 2,
+   "e": "Insertion, deletion, traversal, searching, sorting and merging are data-structure operations. Encryption is a security transformation.",
+   "t": "8.1 Classifying Data Structures"
+  },
+  {
+   "q": "Which data structure gives efficient searching, insertion and deletion together, trading extra table space for speed?",
+   "o": [
+    "Hash table",
+    "Stack",
+    "Linked list",
+    "Queue"
+   ],
+   "a": 0,
+   "e": "A hash table gives average O(1) search, insert and delete, a time-space trade-off.",
+   "t": "8.1 Classifying Data Structures"
+  },
+  {
+   "q": "Which pair of data structures are both non-linear?",
+   "o": [
+    "Stack and queue",
+    "Tree and graph",
+    "Array and tree",
+    "Queue and graph"
+   ],
+   "a": 1,
+   "e": "Tree and graph branch, so they are non-linear. Array, stack, queue and linked list are linear.",
+   "t": "8.1 Classifying Data Structures"
+  },
+  {
+   "q": "Which structure is used when processing must be postponed until other conditions are fulfilled?",
+   "o": [
+    "Queue",
+    "Tree",
+    "Stack",
+    "Graph"
+   ],
+   "a": 2,
+   "e": "A stack (LIFO) defers work: the latest postponed item is handled first.",
+   "t": "8.1 Classifying Data Structures"
+  },
+  {
+   "q": "Which of the following can NEVER contain a cycle?",
+   "o": [
+    "Graph",
+    "Circular queue",
+    "Circular linked list",
+    "Tree"
+   ],
+   "a": 3,
+   "e": "A tree is acyclic (n nodes, n-1 edges). Graphs, circular queues and circular lists can have cycles.",
+   "t": "8.1 Classifying Data Structures"
+  },
+  {
+   "q": "Which notation gives an asymptotically tight bound (both upper and lower)?",
+   "o": [
+    "Big-O",
+    "Omega",
+    "Theta",
+    "Little-o"
+   ],
+   "a": 2,
+   "e": "Theta is tight upper and lower bound; Big-O is only an upper bound and Omega a lower bound.",
+   "t": "8.2 Complexity and Asymptotic Notation"
+  },
+  {
+   "q": "What is the order of f(x) = 4x^2 - 5x + 3?",
+   "o": [
+    "O(x)",
+    "O(x^2)",
+    "O(x^3)",
+    "O(1)"
+   ],
+   "a": 1,
+   "e": "Only the fastest-growing term survives and constants are dropped, giving O(x^2).",
+   "t": "8.2 Complexity and Asymptotic Notation"
+  },
+  {
+   "q": "Which ordering of average-case running times is correct, fastest first?",
+   "o": [
+    "Binary search < linear search < quick sort < selection sort",
+    "Linear search < binary search < quick sort < selection sort",
+    "Binary search < quick sort < linear search < selection sort",
+    "Quick sort < binary search < linear search < selection sort"
+   ],
+   "a": 0,
+   "e": "Binary search is O(log n), linear search O(n), quick sort O(n log n), selection sort O(n^2).",
+   "t": "8.2 Complexity and Asymptotic Notation"
+  },
+  {
+   "q": "Which recurrence describes the worst case of quicksort?",
+   "o": [
+    "T(n) = T(n/2) + 1",
+    "T(n) = T(n-1) + Cn",
+    "T(n) = 2T(n/2) + n",
+    "T(n) = T(n/2) + n"
+   ],
+   "a": 1,
+   "e": "T(n) = T(n-1) + Cn gives O(n^2). T(n) = T(n/2) + 1 is binary search.",
+   "t": "8.2 Complexity and Asymptotic Notation"
+  },
+  {
+   "q": "The repeated-squaring routine exponentiate() that halves the exponent each time runs in:",
+   "o": [
+    "Theta(n)",
+    "Theta(n log n)",
+    "Theta(log n)",
+    "Theta(n^2)"
+   ],
+   "a": 2,
+   "e": "Halving the exponent at each step gives Theta(log n) multiplications.",
+   "t": "8.2 Complexity and Asymptotic Notation"
+  },
+  {
+   "q": "A loop runs j = 1; while (j <= n) j = j * 2. How many comparisons of j with n are made?",
+   "o": [
+    "n",
+    "log2 n + 1",
+    "n/2",
+    "2 log2 n"
+   ],
+   "a": 1,
+   "e": "j takes values 1, 2, 4 ... so the test succeeds log2 n + 1 times (counting the doubling steps as in the standard result).",
+   "t": "8.2 Complexity and Asymptotic Notation"
+  },
+  {
+   "q": "Which problem is NOT computable by any algorithm?",
+   "o": [
+    "Halting problem",
+    "Matrix multiplication",
+    "Shortest path",
+    "Sorting"
+   ],
+   "a": 0,
+   "e": "The halting problem is undecidable; no algorithm exists for it.",
+   "t": "8.2 Complexity and Asymptotic Notation"
+  },
+  {
+   "q": "Strassen's matrix multiplication has running time:",
+   "o": [
+    "O(n^3)",
+    "O(n^2.81)",
+    "O(n^2)",
+    "O(n log n)"
+   ],
+   "a": 1,
+   "e": "Strassen uses 7 multiplications, giving exponent log2 7, about n^2.81.",
+   "t": "8.2 Complexity and Asymptotic Notation"
+  },
+  {
+   "q": "N insertions are required but only about sqrt(log N) other operations. Which structure is best?",
+   "o": [
+    "Sorted array",
+    "Unsorted array",
+    "Balanced BST",
+    "Sorted linked list"
+   ],
+   "a": 1,
+   "e": "An unsorted array inserts in O(1); the few other operations hardly matter.",
+   "t": "8.2 Complexity and Asymptotic Notation"
+  },
+  {
+   "q": "How many elements does the array E[-4:1, 6:10] have?",
+   "o": [
+    "20",
+    "24",
+    "30",
+    "36"
+   ],
+   "a": 2,
+   "e": "Rows -4..1 = 6, columns 6..10 = 5, so 6 x 5 = 30.",
+   "t": "8.3 Arrays and Address Calculation"
+  },
+  {
+   "q": "In row-major order, array B[4][5] has base 5000 and element size 2. What is LOC(B[2][3])?",
+   "o": [
+    "5026",
+    "5023",
+    "5013",
+    "5046"
+   ],
+   "a": 0,
+   "e": "5000 + 2 x (2x5 + 3) = 5000 + 26 = 5026.",
+   "t": "8.3 Arrays and Address Calculation"
+  },
+  {
+   "q": "C[3][4][5] is stored row-major, base 3000, element size 1. What is LOC(C[2][3][4])?",
+   "o": [
+    "3059",
+    "3055",
+    "3064",
+    "3047"
+   ],
+   "a": 0,
+   "e": "3000 + ((2x4 + 3) x 5) + 4 = 3000 + 55 + 4 = 3059.",
+   "t": "8.3 Arrays and Address Calculation"
+  },
+  {
+   "q": "In a tri-diagonal matrix stored row-wise in a 1-D array, where is element (i, j)?",
+   "o": [
+    "2i + j - 2",
+    "i + 2j - 2",
+    "3i + j",
+    "i + j - 1"
+   ],
+   "a": 0,
+   "e": "Index = 2i + j - 2, and only 3n - 2 cells are needed.",
+   "t": "8.3 Arrays and Address Calculation"
+  },
+  {
+   "q": "Why does an array enjoy spatial locality?",
+   "o": [
+    "It is stored in one contiguous memory block",
+    "It uses pointers between elements",
+    "It grows dynamically",
+    "It is always sorted"
+   ],
+   "a": 0,
+   "e": "Contiguous storage means touching one element brings its neighbours into the cache.",
+   "t": "8.3 Arrays and Address Calculation"
+  },
+  {
+   "q": "What is the time complexity of deleting the first element of an array of n elements?",
+   "o": [
+    "O(1)",
+    "O(log n)",
+    "O(n)",
+    "O(n^2)"
+   ],
+   "a": 2,
+   "e": "The remaining n - 1 elements must shift, so deletion is O(n).",
+   "t": "8.3 Arrays and Address Calculation"
+  },
+  {
+   "q": "Which statement about a singly linked list is INCORRECT?",
+   "o": [
+    "Its size can grow and shrink dynamically",
+    "Elements are accessed sequentially only",
+    "It allows random and direct access to any element",
+    "The last node's pointer is NULL"
+   ],
+   "a": 2,
+   "e": "Reaching an index costs O(n); random access is the false claim.",
+   "t": "8.4 Linked Lists"
+  },
+  {
+   "q": "Inserting a new node at the head of a singly linked list takes:",
+   "o": [
+    "O(1)",
+    "O(n)",
+    "O(log n)",
+    "O(n log n)"
+   ],
+   "a": 0,
+   "e": "Only the new node's next and the head pointer change.",
+   "t": "8.4 Linked Lists"
+  },
+  {
+   "q": "How many pointers change when a node is inserted between two nodes of a doubly linked list?",
+   "o": [
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "a": 2,
+   "e": "The new node's two pointers plus one pointer in each neighbour make four; a singly list needs two.",
+   "t": "8.4 Linked Lists"
+  },
+  {
+   "q": "A deque built on a singly linked list deletes at the rear in:",
+   "o": [
+    "O(1)",
+    "O(N)",
+    "O(log N)",
+    "O(N^2)"
+   ],
+   "a": 1,
+   "e": "You must walk to the predecessor of the last node. A doubly linked list makes it O(1).",
+   "t": "8.4 Linked Lists"
+  },
+  {
+   "q": "Which structure is used for round-robin CPU allocation?",
+   "o": [
+    "Circular linked list",
+    "Binary tree",
+    "Stack",
+    "Hash table"
+   ],
+   "a": 0,
+   "e": "The last node pointing back to the first suits cyclic allocation.",
+   "t": "8.4 Linked Lists"
+  },
+  {
+   "q": "Which technique is NOT suitable on a linked list?",
+   "o": [
+    "Linear search",
+    "Merge sort",
+    "Binary search",
+    "Linear traversal"
+   ],
+   "a": 2,
+   "e": "Binary search needs O(1) access to the middle element, which lists lack.",
+   "t": "8.4 Linked Lists"
+  },
+  {
+   "q": "Which of the following is NOT an application of a stack?",
+   "o": [
+    "Function call management",
+    "Symbol balancing",
+    "Expression evaluation",
+    "Asynchronous data transfer between processes"
+   ],
+   "a": 3,
+   "e": "Asynchronous transfer between processes is a queue/pipe job.",
+   "t": "8.5 Stacks and Expression Notation"
+  },
+  {
+   "q": "Popping from an empty stack causes:",
+   "o": [
+    "Overflow",
+    "Underflow",
+    "Deadlock",
+    "Segmentation"
+   ],
+   "a": 1,
+   "e": "Pop on empty = underflow; push on full = overflow.",
+   "t": "8.5 Stacks and Expression Notation"
+  },
+  {
+   "q": "What is the prefix form of A + B * C?",
+   "o": [
+    "+ A * B C",
+    "* + A B C",
+    "A B C * +",
+    "+ * A B C"
+   ],
+   "a": 0,
+   "e": "* binds tighter, so B*C becomes *BC and the prefix form is +A*BC.",
+   "t": "8.5 Stacks and Expression Notation"
+  },
+  {
+   "q": "Which prefix expression equals (A*B + C)/(E - F*G)?",
+   "o": [
+    "/ + * A B C - E * F G",
+    "/ * + A B C - E * F G",
+    "+ / * A B C - E * F G",
+    "/ + * A B C * - E F G"
+   ],
+   "a": 0,
+   "e": "Numerator +*ABC, denominator -E*FG, joined by /.",
+   "t": "8.5 Stacks and Expression Notation"
+  },
+  {
+   "q": "Convert the prefix expression * + a b - c d to postfix.",
+   "o": [
+    "ab+cd-*",
+    "abcd+-*",
+    "ab+c-d*",
+    "a+b*c-d"
+   ],
+   "a": 0,
+   "e": "(a+b) becomes ab+, (c-d) becomes cd-, then * last.",
+   "t": "8.5 Stacks and Expression Notation"
+  },
+  {
+   "q": "Which postfix string has the operator last in each sub-expression, e.g. a b c * + d e - + ?",
+   "o": [
+    "Postfix (Reverse Polish)",
+    "Prefix (Polish)",
+    "Infix",
+    "Mixfix"
+   ],
+   "a": 0,
+   "e": "In postfix the operator follows its operands, so no brackets or precedence are needed.",
+   "t": "8.5 Stacks and Expression Notation"
+  },
+  {
+   "q": "While evaluating postfix 3 2 + 7 * 6 5 + 4 * -, what is on top of the stack just before the second +?",
+   "o": [
+    "35",
+    "6",
+    "5",
+    "11"
+   ],
+   "a": 2,
+   "e": "After 3 2 + 7 * the stack holds 35, then 6 and 5 are pushed, so 5 is on top.",
+   "t": "8.5 Stacks and Expression Notation"
+  },
+  {
+   "q": "In a linear queue, where does insertion take place?",
+   "o": [
+    "Front",
+    "Rear",
+    "Middle",
+    "Either end"
+   ],
+   "a": 1,
+   "e": "Queues are FIFO: insert at the rear, delete at the front.",
+   "t": "8.6 Queues"
+  },
+  {
+   "q": "A circular queue (ring buffer) is used mainly to:",
+   "o": [
+    "Avoid wastage of memory",
+    "Sort elements",
+    "Allow insertion in the middle",
+    "Make access LIFO"
+   ],
+   "a": 0,
+   "e": "It reuses freed front slots, curing false overflow of a linear queue.",
+   "t": "8.6 Queues"
+  },
+  {
+   "q": "In a circular queue of size MAX, the queue is full when:",
+   "o": [
+    "front = rear = -1",
+    "(rear + 1) mod MAX = front",
+    "front = rear",
+    "rear = MAX - 1 only"
+   ],
+   "a": 1,
+   "e": "Full is (rear+1) mod MAX = front; front = rear = -1 means empty.",
+   "t": "8.6 Queues"
+  },
+  {
+   "q": "Which structure is best used to implement a priority queue?",
+   "o": [
+    "Binary heap",
+    "Stack",
+    "Circular list",
+    "Hash table"
+   ],
+   "a": 0,
+   "e": "A binary heap gives O(log n) insert and extract.",
+   "t": "8.6 Queues"
+  },
+  {
+   "q": "Insertion into a linked queue with new node PTR is done by:",
+   "o": [
+    "REAR->next = PTR; REAR = PTR",
+    "FRONT->next = PTR; FRONT = PTR",
+    "PTR->next = REAR; FRONT = PTR",
+    "REAR = PTR; FRONT->next = PTR"
+   ],
+   "a": 0,
+   "e": "Link after the old rear, then move REAR. FRONT is never touched.",
+   "t": "8.6 Queues"
+  },
+  {
+   "q": "What is the maximum number of nodes in a binary tree of height n (root at level 0)?",
+   "o": [
+    "2^n - 1",
+    "2^(n+1) - 1",
+    "2^n + 1",
+    "n + 1"
+   ],
+   "a": 1,
+   "e": "A complete tree of height n has 2^(n+1) - 1 nodes; the minimum is n + 1.",
+   "t": "8.7 Trees"
+  },
+  {
+   "q": "A full binary tree has n leaves. How many degree-2 nodes does it have?",
+   "o": [
+    "n + 1",
+    "n - 1",
+    "n/2",
+    "2n"
+   ],
+   "a": 1,
+   "e": "In such a tree, leaves minus one equals the number of degree-2 nodes.",
+   "t": "8.7 Trees"
+  },
+  {
+   "q": "A binary tree with n nodes has how many NULL pointers?",
+   "o": [
+    "n - 1",
+    "n",
+    "n + 1",
+    "2n"
+   ],
+   "a": 2,
+   "e": "n+1 null pointers; a threaded tree reuses them as threads.",
+   "t": "8.7 Trees"
+  },
+  {
+   "q": "How many different BSTs can be formed from 4 keys?",
+   "o": [
+    "10",
+    "12",
+    "14",
+    "16"
+   ],
+   "a": 2,
+   "e": "The Catalan number for 4 keys is 14.",
+   "t": "8.7 Trees"
+  },
+  {
+   "q": "Which traversal order is Left, Right, Node?",
+   "o": [
+    "Preorder",
+    "Inorder",
+    "Postorder",
+    "Level order"
+   ],
+   "a": 2,
+   "e": "Pre = NLR, In = LNR, Post = LRN.",
+   "t": "8.7 Trees"
+  },
+  {
+   "q": "The preorder traversal of a binary tree is 38,14,8,23,18,20,56,45,82,70 (BST). What is its postorder?",
+   "o": [
+    "8,20,18,23,14,45,70,82,56,38",
+    "8,14,18,20,23,38,45,56,70,82",
+    "8,18,20,23,14,70,45,82,56,38",
+    "38,14,8,23,18,20,56,45,82,70"
+   ],
+   "a": 0,
+   "e": "Rebuilding the BST gives left subtree rooted at 14 and right at 56; postorder is 8,20,18,23,14,45,70,82,56,38.",
+   "t": "8.7 Trees"
+  },
+  {
+   "q": "In a BST, in-order traversal produces:",
+   "o": [
+    "Descending order",
+    "Ascending sorted order",
+    "Level-wise order",
+    "Random order"
+   ],
+   "a": 1,
+   "e": "Left < node < right, so in-order visits keys in ascending order.",
+   "t": "8.7 Trees"
+  },
+  {
+   "q": "When deleting a BST node with two children, it is replaced by its:",
+   "o": [
+    "Preorder successor",
+    "Inorder successor",
+    "Postorder successor",
+    "Level-order successor"
+   ],
+   "a": 1,
+   "e": "The inorder successor is correct; preorder is the false claim.",
+   "t": "8.7 Trees"
+  },
+  {
+   "q": "Inorder of a tree is QSPTRU and preorder is PQSRTU. What is its postorder?",
+   "o": [
+    "S,Q,T,U,R,P",
+    "Q,S,T,R,U,P",
+    "S,Q,U,T,R,P",
+    "S,T,Q,U,R,P"
+   ],
+   "a": 0,
+   "e": "P is the root; Q,S on the left and R,T,U on the right give S,Q,T,U,R,P.",
+   "t": "8.7 Trees"
+  },
+  {
+   "q": "In an AVL tree, a node needs rebalancing when its balance factor becomes:",
+   "o": [
+    "0 or 1",
+    "1 or -1",
+    "+2 or -2",
+    "only 0"
+   ],
+   "a": 2,
+   "e": "Allowed values are -1, 0, +1; reaching +/-2 triggers rotation.",
+   "t": "8.8 Balanced Trees and Heaps"
+  },
+  {
+   "q": "Which AVL rotations are double rotations?",
+   "o": [
+    "LL and RR",
+    "LR and RL",
+    "LL and LR",
+    "RR and RL"
+   ],
+   "a": 1,
+   "e": "LL and RR are single rotations; LR and RL are double.",
+   "t": "8.8 Balanced Trees and Heaps"
+  },
+  {
+   "q": "Which statement about B-trees is false?",
+   "o": [
+    "It is not a binary tree",
+    "It is widely used for external memory",
+    "All leaves are at the same level",
+    "Leaves may be at different levels"
+   ],
+   "a": 3,
+   "e": "All leaves of a B-tree are at the same level; the opposite claim is false.",
+   "t": "8.8 Balanced Trees and Heaps"
+  },
+  {
+   "q": "In a red-black tree, newly inserted non-root nodes are coloured:",
+   "o": [
+    "Black",
+    "Red",
+    "Blue",
+    "Either, chosen freely"
+   ],
+   "a": 1,
+   "e": "A new root is black and a non-root insertion is red.",
+   "t": "8.8 Balanced Trees and Heaps"
+  },
+  {
+   "q": "In a 1-based array heap, the parent of the node at index i is:",
+   "o": [
+    "floor(i/2)",
+    "2i",
+    "2i + 1",
+    "i - 1"
+   ],
+   "a": 0,
+   "e": "Parent = floor(i/2); children are 2i and 2i+1.",
+   "t": "8.8 Balanced Trees and Heaps"
+  },
+  {
+   "q": "A vertex of degree 1 is called:",
+   "o": [
+    "Pendant",
+    "Articulation",
+    "Isolated",
+    "Pivot"
+   ],
+   "a": 0,
+   "e": "Pendant = degree 1; an isolated vertex has degree 0.",
+   "t": "8.9 Graphs"
+  },
+  {
+   "q": "A simple graph has 8 vertices. What is the maximum number of edges?",
+   "o": [
+    "16",
+    "24",
+    "28",
+    "56"
+   ],
+   "a": 2,
+   "e": "n(n-1)/2 = 8 x 7 / 2 = 28.",
+   "t": "8.9 Graphs"
+  },
+  {
+   "q": "Which data structure does BFS use?",
+   "o": [
+    "Stack",
+    "Queue",
+    "Heap",
+    "Hash table"
+   ],
+   "a": 1,
+   "e": "BFS uses a queue and DFS a stack.",
+   "t": "8.9 Graphs"
+  },
+  {
+   "q": "A spanning tree of a connected graph with n vertices has how many edges?",
+   "o": [
+    "n/2",
+    "n",
+    "n - 1",
+    "n + 1"
+   ],
+   "a": 2,
+   "e": "Exactly n - 1 edges; n/2 is invalid.",
+   "t": "8.9 Graphs"
+  },
+  {
+   "q": "Which problem is NOT NP-complete?",
+   "o": [
+    "Travelling salesman",
+    "Vertex cover",
+    "Hamiltonian cycle",
+    "Shortest path"
+   ],
+   "a": 3,
+   "e": "Shortest path is solved in polynomial time by Dijkstra.",
+   "t": "8.9 Graphs"
+  },
+  {
+   "q": "Binary search is unsuccessful when:",
+   "o": [
+    "Beg > End",
+    "End < Beg is false",
+    "Beg = End",
+    "Mid = Beg"
+   ],
+   "a": 0,
+   "e": "End < Beg means the range is empty.",
+   "t": "8.10 Searching and Hashing"
+  },
+  {
+   "q": "What is the maximum number of comparisons binary search needs on 12,000 sorted elements?",
+   "o": [
+    "12",
+    "13",
+    "14",
+    "15"
+   ],
+   "a": 2,
+   "e": "ceil(log2 12000) = 14, since 2^13 = 8192 and 2^14 = 16384.",
+   "t": "8.10 Searching and Hashing"
+  },
+  {
+   "q": "Which of the following is NOT a hash function method?",
+   "o": [
+    "Division",
+    "Mid-square",
+    "Folding",
+    "Probe"
+   ],
+   "a": 3,
+   "e": "Division, mid-square and folding are hash functions; probing resolves collisions.",
+   "t": "8.10 Searching and Hashing"
+  },
+  {
+   "q": "Using h(k) = k mod 57, what is h(197)?",
+   "o": [
+    "26",
+    "6",
+    "20",
+    "29"
+   ],
+   "a": 0,
+   "e": "197 - 3x57 = 197 - 171 = 26.",
+   "t": "8.10 Searching and Hashing"
+  },
+  {
+   "q": "Which is NOT a collision-resolution technique?",
+   "o": [
+    "Separate chaining",
+    "Double hashing",
+    "Folding",
+    "Rehashing"
+   ],
+   "a": 2,
+   "e": "Folding is a hash function, not a collision technique.",
+   "t": "8.10 Searching and Hashing"
+  },
+  {
+   "q": "Keys 22, 28, 23, 12, 13 are inserted by h(k)=k mod 9 with linear probing in a table of size 9. Where does 13 go?",
+   "o": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "a": 2,
+   "e": "13 hashes to 4 (22 there), 5 holds 23, so 13 goes to 6.",
+   "t": "8.10 Searching and Hashing"
+  },
+  {
+   "q": "Worst-case comparisons of bubble sort on 15 elements are:",
+   "o": [
+    "105",
+    "120",
+    "225",
+    "210"
+   ],
+   "a": 0,
+   "e": "n(n-1)/2 = 15 x 14 / 2 = 105.",
+   "t": "8.11 Sorting"
+  },
+  {
+   "q": "Which sorting algorithm is NOT stable?",
+   "o": [
+    "Merge sort",
+    "Insertion sort",
+    "Heap sort",
+    "Bubble sort"
+   ],
+   "a": 2,
+   "e": "Heap, quick and selection sort are unstable.",
+   "t": "8.11 Sorting"
+  },
+  {
+   "q": "Which pair of sorts is recursive divide and conquer?",
+   "o": [
+    "Quick and merge",
+    "Bubble and insertion",
+    "Selection and heap",
+    "Bubble and quick"
+   ],
+   "a": 0,
+   "e": "Quick and merge sort divide and recurse; bubble and insertion are iterative.",
+   "t": "8.11 Sorting"
+  },
+  {
+   "q": "The worst case of quicksort is:",
+   "o": [
+    "O(n log n)",
+    "Theta(n^2)",
+    "O(n)",
+    "O(log n)"
+   ],
+   "a": 1,
+   "e": "Sorted input with an extreme pivot gives Theta(n^2); a median pivot restores O(n log n).",
+   "t": "8.11 Sorting"
+  },
+  {
+   "q": "Which sort is O(n log n) in every case and best suited for linked lists?",
+   "o": [
+    "Merge sort",
+    "Quick sort",
+    "Heap sort",
+    "Selection sort"
+   ],
+   "a": 0,
+   "e": "Merge sort needs only sequential access.",
+   "t": "8.11 Sorting"
+  },
+  {
+   "q": "Which sort needs at most n - 1 swaps but is O(n^2) in both best and worst case?",
+   "o": [
+    "Selection sort",
+    "Bubble sort",
+    "Insertion sort",
+    "Heap sort"
+   ],
+   "a": 0,
+   "e": "Selection sort always scans for the minimum, with few swaps.",
+   "t": "8.11 Sorting"
+  },
+  {
+   "q": "Which of the following is solved by dynamic programming and NOT divide and conquer?",
+   "o": [
+    "Floyd-Warshall",
+    "Merge sort",
+    "Quick sort",
+    "Binary search"
+   ],
+   "a": 0,
+   "e": "Floyd-Warshall is DP.",
+   "t": "8.12 Algorithm Design Techniques"
+  },
+  {
+   "q": "Which statement about greedy algorithms is FALSE?",
+   "o": [
+    "They consider one input at a time",
+    "They examine all feasible solutions",
+    "They make locally optimal choices",
+    "Kruskal's algorithm is greedy"
+   ],
+   "a": 1,
+   "e": "Greedy does not examine all feasible solutions.",
+   "t": "8.12 Algorithm Design Techniques"
+  },
+  {
+   "q": "Dynamic programming is suited to problems with:",
+   "o": [
+    "Overlapping subproblems",
+    "Only independent subproblems",
+    "No optimal substructure",
+    "Random inputs"
+   ],
+   "a": 0,
+   "e": "DP relies on overlapping subproblems.",
+   "t": "8.12 Algorithm Design Techniques"
+  },
+  {
+   "q": "Which is solved by backtracking?",
+   "o": [
+    "N-queens",
+    "Fractional knapsack",
+    "LCS",
+    "Kruskal MST"
+   ],
+   "a": 0,
+   "e": "Subset-sum and n-queens use trial with undo.",
+   "t": "8.12 Algorithm Design Techniques"
+  }
+ ],
+ "tf": [
+  {
+   "s": "A hash table has average O(1) search, insert and delete.",
+   "a": true,
+   "n": "Extra table space buys speed."
+  },
+  {
+   "s": "Big-O gives a lower bound on running time.",
+   "a": false,
+   "n": "Big-O is the upper bound; Omega is the lower bound."
+  },
+  {
+   "s": "Intractable problems are solved in polynomial time.",
+   "a": false,
+   "n": "Tractable = polynomial; intractable = exponential."
+  },
+  {
+   "s": "Linked lists support random access in O(1).",
+   "a": false,
+   "n": "Access is sequential, O(n)."
+  },
+  {
+   "s": "Evaluating a prefix expression uses a stack scanned right to left.",
+   "a": true,
+   "n": "Postfix scans left to right."
+  },
+  {
+   "s": "Symbol balancing is a queue application.",
+   "a": false,
+   "n": "It is a stack application."
+  },
+  {
+   "s": "In a BST the right subtree holds greater values.",
+   "a": true,
+   "n": "left < node < right."
+  },
+  {
+   "s": "Deleting a two-child BST node uses its preorder successor.",
+   "a": false,
+   "n": "It uses the inorder successor."
+  },
+  {
+   "s": "DFS uses less memory than BFS.",
+   "a": true,
+   "n": "It stores one path, not a frontier."
+  },
+  {
+   "s": "Binary search can be applied to a linked list efficiently.",
+   "a": false,
+   "n": "No O(1) access to the middle."
+  },
+  {
+   "s": "Heap sort is stable.",
+   "a": false,
+   "n": "Heap sort is not stable."
+  },
+  {
+   "s": "Floyd-Warshall is a divide and conquer algorithm.",
+   "a": false,
+   "n": "It is dynamic programming."
+  },
+  {
+   "s": "The handshaking lemma says the degree sum equals twice the number of edges.",
+   "a": true,
+   "n": "Sum deg(v) = 2|E|."
+  },
+  {
+   "s": "The best case of binary search is O(log n).",
+   "a": false,
+   "n": "The best case is one comparison."
+  }
+ ],
+ "fill": [
+  {
+   "q": "A tree with n nodes has ______ edges.",
+   "d": "n-1",
+   "alts": "n-1~n−1"
+  },
+  {
+   "q": "The structure used to implement DFS is a ______.",
+   "d": "stack",
+   "alts": "stack"
+  },
+  {
+   "q": "Binary heap is used to implement a ______ queue.",
+   "d": "priority",
+   "alts": "priority"
+  },
+  {
+   "q": "Row-major address of A[i][j] is B + w x (i x C + j), where C is the number of ______.",
+   "d": "columns",
+   "alts": "columns~column"
+  },
+  {
+   "q": "The balance factor of an AVL node must lie in {-1, 0, ______}.",
+   "d": "+1",
+   "alts": "1~+1"
+  },
+  {
+   "q": "The sorting algorithm with n(n-1)/2 worst-case comparisons, repeatedly swapping adjacent elements, is ______ sort.",
+   "d": "bubble",
+   "alts": "bubble"
+  },
+  {
+   "q": "A degree-1 vertex in a graph is called a ______ vertex.",
+   "d": "pendant",
+   "alts": "pendant"
+  },
+  {
+   "q": "In division hashing, h(k) = k ______ m.",
+   "d": "mod",
+   "alts": "mod~modulo"
+  }
+ ]
+}
