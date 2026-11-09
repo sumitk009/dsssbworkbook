@@ -9,7 +9,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;800&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=1">
+<link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
 <body>
 <div class="blobs"><span></span><span></span><span></span></div>
@@ -17,10 +17,21 @@
 <div id="nav"></div>
 <div id="app"><noscript>इस वेबसाइट को चलाने के लिए JavaScript चालू करें।</noscript></div>
 
+<footer id="ft">
+<div class="ft-in">
+<div class="ft-brand"><div class="ft-logo">CS</div><div><b>DSSSB TGT Computer Science</b><p>अध्याय-वार MCQ, PYQ, Mock Test और गलतियों की डायरी के साथ डिजिटल अभ्यास पुस्तिका।</p></div></div>
+<div class="ft-col"><h4>नेविगेशन</h4><a href="#/home">होम</a><a href="#/guide">कैसे करें</a><a href="#/stats">प्रगति</a><a href="#/mock/50">Mock Test</a><a href="#/feedback">फीडबैक और रेटिंग</a></div>
+<div class="ft-col"><h4>संपर्क</h4><a href="https://wa.me/918969543599" target="_blank" rel="noopener">WhatsApp: +91 89695 43599</a><a href="mailto:sumitk09jmu@gmail.com">sumitk09jmu@gmail.com</a><span>Developer: Sumit Kumar</span></div>
+</div>
+<div class="ft-bot"><span>© <span id="yr">2026</span> Sumit Kumar. सर्वाधिकार सुरक्षित।</span><span>यह एक स्वतंत्र अभ्यास-सामग्री है; यह DSSSB का आधिकारिक प्रकाशन नहीं है।</span></div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+
 <!-- load order matters: data -> helpers -> app (app.js sabse last) -->
-<script src="assets/js/data/bank.js?v=1"></script>
-<script src="assets/js/sound.js?v=1"></script>
-<script src="assets/js/auth.js?v=1"></script>
-<script src="assets/js/app.js?v=1"></script>
+<script src="assets/js/data/bank.js?v=2"></script>
+<script src="assets/js/sound.js?v=2"></script>
+<script src="assets/js/extra.js?v=2"></script>
+<script src="assets/js/auth.js?v=2"></script>
+<script src="assets/js/app.js?v=2"></script>
 </body>
 </html>
