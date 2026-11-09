@@ -33,7 +33,7 @@ function pctBadge(sc,n){if(sc==null)return'';const p=Math.round(sc/n*100);return
 function band(p){return p>=80?['💪 तैयारी मजबूत है!','अगला कदम: Mock Test और Revision','rgba(34,197,94,.22)']:p>=60?['👍 ठीक-ठाक प्रदर्शन','अगला कदम: गलत टॉपिक दोहराएँ','rgba(251,191,36,.22)']:['📖 और अभ्यास चाहिए','अगला कदम: चैप्टर के नोट्स पढ़कर यही सेट फिर हल करें','rgba(239,68,68,.22)']}
 function countUp(el,to,ms=1200,suf=''){if(!el)return;const t0=performance.now();(function s(t){const k=Math.min(1,(t-t0)/ms);el.textContent=Math.round(to*k)+suf;if(k<1)requestAnimationFrame(s)})(t0)}
 function nav(){if(!USER){$('#nav').innerHTML='<span class="logo">DSSSB TGT CS</span>';return}const cur=(location.hash||'#/home').split('/')[1];
- const items=[['home','#/home','🏠 होम'],['guide','#/guide','📘 कैसे करें'],['stats','#/stats','📊 प्रगति'],['tf','#/tf/all','✔ सही/गलत'],['fill','#/fill/all','✏ रिक्त स्थान'],['mock','#/mock/50','🎯 Mock Test'],['diary','#/diary','📒 गलतियाँ']];
+ const items=[['home','#/home','🏠 होम'],['guide','#/guide','📘 कैसे करें'],['stats','#/stats','📊 प्रगति'],['tf','#/tf/all','✔ सही/गलत'],['fill','#/fill/all','✏ रिक्त स्थान'],['mock','#/mock/50','🎯 Mock Test'],['diary','#/diary','📒 गलतियाँ'],['feedback','#/feedback','💬 फीडबैक']];
  $('#nav').innerHTML=`<span class="logo" onclick="location.hash='#/home'">DSSSB TGT CS</span>`+items.map(i=>`<button class="nb ${cur===i[0]?'on':''}" onclick="location.hash='${i[1]}'">${i[2]}</button>`).join('')+`<button class="nb" style="margin-left:auto" onclick="toggleSound()">${S.sound?'🔊':'🔇'}</button><button class="nb ${cur==='profile'?'on':''}" onclick="location.hash='#/profile'">👤 ${esc(USER.name.split(' ')[0])}</button><button class="nb" onclick="logout()">⎋ Logout</button>`}
 function toggleSound(){S.sound=!S.sound;save();nav();if(S.sound)SFX.ok()}
 
@@ -43,7 +43,7 @@ function route(){stopTimer();if(!USER){nav();$('#app').innerHTML=vAuth();return}
  const h=(location.hash||'#/home').split('/');const v=h[1];const app=$('#app');nav();app.style.animation='none';void app.offsetWidth;app.style.animation='';scrollTo(0,0);
  if(v==='quiz')return startIntro(h[2]);
  if(v==='mock')return mockIntro(+h[2]||50);
- const map={home:vHome,guide:vGuide,stats:vStats,ch:()=>vChapter(+h[2]),tf:()=>vTF(h[2]),fill:()=>vFill(h[2]),diary:vDiary,profile:vProfile};
+ const map={home:vHome,guide:vGuide,stats:vStats,ch:()=>vChapter(+h[2]),tf:()=>vTF(h[2]),fill:()=>vFill(h[2]),diary:vDiary,profile:vProfile,feedback:vFeedback};
  app.innerHTML=(map[v]||vHome)()}
 
 /* ================= HOME ================= */
@@ -125,6 +125,7 @@ function finishQ(){stopTimer();const{s,list,ans,retry}=Q;let sc=0;const wrong=[]
  <div style="color:var(--mut)">⏱ समय: ${fmt(secs)} (लक्ष्य ${fmt(n*60)})${wrong.length?' · 📒 '+wrong.length+' गलती डायरी में जुड़ीं':''}</div>
  <div class="row" style="justify-content:center;margin-top:16px">${s.mock?`<button class="btn" onclick="location.hash='#/mock/${n}';route()">🔄 नया Mock Test</button>`:`<button class="btn" onclick="location.hash='#/quiz/${s.id}'">🔄 फिर हल करें</button>`}${wrong.length&&!s.mock?`<button class="btn ok" onclick="beginQuiz('${s.id}','practice',true)">🔁 केवल गलत प्रश्न</button>`:''}<button class="btn gh" onclick="location.hash='#/home'">🏠 होम</button></div></div>
  <h2 class="sec">उत्तर-कुंजी और व्याख्या</h2>${list.map((qi,i)=>{const q=s.qs[qi];const ok=ans[i]===q.a;return`<div class="card item ${ok?'right':'wrong'}"><div style="white-space:pre-wrap"><span class="n">${i+1}.</span>${esc(q.q)}</div>${qMeta(q)}<div class="fb ${ok?'ok':'bad'}">${ok?'✅ आपका उत्तर सही':'❌ आपका उत्तर: '+(ans[i]!=null?'('+LET[ans[i]]+') '+esc(q.o[ans[i]]):'—')+'<br>✔ सही: ('+LET[q.a]+') '+esc(q.o[q.a])}<br><span class="tag">${esc(q.e)}</span></div></div>`}).join('')}`;
+ $('#app').insertAdjacentHTML('beforeend',rateCard(s.title));
  setTimeout(()=>{$('#rg').style.strokeDashoffset=C*(1-p/100);countUp($('#rp'),p,1400,'%')},80);scrollTo(0,0)}
 
 /* ================= TRUE / FALSE + FILL ================= */
