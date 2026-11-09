@@ -87,3 +87,52 @@ th{color:var(--a2);font-weight:600;position:sticky;top:0}
 .auth{max-width:440px;margin:26px auto}.tabs{display:flex;gap:8px;margin-bottom:14px}.tabs .btn{flex:1}
 .who{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.av{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:26px;font-weight:800;background:rgba(0,0,0,.25)}
 .qtext{white-space:pre-wrap}.tag{line-height:1.5}
+
+/* ===== Professional theme (v2) ===== */
+:root{--bg:#0c1731;--card:#14223f;--bd:#27385e;--tx:#edf1fa;--mut:#9fb0d0;--a1:#2f6bff;--a2:#2f6bff;--gold:#e6b450;--blue:#5b8cff}
+body{background:var(--bg);display:flex;flex-direction:column}
+body:before{content:"";height:4px;background:linear-gradient(90deg,#e6b450,#2f6bff)}
+.blobs{display:none}
+#nav{background:rgba(12,23,49,.94);border-bottom:1px solid var(--bd)}
+#nav .logo{background:none;color:var(--gold);-webkit-text-fill-color:var(--gold)}
+.nb:hover,.nb.on{background:var(--a1);border-color:var(--a1)}
+.card{backdrop-filter:none;background:var(--card);border-radius:12px}
+.hero{background:#13284f;border:1px solid var(--bd);border-left:5px solid var(--gold);border-radius:12px;box-shadow:none}
+.hero:after{display:none}
+.chip{background:rgba(255,255,255,.08);border:1px solid var(--bd)}
+.btn{background:var(--a1);box-shadow:none;border-radius:8px}
+.btn:hover{filter:brightness(1.12);transform:none}
+.btn.gh{background:transparent}.btn.ok{background:#188a4a}.btn.no{background:#c0392b}
+.tile:hover{transform:none;border-color:var(--gold);box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.stat b{background:none;color:var(--gold);-webkit-text-fill-color:var(--gold)}
+.bar i{background:var(--gold)}
+.steps div:before{background:var(--a1)}
+#app{flex:1;width:100%}
+a{color:var(--gold)}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+/* feedback + rating */
+.fgrid{display:grid;grid-template-columns:3fr 2fr;gap:14px;margin-top:16px;align-items:start}
+@media(max-width:760px){.fgrid{grid-template-columns:1fr}}
+.ct{margin:0 0 12px;font-size:17px}
+.fl{margin:14px 0 6px;font-size:13.5px;color:var(--mut);font-weight:600}
+.stars{display:flex;gap:4px}
+.star{background:none;border:0;padding:2px 3px;font-size:34px;line-height:1;color:#3a4c75;cursor:pointer;transition:color .15s,transform .15s}
+.star.on{color:var(--gold)}.star:hover{transform:scale(1.15);color:var(--gold)}
+#qrs{display:flex;justify-content:center}
+.sstat{color:var(--gold);letter-spacing:2px}.sstat i{font-style:normal;color:#3a4c75}
+.contact{display:grid;gap:10px}
+.contact a{display:block;padding:11px 13px;border:1px solid var(--bd);border-radius:8px;text-decoration:none;color:var(--tx)}
+.contact a:hover{border-color:var(--gold)}.contact b{display:block;font-size:13px;color:var(--gold)}.contact span{font-size:14.5px;word-break:break-all}
+.avg{display:flex;align-items:center;gap:10px}.avg b{font-size:30px;color:var(--gold);font-family:Poppins,sans-serif}
+/* footer */
+#ft{position:relative;z-index:2;margin-top:30px;background:#091227;border-top:3px solid var(--gold)}
+.ft-in{max-width:980px;margin:0 auto;padding:30px 14px;display:grid;grid-template-columns:2fr 1fr 1.3fr;gap:28px}
+@media(max-width:760px){.ft-in{grid-template-columns:1fr;gap:20px}}
+.ft-brand{display:flex;gap:12px;align-items:flex-start}
+.ft-logo{flex:none;width:42px;height:42px;border-radius:8px;background:var(--a1);display:grid;place-items:center;font-weight:800;font-family:Poppins,sans-serif}
+.ft-brand p{margin:4px 0 0;color:var(--mut);font-size:13.5px}
+.ft-col{display:flex;flex-direction:column;gap:7px;font-size:14px}
+.ft-col h4{margin:0 0 4px;font-size:14px;color:var(--gold)}
+.ft-col a{color:var(--tx);text-decoration:none;opacity:.88}.ft-col a:hover{opacity:1;text-decoration:underline}.ft-col span{color:var(--mut)}
+.ft-bot{max-width:980px;margin:0 auto;padding:14px;border-top:1px solid var(--bd);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--mut)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
